@@ -1,0 +1,20 @@
+option java_outer_classname = "LCResponseResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum ResponseResult{
+	success				= 0x00;
+	failure				= 0x01;
+	messageError		= 0x02;
+	notSupport			= 0x03;
+	alarmHandle			= 0x04;
+	offline				= 0x05;
+	notRegister			= 0x06;
+	ecuSuccess			= 0x07;	
+	ecuFailure			= 0x08;	
+	ecuNotSupport		= 0x09;	
+	typeError			= 0x0A;
+	limitError			= 0x0B;
+	vehicleClose		= 0x0C;
+	communicateError	= 0x0D;
+	
+}

@@ -1,0 +1,9 @@
+option java_outer_classname = "LCResRouteINOUTAlarmRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/RouteInOutData.proto";
+message ResRouteINOUTAlarmRecoreds{
+	required	int32	statusCode =1;
+	optional	int32	totalRecords =2;
+	repeated	RouteInOutData	dataList =3;
+}

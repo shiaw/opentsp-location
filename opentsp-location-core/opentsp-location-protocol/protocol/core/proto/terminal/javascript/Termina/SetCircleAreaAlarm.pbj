@@ -1,0 +1,24 @@
+
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+enum SetAreaOperation{
+	updateArea	=0;
+	additionalArea	=1;
+	modifyArea	=2;
+}
+
+message SetCircleAreaAlarm{
+	required SetAreaOperation operations = 1;
+	repeated CircleArea areas = 2;
+}
+message CircleArea{
+	required int64 areaIdentify = 1;
+	required int32 areaProperty = 2;
+	required int32 centerLatitude = 3;
+	required int32 centerLongitude = 4;
+	required int32 radius = 5;
+	optional int64 beginDate = 6;
+	optional int64 endDate = 7;
+	optional int32 maxSpeed = 8;
+	optional int32 speedingContinuousTime = 9;
+}

@@ -1,0 +1,101 @@
+package com.navinfo.opentsp.platform.dp.core.cache;
+
+import com.navinfo.opentsp.platform.dp.core.cache.entity.InternalCacheEntity;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+/**
+ * 内部公共缓存对象
+ * 
+ * @author lgw
+ * 
+ */
+public class InternalCache {
+	private static Map<String, InternalCacheEntity> cache = new ConcurrentHashMap<String, InternalCacheEntity>();
+	private final int DEFAULT_TIME_OUT = 600;
+	private final static InternalCache instance = new InternalCache();
+
+	private InternalCache() {
+	}
+
+	public static InternalCache getInstance() {
+		return instance;
+	}
+
+	/**
+	 * 添加一个缓存数据
+	 * 
+	 * @param key
+	 * @param expired {@link Integer} 小于0永不超时
+	 * @param value
+	 * @return
+	 */
+	public boolean add(String key, int expired, Object value) {
+		InternalCacheEntity entry = new InternalCacheEntity();
+		entry.setObject(value);
+		entry.setTimeout(expired);
+		entry.setLastUpdateTime(System.currentTimeMillis() / 1000);
+		return cache.put(key, entry) != null;
+	}
+
+	public boolean delete(String key) {
+		return cache.remove(key) != null;
+	}
+
+	public boolean update(String key, Object value) {
+		InternalCacheEntity InternalCacheEntity = cache.get(key);
+		if (InternalCacheEntity != null) {
+			InternalCacheEntity
+					.setLastUpdateTime(System.currentTimeMillis() / 1000);
+			InternalCacheEntity.setObject(value);
+			return cache.put(key, InternalCacheEntity) != null;
+		} else {
+			return false;
+		}
+
+	}
+
+	public boolean add(String key, Object value) {
+		return this.add(key, DEFAULT_TIME_OUT, value);
+	}
+
+	/**
+	 * 获取缓存超时对象
+	 * 
+	 * @return
+	 */
+	public List<Object> getExpiredObject() {
+		Iterator<String> iterable = cache.keySet().iterator();
+		List<Object> result = new ArrayList<Object>();
+		long time = System.currentTimeMillis() / 1000;
+		while (iterable.hasNext()) {
+			InternalCacheEntity internalCacheEntity = cache
+					.get(iterable.next());
+			if (internalCacheEntity != null) {
+				if(internalCacheEntity.getTimeout() < 0){
+					continue;
+				}
+				if (time - internalCacheEntity.getLastUpdateTime() > internalCacheEntity
+						.getTimeout()) {
+					result.add(internalCacheEntity.getObject());
+				}
+			}
+		}
+		return result;
+	}
+
+	public Object get(String key) {
+		InternalCacheEntity entry = cache.get(key);
+		if (entry != null)
+			return entry.getObject();
+		return null;
+	}
+	public int size(){
+		return cache.size();
+	}
+	
+}

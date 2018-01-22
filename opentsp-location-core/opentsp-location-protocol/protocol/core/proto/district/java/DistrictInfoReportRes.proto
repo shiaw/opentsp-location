@@ -1,0 +1,13 @@
+option java_outer_classname = "LCDistrictInfoReportRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.district";
+
+message DistrictInfoReportRes{
+	required	int32	serialNumber	=1;
+	required	ReportResult	results	=2;
+	
+	enum	ReportResult{
+		success				=0x01;
+		illegalDistrict		=0x02;
+		illegalNodeCode		=0x03;
+	}
+}

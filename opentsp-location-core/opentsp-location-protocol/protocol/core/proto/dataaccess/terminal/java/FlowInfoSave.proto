@@ -1,0 +1,13 @@
+option java_outer_classname = "LCFlowInfoSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+message FlowInfoSave{
+	repeated	TerminalDataFlow	flows		=1;
+	
+	message TerminalDataFlow{
+		required	int64	terminalId			=1;
+		required	int64	flowDate			=2;
+		required	int32	upFlow				=3;
+		required	int32	downFlow			=4;
+	}
+}

@@ -1,0 +1,15 @@
+option java_outer_classname = "LCDictData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+import "core/proto/dataaccess/common/java/DictType.proto";
+
+message DictData{
+	required int32 dataCode = 1;
+	optional int32 gbCode = 2;
+	required DictType dictType = 3;
+	required string name = 4;
+	optional int32 parentDataCode = 5;
+}

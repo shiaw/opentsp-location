@@ -1,0 +1,36 @@
+option java_outer_classname = "LCMonitorThreadStatus";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster.common";
+
+message MonitorThreadStatus{
+	required	ThreadType	types	=1;
+	required	ThreadStatus	status	=2;
+	
+	enum ThreadType{
+		ta_responseMechanism			=0x01;
+		ta_commonCacheProcess			=0x02;
+		ta_pictureCacheProcess			=0x03;
+		ta_statusHeartbeatProcess		=0x04;
+		ta_terminalFlowSaveProcess		=0x05;
+		ta_terminalStatusTestProcess	=0x06;
+		
+		dp_terminalParameterProcess		=0x20;
+		dp_dpAndTaDataGuaranteeProcess	=0x21;
+		dp_removeInvalidDataProcess		=0x22;
+		dp_commonDataProcess			=0x23;
+		dp_statusHeartbeatProcess		=0x24;
+		dp_commonHeartbeatProcess		=0x25;
+		dp_encryptDelayCheckProcess		=0x26;
+		dp_encryptTimeoutCheckProcess	=0x27;
+		
+		dsa_realtimeCacheCleanerProcess	=0x40;
+		dsa_statusHeartbeatProcess		=0x41;
+		rp_ws_statusHeartbeatProcess	=0x42;
+		da_cleanAlarmQueryCacheTask		=0x43;
+	}
+	
+	enum ThreadStatus{
+		threadNormal	=0x01;
+		threadException	=0x02;
+	}
+}

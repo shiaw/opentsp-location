@@ -1,0 +1,21 @@
+
+option java_outer_classname = "LCDrivingBehaviorAnalysis";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message DrivingBehaviorAnalysis{
+	optional	int32	turningAngle          =1;
+	optional	int32	lowOilDrivingValue    =2;
+	optional	int32	vehicleSpeedFromEcu   =3;
+	optional	int32	rpmWhenAlarming       =4;
+	optional	int32	velocityChangeValue   =5;
+	optional	int32	currentGearshift      =6;
+	optional	int32	currentRPM			  =7;
+	optional	string	deviceIdentity		  =8;
+	optional	int32	brakeTimes			  =9;
+	optional	int32	clutchTimes			  =10;
+	optional	int32	retarderTimes		  =11;
+	optional	int32	absTimes			  =12;
+	optional	int32	reverseTimes          =13;
+}
+
+

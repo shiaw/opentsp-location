@@ -1,0 +1,39 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+
+
+message TakePhotography{
+	required int32 channels = 1;
+	required CommandType commandType = 2;
+	required int32 photoNumber = 3;
+	required int32 takeInterval = 4;
+	
+	required SaveStatus saveStatus = 5;
+	required Resolution resolutions = 6;
+	required int32 photoQuality = 7;
+	required int32 saturation = 8;
+	
+	required int32 brightness = 9;
+	required int32 contrast = 10;
+	required int32 chroma = 11;
+	
+	enum CommandType{
+		multiPhoto = 0;
+		stopPhoto = 1;
+		videoModel = 2;
+	}
+	enum SaveStatus{
+		upload = 0;
+		terminalSave = 1;
+	}
+	enum Resolution{
+		R320_240 = 1;
+		R640_480 = 2;
+		R800_600 = 3;
+		R1024_768 = 4;
+		R176_144_QCIF = 5;
+		R352_288_CIF = 6;
+		R704_288_HALFD1 = 7;
+		R740_576_D1 = 8;
+	}
+}

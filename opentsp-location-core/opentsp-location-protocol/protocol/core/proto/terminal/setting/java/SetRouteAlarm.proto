@@ -1,0 +1,30 @@
+option java_outer_classname = "LCSetRouteAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+import "core/proto/common/java/SetAreaOperation.proto";
+
+message SetRouteAlarm{
+	required SetAreaOperation operations = 1;
+	repeated Route routes = 2;
+}
+
+message Route{
+	required int64 routeIdentify = 1;
+	required int32 routeProperty = 2;
+	optional int64 beginDate = 3;
+	optional int64 endDate = 4;
+	repeated TurningPoint turningPoints = 5;
+}
+
+message TurningPoint{
+	required int64 turningIdentify = 1;
+	optional int64 lineIdentify = 2;
+	required int32 turningLatitude = 3;
+	required int32 turningLongitude = 4;
+	optional int32 lineWidth = 5;
+	optional int32 lineProperty = 6;
+	optional int32 drivingOutTime = 7;
+	optional int32 drivingLackOfTime = 8;
+	optional int32 maxSpeed = 9;
+	optional int32 speedingContinuousTime = 10;
+}

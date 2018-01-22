@@ -1,0 +1,20 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message RecordStartCommand{
+ 
+ 
+	required	bool	isRecord	=1;
+	required	bool	isAlways	=2;
+	required	int32	recordTime	=3;
+	required	SaveStatus	status	=4;
+	required	AudioRate	rates	=5;
+	
+	enum AudioRate{
+		rate_8k		=0x00;
+		rate_11k	=0x01;
+		rate_23k	=0x02;
+		rate_32k	=0x03;
+	}
+	
+}

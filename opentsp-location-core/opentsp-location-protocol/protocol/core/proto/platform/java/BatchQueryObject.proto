@@ -1,0 +1,9 @@
+option java_outer_classname = "LCBatchQueryObject";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message BatchQueryObject{
+	required	DistrictCode	districtCode	=1;
+	repeated	int64	terminalIdentify		=2;
+}

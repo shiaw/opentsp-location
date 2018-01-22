@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-gateway/opentsp-gateway-forwarding" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-gateway/opentsp-gateway-tcp-location" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-gateway/opentsp-gateway-tcp-location-rp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-gateway/opentsp-gateway-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-da" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-da/opentsp-location-da-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-dp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-dp/opentsp-location-dp-command" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-dp/opentsp-location-dp-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-dsa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-monitor/opentsp-location-monitor-commands" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-monitor/opentsp-location-monitor-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-protocol" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-push" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-push/opentsp-location-push-commands" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-push/opentsp-location-push-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-rprest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-rprest/opentsp-location-rprest-commands" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-rprest/opentsp-location-rprest-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-rpws" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-rpws/opentsp-location-rpws-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/opentsp-location-joblocation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/opentsp-location-jobtracker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-qqi-location" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-qqi-location/tasktracker-qqi-location-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-qqi-location/tasktracker-qqi-location-vo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-rprest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-rprest/tasktracker-rprest-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-core/opentsp-location-schedule/tasktracker-rprest/tasktracker-rprest-vo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-tools/opentsp-location-808tool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-tools/opentsp-location-kafka-mongo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opentsp-location-tools/opentsp-location-parse" charset="UTF-8" />
+  </component>
+</project>

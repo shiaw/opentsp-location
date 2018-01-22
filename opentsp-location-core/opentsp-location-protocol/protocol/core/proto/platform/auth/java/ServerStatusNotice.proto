@@ -1,0 +1,12 @@
+option java_outer_classname = "LCServerStatusNotice";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+import "core/proto/common/java/ServerStatus.proto";
+
+message ServerStatusNotice{
+	required	string	serverIp				=1;
+	required	int64	serverIdentifies		=2;
+	required	ServerStatus	status			=3;
+	optional	string	channelIdentify			=4;
+
+}

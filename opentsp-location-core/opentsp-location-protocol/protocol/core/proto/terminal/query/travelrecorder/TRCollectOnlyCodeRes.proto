@@ -1,0 +1,13 @@
+option java_outer_classname = "LCTRCollectOnlyCodeRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message TRCollectOnlyCodeRes{
+	required	int32			serialNumber				=1;
+	required	ResponseResult	result						=2;
+	optional	string			manufacturerAuthCode		=3;
+	optional	string			productsAuthCode			=4;
+	optional	int64			productDate					=5;
+	optional	int64			productsCode				=6;
+}

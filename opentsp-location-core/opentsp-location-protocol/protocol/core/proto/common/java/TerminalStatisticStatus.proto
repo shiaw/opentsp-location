@@ -1,0 +1,12 @@
+
+option java_outer_classname = "LCTerminalStatisticStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message TerminalStatisticStatus{
+	required	int64	terminalIdentify	=1;
+	required	int32	type                =2;
+}
+
+
+
+

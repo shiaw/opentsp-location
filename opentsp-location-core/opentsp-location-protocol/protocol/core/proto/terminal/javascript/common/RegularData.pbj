@@ -1,0 +1,79 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.dataaccess.common;
+enum RegularCode{
+	speeding = 0x2981A;
+	inOutArea = 0x29824;
+	routeDriverTime = 0x2982E;
+	driverNotCard = 0x29838;
+	doorOpenOutArea = 0x29842;
+	drivingBan = 0x2984C;
+}
+enum AreaType{
+	noType = 0x222E0;
+	point = 0x222E1;
+	circle = 0x222E2;
+	rectangle = 0x222E3;
+	polygon = 0x222E4;
+	route = 0x222E5;
+	segment	=	0x222E6;
+}
+message AreaSpeeding{
+	required int64 areaId = 1;
+	required AreaType	types = 2;
+	required int32 maxSpeed = 3;
+	required int32 continuousTime = 4;
+	optional	int64	startDate	=5;
+	optional	int64	endDate		=6;
+	optional	bool	isEveryDay	=7;
+	optional	int64	routeId	=8;
+	required	bool	basedTime	=9;
+}
+
+message InOutArea{
+	required	int64	areaId	=1;
+	required	bool	inAreaAlarmToDriver	=2;
+	required	bool	inAreaAlarmToPlatform	=3;
+	required	bool	outAreaAlarmToDriver	=4;
+	required	bool	outAreaAlarmToPlatform	=5;
+	required	bool	basedTime	=6;
+	optional	bool	isEveryDay	=7;
+	optional	int64	startDate	=8;
+	optional	int64	endDate		=9;
+}
+message RouteDriverTime{
+	required	int64	routeId	=1;
+	required	int64	lineId	=2;
+	required	int32	maxTime	=3;
+	required	int32	minTime	=4;
+	required	bool	basedTime	=5;
+	optional	bool	isEveryDay	=6;
+	optional	int64	startDate	=7;
+	optional	int64	endDate		=8;
+}
+message DriverNotCard{
+	required int32 notCardTime = 1;
+}
+message DoorOpenOutArea{
+	required	int64	areaId	=1;
+	required	bool	basedTime	=2;
+	optional	bool	isEveryDay	=3;
+	optional	int64	startDate	=4;
+	optional	int64	endDate		=5;
+}
+message DrivingBan{
+	required bool isEveryDay = 1;
+	required int64 startDate = 2;
+	required int64 endDate = 3;
+}
+
+message RegularData{
+	required int64 terminalId = 1;
+	required RegularCode regularCode = 2;
+	required int64 lastModifyDate = 3;
+	optional AreaSpeeding speeding = 4;
+	optional InOutArea inOutArea = 5;
+	optional RouteDriverTime driverTime = 6;
+	optional DriverNotCard driverNotCard = 7;
+	optional DoorOpenOutArea doorOpenOutArea = 8;
+	optional DrivingBan	drivingBan	 = 9;
+}

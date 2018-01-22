@@ -1,0 +1,26 @@
+option java_outer_classname = "LCMonitorCacheSize";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message MonitorCacheSize{
+	required	CacheType	types	=1;
+	required	int32	cacheSize	=2;
+	
+	enum CacheType{
+		ta_terminalLink	=0x01;
+		ta_terminalIdentify	=0x02;
+		ta_temporaryData	=0x03;
+		ta_localData	=0x04;
+		ta_usedKeyStart	=0x05;
+		ta_usedKeyEnd	=0x06;
+		
+		dp_areaData	=0x20;
+		dp_regularData	=0x21;
+		dp_latestLocationData	=0x22;
+		dp_dictData	=0x23;
+		dp_commonData	=0x24;
+		dp_terminalParameter	=0x25;
+		dp_dpAndTaDataGuarantee	=0x26;
+		dp_messageAddressing	=0x27;
+		dp_encryptData	=0x28;
+	}
+}

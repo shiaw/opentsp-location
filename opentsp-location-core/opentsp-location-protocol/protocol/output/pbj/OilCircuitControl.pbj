@@ -1,0 +1,14 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message OilCircuitControl{
+ 
+ 
+	required	ControlType	types	=1;
+	required	bool	status		=2;
+	
+	enum ControlType{
+		oil			=0x00;
+		circuit		=0x01;
+	}
+}

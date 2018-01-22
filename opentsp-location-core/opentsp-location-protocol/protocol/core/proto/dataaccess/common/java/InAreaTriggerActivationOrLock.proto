@@ -1,0 +1,7 @@
+option java_outer_classname = "LCInAreaTriggerActivationOrLock";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message InAreaTriggerActivationOrLock {
+	required	int64	areaId =1;
+	required	int32	status =2;
+}

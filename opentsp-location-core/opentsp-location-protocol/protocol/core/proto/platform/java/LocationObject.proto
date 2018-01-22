@@ -1,0 +1,9 @@
+option java_outer_classname = "LCLocationObject";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+import "core/proto/common/java/LocationData.proto";
+
+message LocationObject{
+	required	int64	terminalIdentify	=1;
+	optional	LocationData	locationData	=2;
+}

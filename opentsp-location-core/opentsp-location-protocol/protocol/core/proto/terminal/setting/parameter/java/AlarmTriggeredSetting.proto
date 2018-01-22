@@ -1,0 +1,10 @@
+option java_outer_classname = "LCAlarmTriggeredSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message AlarmTriggeredSetting{
+	optional	int64	alarmMask			=1;
+	optional	int64	alarmSmsSwitch		=2;
+	optional	int64	alarmPhotoSwitch	=3;
+	optional	int64	alarmPhotoSave		=4;
+	optional	int64	alarmKeyStatus		=5;
+}

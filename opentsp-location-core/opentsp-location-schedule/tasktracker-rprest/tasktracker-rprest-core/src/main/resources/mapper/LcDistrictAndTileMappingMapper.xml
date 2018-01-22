@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.navinfo.tasktracker.rprest.dao.LcDistrictAndTileMappingMapper">
+  <resultMap id="BaseResultMap" type="com.navinfo.tasktracker.rprest.domain.LcDistrictAndTileMapping">
+    <id column="TILE_ID" jdbcType="BIGINT" property="tileId" />
+    <result column="DISTRICT_ID" jdbcType="INTEGER" property="districtId" />
+    <result column="PARENT_DISTRICT_ID" jdbcType="INTEGER" property="parentDistrictId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    TILE_ID, DISTRICT_ID, PARENT_DISTRICT_ID
+  </sql>
+  <select id="selectAll"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from lc_district_and_tile_mapping
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from lc_district_and_tile_mapping
+    where TILE_ID = #{tileId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from lc_district_and_tile_mapping
+    where TILE_ID = #{tileId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.navinfo.tasktracker.rprest.domain.LcDistrictAndTileMapping">
+    insert into lc_district_and_tile_mapping (TILE_ID, DISTRICT_ID, PARENT_DISTRICT_ID
+      )
+    values (#{tileId,jdbcType=BIGINT}, #{districtId,jdbcType=INTEGER}, #{parentDistrictId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.navinfo.tasktracker.rprest.domain.LcDistrictAndTileMapping">
+    insert into lc_district_and_tile_mapping
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tileId != null">
+        TILE_ID,
+      </if>
+      <if test="districtId != null">
+        DISTRICT_ID,
+      </if>
+      <if test="parentDistrictId != null">
+        PARENT_DISTRICT_ID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tileId != null">
+        #{tileId,jdbcType=BIGINT},
+      </if>
+      <if test="districtId != null">
+        #{districtId,jdbcType=INTEGER},
+      </if>
+      <if test="parentDistrictId != null">
+        #{parentDistrictId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.navinfo.tasktracker.rprest.domain.LcDistrictAndTileMapping">
+    update lc_district_and_tile_mapping
+    <set>
+      <if test="districtId != null">
+        DISTRICT_ID = #{districtId,jdbcType=INTEGER},
+      </if>
+      <if test="parentDistrictId != null">
+        PARENT_DISTRICT_ID = #{parentDistrictId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where TILE_ID = #{tileId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.navinfo.tasktracker.rprest.domain.LcDistrictAndTileMapping">
+    update lc_district_and_tile_mapping
+    set DISTRICT_ID = #{districtId,jdbcType=INTEGER},
+      PARENT_DISTRICT_ID = #{parentDistrictId,jdbcType=INTEGER}
+    where TILE_ID = #{tileId,jdbcType=BIGINT}
+  </update>
+</mapper>

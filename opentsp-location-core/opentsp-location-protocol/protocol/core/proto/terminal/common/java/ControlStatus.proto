@@ -1,0 +1,6 @@
+option java_outer_classname = "LCControlStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum ControlStatus{
+	doorSwitch		=0x01;
+}

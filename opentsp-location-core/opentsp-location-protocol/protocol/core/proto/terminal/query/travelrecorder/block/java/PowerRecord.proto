@@ -1,0 +1,9 @@
+option java_outer_classname = "LCPowerRecord";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder.block";
+
+import "core/proto/terminal/common/java/PowerEventType.proto";
+
+message PowerRecord{
+	required	int64				occurDate			=1;
+	required	PowerEventType		types				=2;
+}

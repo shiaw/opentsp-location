@@ -1,0 +1,9 @@
+option java_outer_classname = "LCCpuInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message CpuInfo{
+	required	float	serverCpu	=1;
+	required	float	systemCpu	=2;
+	required	float	totalCpu	=3;
+	required	float	idleCpu		=4;
+}

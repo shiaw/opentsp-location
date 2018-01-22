@@ -1,0 +1,12 @@
+option java_outer_classname = "LCTRCollectDriverIdentityRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/terminal/query/travelrecorder/block/java/DriverLoginRecord.proto";
+
+message TRCollectDriverIdentityRes{
+	required	int32					serialNumber		=1;
+	required	ResponseResult			result				=2;
+	repeated	DriverLoginRecord		records				=3;
+}
+

@@ -1,0 +1,11 @@
+option java_outer_classname = "LCSettingPara";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum SettingPara{
+	vehicleInfo					=0x82;
+	recorderInstallDate			=0x83;
+	statusSignal				=0x84;
+	recorderDate				=0xC2;
+	recorderPulse				=0xC3;
+	originalMileage				=0xC4;
+}

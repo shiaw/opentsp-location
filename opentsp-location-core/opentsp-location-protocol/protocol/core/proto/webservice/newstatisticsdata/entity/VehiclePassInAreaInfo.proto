@@ -1,0 +1,9 @@
+option java_outer_classname = "LCVehiclePassInAreaInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+import "core/proto/webservice/newstatisticsdata/entity/LastestVehicleInfo.proto";
+
+message VehiclePassInAreaInfo{
+	required	int32	districtCodes				=1;
+	repeated	LastestVehicleInfo	vehicleInfo		=2;
+}

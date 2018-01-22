@@ -1,0 +1,9 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message CollisionAlarm{
+ 
+required	int32	collisionTime	=1;
+required	float	acceleration	=2;
+
+}

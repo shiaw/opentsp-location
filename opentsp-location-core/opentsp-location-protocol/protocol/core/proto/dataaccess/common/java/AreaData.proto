@@ -1,0 +1,10 @@
+option java_outer_classname = "LCAreaData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message AreaData{
+	required int32 dataSN = 1;
+	optional int64 dataStatus = 2;
+	optional int32 longitude = 3;
+	optional int32 latitude = 4;
+	optional int32 radiusLength = 5;
+}

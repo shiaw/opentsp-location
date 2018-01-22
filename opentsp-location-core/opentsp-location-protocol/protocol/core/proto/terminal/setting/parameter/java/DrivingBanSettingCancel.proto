@@ -1,0 +1,7 @@
+option java_outer_classname = "LCDrivingBanSettingCancel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message DrivingBanSettingCancel{
+	required	bool	isDeleteAll			=1;
+	repeated	int64	banIdentify			=2;
+}

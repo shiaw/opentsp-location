@@ -1,0 +1,8 @@
+option java_outer_classname = "LCLatestPark";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message LatestPark{
+    required	int64	terminalID 				=1;
+	optional	int64	areaId					=2;
+	optional	int64	beginDate				=3;
+}

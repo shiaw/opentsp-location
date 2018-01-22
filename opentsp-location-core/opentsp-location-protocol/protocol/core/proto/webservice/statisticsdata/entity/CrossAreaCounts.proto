@@ -1,0 +1,7 @@
+option java_outer_classname = "LCCrossAreaCounts";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+import "core/proto/webservice/statisticsdata/entity/CrossRecord.proto";
+
+message CrossAreaCounts{
+	repeated	CrossRecord	records =1;
+}

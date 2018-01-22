@@ -1,0 +1,9 @@
+option java_outer_classname = "LCVehicleControlRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/ShortLocationData.proto";
+
+message VehicleControlRes{
+	required	int32	serialNumber		=1;
+	required	ShortLocationData	locationData   =2;
+}

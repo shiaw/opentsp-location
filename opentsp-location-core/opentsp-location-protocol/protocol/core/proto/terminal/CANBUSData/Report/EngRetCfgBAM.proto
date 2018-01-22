@@ -1,0 +1,35 @@
+option java_outer_classname = "LCEngRetCfgBAM";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngRetCfgBAM{
+	optional	RetarderLocation	retarderLocation			=1;
+	optional	RetarderType	type							=2;
+	optional	int32	retarderControlMethod					=3;
+	optional	int32	retarderSpeedAtIdle						=4;
+	optional	int32	retarderPercentTorqueIdle				=5;
+	optional	int32	maxRetarderSpeedPoint02					=6;
+	optional	int32	retarderPercentTorquePoint02			=7;
+	optional	int32	engineSpeedPoint03						=8;
+	optional	int32	retarderPercentTorquePoint03			=9;
+	optional	int32	engineSpeedPoint04						=10;
+	optional	int32	retarderPercentTorquePoint04			=11;
+	optional	int32	engineSpeedPoint05						=12;
+	optional	int32	retarderPercentTorquePoint05			=13;
+	optional	int32	referenceRetarderTorque					=14;
+	
+	
+}
+	enum RetarderLocation{
+		engineCompressionRelease			=0x00;
+		engineExhaustBrake					=0x01;
+		notAvailableRetarder				=0x0F;
+
+	}
+	enum RetarderType{
+		compressionRelease		=0x03;
+		exhaust					=0x04;
+		notAvailableType		=0x0F;
+
+	}
+	

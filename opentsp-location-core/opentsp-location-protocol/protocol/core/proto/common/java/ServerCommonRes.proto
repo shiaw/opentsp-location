@@ -1,0 +1,9 @@
+option java_outer_classname = "LCServerCommonRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message ServerCommonRes{
+	required	int32	serialNumber			=1;
+	required	int32	responseId				=2;
+	required	PlatformResponseResult	results	=3;
+}

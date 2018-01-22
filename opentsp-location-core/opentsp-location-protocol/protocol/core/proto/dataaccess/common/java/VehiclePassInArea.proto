@@ -1,0 +1,11 @@
+option java_outer_classname = "LCVehiclePassInArea";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/dataaccess/common/java/AreaInfo.proto";
+
+message VehiclePassInArea{
+	required	AreaInfo	areaInfo  =1;
+	optional	bool	saveSign      =2;
+
+	
+}

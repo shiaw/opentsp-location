@@ -1,0 +1,16 @@
+option java_outer_classname = "LCNodeInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.mm";
+
+import "core/proto/common/java/DistrictCode.proto";
+import "core/proto/services/common/java/NodeType.proto";
+import "core/proto/services/mm/java/ExtendConfig.proto";
+
+message NodeInfo{
+	required	NodeType	types	=1;
+	required	int32	nodeCode	=2;
+	required	string	addressIP	=3;
+	required	DistrictCode	districtCode	=4;
+	optional	int32	maxLimit				=5;
+	optional	int32	minLimit				=6;
+	optional	ExtendConfig	extendConfigs	=7;
+}

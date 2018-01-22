@@ -1,0 +1,9 @@
+option java_outer_classname = "LCQueryAreaInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.regular";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message QueryAreaInfo{
+	required	DistrictCode	districtCode	=1;
+	required	int64	nodeCode				=2;
+}

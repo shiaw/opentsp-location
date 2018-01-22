@@ -1,0 +1,6 @@
+option java_outer_classname = "LCServerLogin";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+message ServerLogin{
+	required	int64	serverIdentifies	=1; 
+}

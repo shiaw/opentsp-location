@@ -1,0 +1,8 @@
+option java_outer_classname = "LCGetDictData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/dataaccess/common/java/DictType.proto";
+
+message GetDictData{
+	repeated DictType dictType = 1;
+}

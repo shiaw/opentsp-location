@@ -1,0 +1,16 @@
+option java_outer_classname = "LCConnectToServer";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.remote";
+
+import "core/proto/terminal/common/java/ConnectionControl.proto";
+
+message ConnectToServer{
+	required	ConnectionControl	controls			=1;
+	optional	string				authCoding			=2;
+	optional	string				dialName			=3;
+	required	string				username			=4;
+	required	string				password			=5;
+	required	string				serverIp			=6;
+	optional	int32				tcpPort				=7;
+	optional	int32				udpPort				=8;
+	optional	int32				connectTime			=9;
+}

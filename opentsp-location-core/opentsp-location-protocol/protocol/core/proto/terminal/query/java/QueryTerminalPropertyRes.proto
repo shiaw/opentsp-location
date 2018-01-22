@@ -1,0 +1,41 @@
+option java_outer_classname = "LCQueryTerminalPropertyRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message QueryTerminalPropertyRes{
+	required	int32				serialNumber			=1;
+	required	ResponseResult		result					=2;		
+	optional	TerminalType		type					=3;				
+	optional	string				manufacturerId			=4;
+	optional	string				terminalModel			=5;
+	optional	string				terminalIdentity		=6;
+	optional	string				terminalICCID			=7;
+	optional	string				hardwareVersion			=8;
+	optional	string				firmwareVersion			=9;
+	optional	GNSSModelProperty	property				=10;
+	optional	CommunicationModule	module					=11;
+}
+message TerminalType{
+	required	bool	isSuitForPassengerVehicle		=1;	
+	required	bool	isSuitForDangerousGoods			=2;
+	required	bool	isSuitForFreightTransport		=3;
+	required	bool	isSuitForTaxi					=4;
+	required	bool	isSuitDiskForVideo				=5;
+	required	bool	integratedTerminal				=6;
+}
+message GNSSModelProperty{
+	required	bool	isSupportGps				=1;
+	required	bool	isSupportBeidou				=2;
+	required	bool	isSupportGlonass			=3;
+	required	bool	isSupportGalileo			=4;
+}
+message CommunicationModule{
+	required	bool	isSupportGPRS				=1;
+	required	bool	isSupportCDMA				=2;
+	required	bool	isSupportTD_SCDMA			=3;
+	required	bool	isSupportWCDMA				=4;
+	required	bool	isSupportCDMA2000			=5;
+	required	bool	isSupportTD_LTE				=6;
+	required	bool	isSupportOther				=7;
+}

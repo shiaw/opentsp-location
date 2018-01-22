@@ -1,0 +1,16 @@
+option java_outer_classname = "LCTRCollectLocationDataRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/common/java/TRLocationData.proto";
+
+message TRCollectLocationDataRes{
+	required	int32				serialNumber	=1;
+	required	ResponseResult		result			=2;
+	repeated	LocationDataBlock	blocks			=3;
+}
+
+message LocationDataBlock{
+	required	int64			beginDate	=1;
+	repeated	TRLocationData	datas		=2;
+}

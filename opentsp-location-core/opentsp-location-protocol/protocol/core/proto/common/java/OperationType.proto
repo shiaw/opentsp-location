@@ -1,0 +1,9 @@
+option java_outer_classname = "LCOperationType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum OperationType{
+	add	    =0;
+	modify	=1;
+	delete	=2;
+	
+}

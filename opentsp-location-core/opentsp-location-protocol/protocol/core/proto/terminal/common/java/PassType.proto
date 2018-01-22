@@ -1,0 +1,9 @@
+option java_outer_classname = "LCPassType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum PassType{
+	gnssData	=	0;
+	advertiseScreen	=	3;
+	icardData	=	11;
+	broadcast	=	65;
+}

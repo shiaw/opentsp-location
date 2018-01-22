@@ -1,0 +1,17 @@
+option java_outer_classname = "LCTerminalProtocolMapping";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message TerminalProtocolMapping{
+
+	required	int32					serialNumber		=1;
+	required	PlatformResponseResult	results				=2;
+	repeated	MappingInfo				infos				=3;
+	
+	message MappingInfo{
+		required	int32	protocolCode		=1;
+		required	int32	messageCode			=2;
+		required	int32	instructCode		=3;
+	}
+}

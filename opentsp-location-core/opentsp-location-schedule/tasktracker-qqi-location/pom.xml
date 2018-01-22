@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>tasktracker-qqi-location</artifactId>
+	<packaging>pom</packaging>
+
+	<name>tasktracker-qqi-location</name>
+
+	<parent>
+		<artifactId>opentsp-location-schedule</artifactId>
+		<groupId>com.navinfo.platform</groupId>
+		<version>1.208-RC47-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+		<module>tasktracker-qqi-location-core</module>
+		<module>tasktracker-qqi-location-vo</module>
+	</modules>
+
+
+</project>

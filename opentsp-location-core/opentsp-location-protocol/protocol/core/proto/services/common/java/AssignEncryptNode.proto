@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAssignEncryptNode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message AssignEncryptNode{
+	required	string	encryptIP	=1;
+	required	int32	encryptPort	=2;
+}

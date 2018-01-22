@@ -1,0 +1,9 @@
+option java_outer_classname = "LCInOrOutAreaNotifySet";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+import "core/proto/dataaccess/common/java/AreaInfo.proto";
+
+message InOrOutAreaNotifySet{
+	required	AreaInfo	areaInfo		=1;
+	required	int32	status				=2;
+}

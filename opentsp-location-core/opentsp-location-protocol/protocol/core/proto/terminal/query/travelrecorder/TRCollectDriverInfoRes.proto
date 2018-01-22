@@ -1,0 +1,10 @@
+option java_outer_classname = "LCTRCollectDriverInfoRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message TRCollectDriverInfoRes{
+	required	int32				serialNumber				=1;
+	required	ResponseResult		result						=2;
+	optional	string				driverLicenseNumber			=3;
+}

@@ -1,0 +1,30 @@
+option java_outer_classname = "LCTerminalStatisticData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message StatisticData{
+    required int64 time =1;
+    optional int32 latitude =2;
+    optional int32 longitude=3;
+    optional int32 height=4;
+    optional int32 direction=5;
+    optional int32 speed=6;
+    optional int32 routeStartTime =7;
+    optional int32 routeEndTime =8;
+    optional int32 driveCycleMileage =9;
+    optional int32 idlingMileage =10;
+    optional int32 paringRangeMileage=11;
+    optional int32 parkingIdleTime=12;
+    optional int32 brakeNumber =13;
+    optional int32 cumulativeMileage=14;
+    optional int32 brakingTime =15;
+    optional int32 accelerationFrequency =16;
+    optional int32 decelerationFrequency =17;
+    optional int32 vehicleEstimatedLoad =18;
+    optional int32 initialTotalFuelConsumption =19;
+    optional int32 terminationTotalFuelConsumption =20;
+    optional int32 cruiseRange =21;
+    optional int32 averageSpeedInterval =22;
+    optional int32 overSpeedTimes =23;
+
+}
+

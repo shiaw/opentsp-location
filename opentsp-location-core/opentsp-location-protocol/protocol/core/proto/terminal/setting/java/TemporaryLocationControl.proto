@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTemporaryLocationControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+message TemporaryLocationControl{
+	required	int32	intervalTime		=1;
+	required	int32	locationTime		=2;
+}

@@ -1,0 +1,10 @@
+option java_outer_classname = "LCDistrictInfoReport";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.district";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message DistrictInfoReport{
+	required	DistrictCode	districtCode	=1;
+	required	int64	mmNodeCode				=2;
+	required	bool	isMaster				=3;
+}

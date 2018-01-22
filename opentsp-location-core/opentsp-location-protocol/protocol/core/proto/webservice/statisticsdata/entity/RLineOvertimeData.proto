@@ -1,0 +1,18 @@
+option java_outer_classname = "LCRLineOvertimeData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message RLineOvertimeData{
+    required	int64	terminalID =1;
+	required	int64	areaID =2;
+	required	int64	segmentID =3;
+	required	int32	type =4;
+	required	int64	startDate =5;
+	required	int64	endDate =6;
+	required	int32	continuousTimes =7;
+	required	int32	maxLimitTime =8;
+	required	int32	minLimitTime =9;
+	required	int32	beginLat =10;
+	required	int32	beginLng =11;
+	required	int32	endLat =12;
+	required	int32	endLng =13;
+}

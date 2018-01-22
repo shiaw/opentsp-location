@@ -1,0 +1,12 @@
+option java_outer_classname = "LCEngineTemperature";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineTemperature{
+	optional	int32	coolantTemperature		=1;
+	optional	int32	fuelTemperature			=2;
+	optional	float	oilTemperature			=3;
+	optional	float	ureaTankLevel			=4;
+	optional	int32	ureaTankTemperature		=5;
+}
+

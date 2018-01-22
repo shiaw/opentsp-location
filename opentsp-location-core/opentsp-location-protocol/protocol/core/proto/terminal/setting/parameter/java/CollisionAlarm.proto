@@ -1,0 +1,7 @@
+option java_outer_classname = "LCCollisionAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message CollisionAlarm{
+	required	int32	collisionTime		=1;
+	required	float	acceleration		=2; 
+}

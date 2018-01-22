@@ -1,0 +1,14 @@
+option java_outer_classname = "LCResolution";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum Resolution{
+	R320x240		=0x01;
+	R640x480		=0x02;
+	R800x600		=0x03;
+	R1024x768		=0x04;
+	R176x144QCIF	=0x05;
+	R352x288CIF		=0x06;
+	R704x288HALFD1	=0x07;
+	R704x576D1		=0x08;
+
+}

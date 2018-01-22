@@ -1,0 +1,11 @@
+option java_outer_classname = "LCTRSpeedCollectionRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/terminal/query/travelrecorder/block/java/TRSpeedDataBlock.proto";
+
+message TRSpeedCollectionRes{
+	required	int32					serialNumber		=1;
+	required	ResponseResult			result				=2;
+	repeated	TRSpeedDataBlock		speedDataBlock		=3;
+}

@@ -1,0 +1,18 @@
+option java_outer_classname = "LCDictType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+enum DictType{
+	nodeTypeCode	=10;
+	businessCode	=11;
+	businessStatusCode	=12;
+	districtCode	=13;
+	areaCode	=14;
+	terminalStatus	=15;
+	terminalCommand	=16;
+	regularCode	=17;
+	serverErrorCode	=18;
+	nodeErrorCode	=19;
+	terminalProtocolCode 	=20;
+	commonRuleCode	        =21;
+	breakdownCode	=22;
+}

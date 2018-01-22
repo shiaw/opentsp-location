@@ -1,0 +1,46 @@
+option java_outer_classname = "LCAllAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum AllAlarm{
+	none = 0;
+}
+enum Alarm{
+	emergencyAlarm				=0x000001;
+	speedingAlarm				=0x000002;
+	tiredAlarm					=0x000004;
+	comingAlarm					=0x000008;
+	faultGNSS					=0x000010;
+	noConnectGNSS				=0x000020;
+	shortCircuitGNSS			=0x000040;
+	underPower					=0x000080;
+	lossPower					=0x000100;
+	faultLCD					=0x000200;
+	faultTTS					=0x000400;
+	faultCamera					=0x000800;
+	icCardFailure				=0x001000;
+	speedingWarningAlarm		=0x002000;
+	tiredWarningAlarm			=0x004000;
+	
+		
+	drivingTimeout				=0x040000;
+	parkingTimeout				=0x080000;
+	inOutArea					=0x100000;
+	inOutRoute					=0x200000;
+	routeLackOrOverTime	        =0x400000;
+	routeDeviates				=0x800000;
+}
+
+enum AlarmAddition{
+	faultVSS					=0x000001;
+	abnormalOil					=0x000002;
+	stolenVehicle				=0x000004;
+	illegalIgnition				=0x000008;
+	illegalDisplacement			=0x000010;
+	collisionAlarm				=0x000020;
+	rolloverAlarm				=0x000040;
+	illegalOpenDoorAlarm		=0x000080;
+	drivingBan					=0x000100;
+	keyPointFence				=0x000200;
+	overtimeParkingInArea       =0x000400;
+	removeAlarm	                =0x000800;	
+}	

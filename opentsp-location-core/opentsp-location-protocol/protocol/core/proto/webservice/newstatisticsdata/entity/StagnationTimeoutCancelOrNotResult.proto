@@ -1,0 +1,6 @@
+option java_outer_classname = "LCStagnationTimeoutCancelOrNotResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message StagnationTimeoutCancelOrNotResult{
+	required	int32	statusCode	=1;
+}

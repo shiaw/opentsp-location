@@ -1,0 +1,8 @@
+option java_outer_classname = "LCTRSetMileage";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+
+message TRSetMileage{
+	required	int64	mileage		=1;
+}
+

@@ -1,0 +1,13 @@
+option java_outer_classname = "LCCANBUSData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData";
+
+import "core/proto/terminal/CANBUSData/CANChannel.proto";
+
+
+message CANBUSData{
+	required	int64	CANId         =1;
+	required	bool	collectType   =2;
+	required	bool	frameType     =3;
+	required	CANChannel	channel   =4;
+	required	bytes	CANData       =5;
+}

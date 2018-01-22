@@ -1,0 +1,11 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message VehicleControl{
+ 
+	required	int32	controlStatus	=1;
+	
+	enum ControlStatus{
+		doorSwitch	=0x01;
+	}
+}

@@ -1,0 +1,6 @@
+option java_outer_classname = "LCOvertimeParking";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message OvertimeParking{
+	required	int32	parkingLimit		=1;
+}

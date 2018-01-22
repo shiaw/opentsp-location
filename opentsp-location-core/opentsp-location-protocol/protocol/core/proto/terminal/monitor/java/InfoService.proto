@@ -1,0 +1,7 @@
+option java_outer_classname = "LCInfoService";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message InfoService{
+	required	int32	infoType		=1;
+	required	string	infoContent		=2;
+}

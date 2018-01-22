@@ -1,0 +1,14 @@
+option java_outer_classname = "LCOutRegionToLSpeed";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/common/java/MessageSign.proto";
+
+message OutRegionToLSpeed{
+	required	int64	       areaId        =1;
+	required	int32	       controlType   =2;
+	required	int32	       limitSpeed    =3;
+	required	string	       gpsId         =4;
+	optional	string	       broadcastContent =5;
+	optional	MessageSign	   signs            =6;
+	
+}

@@ -1,0 +1,22 @@
+option java_outer_classname = "LCMonitorThreadStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message MonitorThreadStatus{
+	required	ThreadType	types	=1;
+	required	ThreadStatus	status	=2;
+	
+	enum ThreadType{
+		ta_responseMechanism	=0x01;
+		ta_commonCacheProcess	=0x02;
+		
+		dp_terminalParameterProcess	=0x20;
+		dp_dpAndTaDataGuaranteeProcess	=0x21;
+		dp_removeInvalidDataProcess	=0x22;
+		dp_commonDataProcess	=0x23;
+	}
+	
+	enum ThreadStatus{
+		threadNormal	=0x01;
+		threadException	=0x02;
+	}
+}

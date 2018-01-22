@@ -1,0 +1,21 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message InfoDemandMenu{
+ 
+ 
+	required	SettingType	types	=1;
+	repeated	DemandInfo	infos	=2;
+	
+	enum SettingType{
+		deleteAll	=0x00;
+		updateMenu	=0x01;
+		additionalMenu	=0x02;
+		modifyMenu	=0x03;
+		
+	}
+	message DemandInfo{
+		required	int32	infoType	=1;
+		required	string	infoName	=2;
+	}
+}

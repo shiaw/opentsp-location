@@ -1,0 +1,42 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message CanBusSetting{
+ 
+ 
+	repeated	ControlSetting	settings	=1;	   
+	repeated	SingleCollect	collects	=2;
+
+
+	enum CanPassage{
+
+		firstPassage	=0x01;	   
+		secondPassage	=0x02;	 
+
+	}	 
+	enum CanBusType{
+			 
+		canBus	=0x01;
+		otherCanBus	=0x02;
+
+	}
+	message ControlSetting{
+	 
+		required	CanPassage	passages	=1;   
+		optional	int32	timingInterval		=2;   
+		optional	int32	uploadInterval		=3;
+	}
+	message SingleCollect{
+ 
+		required	CanBusType	types		=1;	   
+		optional	int32	timingInterval		=2;
+		optional	CanPassage	passages	=3;
+		optional	bool	frameType		=4;
+		optional	bool	collectType		=5;
+		optional	int32	canBusIdentify		=6;
+
+	
+	}
+
+
+}

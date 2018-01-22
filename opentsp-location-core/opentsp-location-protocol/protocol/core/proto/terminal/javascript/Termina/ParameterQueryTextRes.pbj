@@ -1,0 +1,7 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+
+message ParameterQueryTextRes{
+	required int32 serialNumber = 1;
+	required string paraContent = 2;
+}

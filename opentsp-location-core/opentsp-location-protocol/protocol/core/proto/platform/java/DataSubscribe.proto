@@ -1,0 +1,6 @@
+option java_outer_classname = "LCDataSubscribe";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+message DataSubscribe{
+	repeated	int64	terminalIdentify	=1;
+}

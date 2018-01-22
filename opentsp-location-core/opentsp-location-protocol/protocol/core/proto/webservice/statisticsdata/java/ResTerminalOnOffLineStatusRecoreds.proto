@@ -1,0 +1,9 @@
+option java_outer_classname = "LCResTerminalOnOffLineStatusRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/TerOnOffStatusData.proto";
+message ResTerminalOnOffLineStatusRecoreds{
+	required	int32	statusCode =1;
+	optional	int32	totalRecords =2;
+	repeated	TerOnOffStatusData	dataList =3;
+}

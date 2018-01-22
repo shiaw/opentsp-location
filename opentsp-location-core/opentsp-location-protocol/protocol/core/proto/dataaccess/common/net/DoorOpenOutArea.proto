@@ -1,0 +1,13 @@
+option java_outer_classname = "LCDoorOpenOutArea";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+message DoorOpenOutArea{
+	required	int64	areaId	=1;
+	required	bool	basedTime	=2;
+	optional	bool	isEveryDay	=3;
+	optional	int64	startDate	=4;
+	optional	int64	endDate		=5;
+}

@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDriverInfoReportSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/terminal/java/DriverInfoReport.proto";
+
+message DriverInfoReportSave{
+	required	int64	terminalId			=1;
+	required	DriverInfoReport	info	=2;
+}

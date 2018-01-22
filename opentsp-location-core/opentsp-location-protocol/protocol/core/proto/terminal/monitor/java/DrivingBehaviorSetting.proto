@@ -1,0 +1,20 @@
+option java_outer_classname = "LCDrivingBehaviorSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+
+message DrivingBehaviorSetting{
+	optional	int32	acceleration = 1;
+	optional	int32	deceleration = 2;
+	optional	int64	sharpTurning = 3;
+	optional	int64	lowOil       = 4;
+	optional	int64	slideNeutral = 5;
+	optional	int64	rpmThreshold = 6;
+	optional	int64	throttle     = 7;
+	optional	int64	disparitySpeed = 8;
+	optional	int64	brakePressure  = 9;
+	optional	int64	longTimeBreaking = 10;
+	optional	int64	longTimeClutch   = 11;
+	optional	int64	parkedTimke   = 12;
+	optional	int64	coldBootTime   = 13;
+	optional	int64	idlingTime     = 14;
+}

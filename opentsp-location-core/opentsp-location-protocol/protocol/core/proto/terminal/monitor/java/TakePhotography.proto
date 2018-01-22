@@ -1,0 +1,20 @@
+option java_outer_classname = "LCTakePhotography";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/CommandType.proto";
+import "core/proto/terminal/common/java/Resolution.proto";
+import "core/proto/terminal/common/java/SaveStatus.proto";
+
+message TakePhotography{
+	required	int32				channels		=1;
+	required	CommandType			commandType		=2;
+	required	int32				photoNumber		=3;
+	required	int32				takeInterval	=4;
+	required	SaveStatus			saveStatus		=5;
+	required	Resolution			resolutions		=6;
+	required	int32				photoQuality	=7;
+	required	int32				saturation		=8;
+	required	int32				brightness		=9;
+	required	int32				contrast		=10;
+	required	int32				chroma			=11;
+}

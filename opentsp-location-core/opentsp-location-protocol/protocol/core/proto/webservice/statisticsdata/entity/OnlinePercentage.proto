@@ -1,0 +1,10 @@
+option java_outer_classname = "LCOnlinePercentage";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message OnlinePercentage{
+	required	int64	terminalId =1;
+	required	int32	statisticDay =2;
+	required	int32	onlineDay =3;
+	required	float	onlinePercentage =4;
+
+}

@@ -1,0 +1,10 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+
+message VehicleControl{
+	required	int32	controlStatus		=1;
+	
+	enum ControlStatus{
+		doorSwitch		=0x01;
+	}
+}

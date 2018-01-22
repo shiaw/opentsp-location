@@ -1,0 +1,9 @@
+option java_outer_classname = "LCGetTerminalInfos";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message GetTerminalInfos{
+	required DistrictCode districtCode = 1;
+	optional	int64	nodeCode = 2;
+}

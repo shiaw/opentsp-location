@@ -1,0 +1,8 @@
+option java_outer_classname = "LCMediaType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum MediaType{
+	picture	=0x00;
+	audio	=0x01;
+	video	=0x02;
+}

@@ -1,0 +1,6 @@
+option java_outer_classname = "LCOutRegionToLimitSpeedDel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+message OutRegionToLimitSpeedDel{
+	repeated	int64	areaIdentifys				=1;
+}

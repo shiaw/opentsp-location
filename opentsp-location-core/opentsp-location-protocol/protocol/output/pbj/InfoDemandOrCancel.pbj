@@ -1,0 +1,10 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message InfoDemandOrCancel{
+ 
+ 
+	required	int32	infoType	=1;
+	required	bool	isDemand	=2;
+	
+}

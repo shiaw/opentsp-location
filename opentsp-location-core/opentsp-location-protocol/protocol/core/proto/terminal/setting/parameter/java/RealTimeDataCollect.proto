@@ -1,0 +1,8 @@
+option java_outer_classname = "LCRealTimeDataCollect";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message RealTimeDataCollect{
+	required	int32	uploadCycle		    =1;
+	required	int32	collectCycle		=2;
+	required	int32	collectionTime		=3;
+}

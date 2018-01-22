@@ -1,0 +1,14 @@
+option java_outer_classname = "LCTerminalRegisterSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+message TerminalRegisterSave{
+	required int64 terminalId = 1;
+	required string	AuthCode = 2;
+	optional int32 provinceIdentify = 3;
+	optional int32 cityIdentify = 4;
+	optional string	produceCoding = 5;
+	optional string	terminalModel = 6;
+	optional string	terminalNumber = 7;
+	optional int32 licenseColorCode = 8;
+	optional string	license = 9;
+}

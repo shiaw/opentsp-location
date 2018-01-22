@@ -1,0 +1,10 @@
+option java_outer_classname = "LCLineProperty";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum LineProperty{
+	drivingTime	=0x0001;
+	speedLimit	=0x0002;
+	northOrSouthLatitude	=0x0004;
+	eastOrWestLongitude	=0x0008;
+}
+

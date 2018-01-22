@@ -1,0 +1,10 @@
+option java_outer_classname = "LCParameterQueryTextRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message ParameterQueryTextRes{
+	required 	int32 			serialNumber 				= 1;
+	required	ResponseResult	result						= 2;
+	required 	string 			paraContent 				= 3;
+}

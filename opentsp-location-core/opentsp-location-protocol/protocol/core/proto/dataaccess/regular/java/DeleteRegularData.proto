@@ -1,0 +1,10 @@
+option java_outer_classname = "LCDeleteRegularData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.regular";
+
+import "core/proto/common/java/RegularCode.proto";
+
+message DeleteRegularData{
+	optional	int64				terminalId				=1;
+	required	RegularCode			regularCode				=2;
+	repeated	int64				regularIdentify			=3;
+}

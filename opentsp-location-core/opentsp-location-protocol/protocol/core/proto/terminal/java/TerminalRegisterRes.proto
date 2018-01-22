@@ -1,0 +1,15 @@
+option java_outer_classname = "LCTerminalRegisterRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+message TerminalRegisterRes{
+	required int32 serialNumber = 1;
+	required RegisterResult results = 2;
+	optional string AuthCoding = 3;
+	enum RegisterResult{
+		success = 0x00;
+		vehicleRegistered = 0x01;
+		vehicleNotRegister = 0x02;
+		terminalRegistered = 0x03;
+		terminalNotRegister = 0x04;
+	}
+}

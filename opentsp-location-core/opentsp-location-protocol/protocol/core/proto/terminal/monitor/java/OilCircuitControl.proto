@@ -1,0 +1,9 @@
+option java_outer_classname = "LCOilCircuitControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/ControlType.proto";
+
+message OilCircuitControl{
+	required ControlType types = 1;
+	required bool status = 2;
+}

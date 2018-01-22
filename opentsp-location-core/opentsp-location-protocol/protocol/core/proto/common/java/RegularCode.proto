@@ -1,0 +1,26 @@
+option java_outer_classname = "LCRegularCode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum RegularCode{
+	speeding 			= 0x2981A;
+	inOutArea 			= 0x29824;
+	routeDriverTime 	= 0x2982E;
+	driverNotCard 		= 0x29838;
+	doorOpenOutArea 	= 0x29842;
+	drivingBan 			= 0x2984C;
+	keyPointFence      	= 0x29856;
+	messageBroadcast    = 0x29860;
+	overtimePark	    = 0x2986A;
+	outregionToLSpeed	= 0x29874;
+	limitSpeedForFault	= 0x2987E;
+	abnormalOilAlarm	= 0x29888;
+	terminalBroadcastSwitch	=170130;
+	serverStationComment	=170140;
+	delayOvertimePark	    =170150;
+	vehiclePassStatistic	=175010;
+	inAreaTriggerActivationOrLockNotify  = 170160;
+	inAreaRetentionNotify	=170170;
+	alarmCancelOrNot		=170180;
+	inOrOutAreaNotifySetPara = 170190;
+	inOrOutAreaNotifySwitchPara = 170200;
+}

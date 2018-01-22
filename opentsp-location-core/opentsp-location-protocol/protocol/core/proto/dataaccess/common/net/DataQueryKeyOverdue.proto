@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDataQueryKeyOverdue";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+message DataQueryKeyOverdue{
+		repeated	string	key		=1;
+}

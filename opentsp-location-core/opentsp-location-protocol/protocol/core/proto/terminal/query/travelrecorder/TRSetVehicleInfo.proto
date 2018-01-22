@@ -1,0 +1,9 @@
+option java_outer_classname = "LCTRSetVehicleInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+message TRSetVehicleInfo{
+	required	string	IdentifyCode		=1;
+	required	string	licenseNumber		=2;
+	required	string	licenseType			=3;
+}
+

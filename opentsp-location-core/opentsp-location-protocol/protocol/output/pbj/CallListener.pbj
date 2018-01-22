@@ -1,0 +1,17 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message CallListener{
+ 
+ 
+	required	string	phoneNumber	=1;
+	required	ListenerStatus	status	=2;
+
+	enum ListenerStatus{
+	 
+		calling	    =0x00;
+		listening	=0x01;
+
+	}
+	
+}

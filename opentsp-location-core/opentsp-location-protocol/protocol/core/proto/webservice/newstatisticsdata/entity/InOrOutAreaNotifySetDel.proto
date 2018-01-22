@@ -1,0 +1,6 @@
+option java_outer_classname = "LCInOrOutAreaNotifySetDel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message InOrOutAreaNotifySetDel{
+	repeated	int64	areaIdentifys   	=1;
+}

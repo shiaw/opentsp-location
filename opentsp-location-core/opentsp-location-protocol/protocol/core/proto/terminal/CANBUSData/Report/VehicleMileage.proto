@@ -1,0 +1,9 @@
+option java_outer_classname = "LCVehicleMileage";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message VehicleMileage{
+	optional	int64	tripDistance			=1;
+	optional	int64	vehicleDistance			=2;
+
+}

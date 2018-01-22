@@ -1,0 +1,26 @@
+option java_outer_classname = "LCMileageConsumption";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message MileageConsumption{
+	required	int64	terminalID 				=1;
+	optional	int64	mileage					=2;
+	optional	int32	staticDate				=3;
+	optional	float	oilConsumption			=4;
+	optional	float	electricConsumption		=5;
+	optional	int64	beginMileage			=6;
+	optional	int64	endMileage				=7;
+	optional	int64	startDate				=8;
+	optional	int64	endDate					=9;
+	optional	int32	beginLat				=10;
+	optional	int32	beginLng				=11;
+	optional	int32	endLat					=12;
+	optional	int32	endLng					=13;
+	optional	int64	terminalMileage			=14;
+	optional    int64   meterMileage            =15;
+	optional    float   oilValue                =16;
+	optional    float   fuelOil                 =17;
+	optional    int64   beginGpsMileage         =18;
+	optional    int64   endGpsMileage           =19;
+	optional    int64   beginMeMileage          =20;
+	optional    int64   endMeMileage            =21;
+}

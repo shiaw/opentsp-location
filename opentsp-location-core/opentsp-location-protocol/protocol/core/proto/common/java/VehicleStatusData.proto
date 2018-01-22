@@ -1,0 +1,9 @@
+option java_outer_classname = "LCVehicleStatusData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+import "core/proto/common/java/StatusType.proto";
+
+message VehicleStatusData{
+	required StatusType types		= 1;
+	required int64		statusValue	= 2;
+}

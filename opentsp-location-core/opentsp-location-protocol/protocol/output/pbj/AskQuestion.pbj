@@ -1,0 +1,18 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message AskQuestion{
+ 
+	repeated	QuestionStatus	status	 =1;
+	required	string	content			 =2;
+	repeated	CandidateAnswer	answers	 =3;
+	enum QuestionStatus{
+		emergency		=0x00;
+		terminalTTS		=0x01;	
+		displayOnScreen	=0x02;	
+	}
+	message CandidateAnswer{
+		required	int32	answerId		=1;
+		required	string	answerContent   =2;
+	}
+}

@@ -1,0 +1,9 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message AlarmTriggeredSetting{
+	optional	int32	alarmMask			=1;
+	optional	int32	alarmSmsSwitch		=2;
+	optional	int32	alarmPhotoSwitch	=3;
+	optional	int32	alarmPhotoSave		=4;
+	optional	int32	alarmKeyStatus		=5;
+}

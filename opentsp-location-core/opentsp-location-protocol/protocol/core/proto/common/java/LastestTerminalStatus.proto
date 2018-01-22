@@ -1,0 +1,8 @@
+option java_outer_classname = "LCLastestTerminalStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+
+message LastestTerminalStatus{
+		required int64		terminalId	= 1;
+		required bool		status	= 2;
+}

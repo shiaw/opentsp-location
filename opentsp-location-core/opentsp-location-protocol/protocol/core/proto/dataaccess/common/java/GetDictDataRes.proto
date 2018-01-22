@@ -1,0 +1,11 @@
+option java_outer_classname = "LCGetDictDataRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/common/java/PlatformResponseResult.proto";
+import "core/proto/dataaccess/common/java/DictData.proto";
+
+message GetDictDataRes{
+	required	int32					serialNumber		=1;
+	required	PlatformResponseResult	results				=2;
+	repeated	DictData				datas				=3;
+}

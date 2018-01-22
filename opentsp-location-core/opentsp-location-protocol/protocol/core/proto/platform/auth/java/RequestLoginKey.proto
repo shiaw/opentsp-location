@@ -1,0 +1,11 @@
+option java_outer_classname = "LCRequestLoginKey";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message RequestLoginKey{
+	required	string	name	=1;
+	required	string	password	=2;
+	required	string	version		=3;
+	repeated	DistrictCode	district	=4;
+}

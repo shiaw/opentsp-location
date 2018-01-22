@@ -1,0 +1,11 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message MessageTimeoutProcess{
+	optional	int32	heartbeatInterval	=1;
+	optional	int32	tcpResponseTimeout	=2;
+	optional	int32	tcpRetransTimes		=3;
+	optional	int32	udpResponseTimeout	=4;
+	optional	int32	udpRetransTimes		=5;
+	optional	int32	smsResponseTimeout	=6;
+	optional	int32	smsRetransTimes		=7;
+}

@@ -1,0 +1,8 @@
+import "core/proto/common/java/SettingIdentify.proto";
+option java_outer_classname = "LCSettingObject";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+message SettingObject{
+	required SettingIdentify setId = 1;
+	optional int64 intParaContent = 2;
+	optional string strParaContent = 3;
+}

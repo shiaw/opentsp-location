@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      label: qingqi-lc-local
+      uri: http://127.0.0.1:8080/
+      name: opentsp-gateway-tcp-location
+      enabled: false

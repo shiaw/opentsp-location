@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAlarmCancelOrNot";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+message AlarmCancelOrNot{
+	required	int64	alarmType		= 1;
+	required	bool	isCancel		= 2;
+}

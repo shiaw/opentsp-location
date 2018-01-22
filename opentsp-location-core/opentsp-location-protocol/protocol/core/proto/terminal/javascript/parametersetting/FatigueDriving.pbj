@@ -1,0 +1,8 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message FatigueDriving{
+	required	int32	continueDrivingTime			=1;	
+	required	int32	dayCumulativeDrivingTime	=2;	
+	required	int32	minRestingTime				=3;	
+	required	int32	maxParkingTime				=4;	
+}

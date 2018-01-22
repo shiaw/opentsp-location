@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAssignDPNode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message AssignDPNode{
+	required	string	dpIP	=1;
+	required	int32	dpPort	=2;
+}

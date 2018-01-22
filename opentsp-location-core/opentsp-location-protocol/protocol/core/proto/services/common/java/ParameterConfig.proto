@@ -1,0 +1,35 @@
+option java_outer_classname = "LCParameterConfig";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+message ParameterConfig{
+	required	ParameterType	types	=1;
+	required	int32	values			=2;
+
+
+	enum	ParameterType{
+		all_reconnectTimes	=0x01;
+		all_reconnectInterval	=0x02;
+		all_nodeNumber	=0x03;
+		all_nodeDistrict	=0x04;
+		all_heartbeatInterval	=0x05;
+		
+		ta_pictureDataTimeoutThreshold	=0x10;
+		ta_pictureProcessInterval	=0x11;
+		ta_commandTimeoutThreshold	=0x12;
+		ta_commandProcessInterval	=0x13;
+		ta_commonCacheProcessInterval	=0x14;
+		ta_patchDataThreshold	=0x15;
+		
+		dp_terminalSettingThreshold	=0x30;
+		dp_dataSaveThreshold	=0x31;
+		dp_removeInvalidDataThreshold	=0x32;
+		dp_terminalSetProcessInterval	=0x33;
+		dp_dpAndTaGuaranteeInterval	=0x34;
+		dp_removeInvalidDataInterval	=0x35;
+		dp_commonDataProcessInterval	=0x36;
+		
+		
+		en_threadNumber				=0x50;
+		
+	}
+}

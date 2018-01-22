@@ -1,0 +1,12 @@
+option java_outer_classname = "LCDataSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+message DataSave{
+	required	int32	nodeNumber			=1;
+	required	int32	nodeNumberTo		=2;
+	required	int32	dataType			=3;
+	required	bytes	dataValue			=4;
+}

@@ -1,0 +1,10 @@
+option java_outer_classname = "LCEngineRunningTime";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineRunningTime{
+	optional	int32	totalTime			=1;
+	optional	int64	totalRevolution		=2;
+
+}
+

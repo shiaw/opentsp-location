@@ -1,0 +1,15 @@
+option java_outer_classname = "LCConfigForRP";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.rp";
+
+
+import "core/proto/services/common/java/ParameterConfig.proto";
+
+message ConfigForRP{
+	required	string	dpIP		=1;
+	required	int32	dpPort		=2;
+	required	string	rpForServerIP	=3;
+	required	int32	rpForServerPort	=4;
+	required	string	daIP			=5;
+	required	int32	daPort			=6;
+	repeated	ParameterConfig	paras	=7;
+}

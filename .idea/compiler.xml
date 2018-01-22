@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="opentsp-gateway-forwarding" />
+        <module name="opentsp-gateway-tcp-location" />
+        <module name="opentsp-gateway-tcp-location-rp" />
+        <module name="opentsp-gateway-web" />
+        <module name="opentsp-location-808tool" />
+        <module name="opentsp-location-da-core" />
+        <module name="opentsp-location-dp-command" />
+        <module name="opentsp-location-dp-core" />
+        <module name="opentsp-location-dsa" />
+        <module name="opentsp-location-joblocation" />
+        <module name="opentsp-location-jobtracker" />
+        <module name="opentsp-location-kafka-mongo" />
+        <module name="opentsp-location-monitor-commands" />
+        <module name="opentsp-location-monitor-core" />
+        <module name="opentsp-location-parallel" />
+        <module name="opentsp-location-parse" />
+        <module name="opentsp-location-protocol" />
+        <module name="opentsp-location-push-commands" />
+        <module name="opentsp-location-push-core" />
+        <module name="opentsp-location-rprest-commands" />
+        <module name="opentsp-location-rprest-core" />
+        <module name="opentsp-location-rpws-core" />
+        <module name="tasktracker-qqi-location-core" />
+        <module name="tasktracker-qqi-location-vo" />
+        <module name="tasktracker-rprest-core" />
+        <module name="tasktracker-rprest-vo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="opentsp-gateway" target="1.7" />
+      <module name="opentsp-gateway-forwarding" target="1.7" />
+      <module name="opentsp-gateway-tcp-location" target="1.7" />
+      <module name="opentsp-gateway-tcp-location-rp" target="1.7" />
+      <module name="opentsp-gateway-web" target="1.7" />
+      <module name="opentsp-location" target="1.7" />
+      <module name="opentsp-location-808tool" target="1.8" />
+      <module name="opentsp-location-computing" target="1.5" />
+      <module name="opentsp-location-core" target="1.7" />
+      <module name="opentsp-location-da" target="1.7" />
+      <module name="opentsp-location-da-core" target="1.7" />
+      <module name="opentsp-location-dp" target="1.7" />
+      <module name="opentsp-location-dp-command" target="1.7" />
+      <module name="opentsp-location-dp-core" target="1.7" />
+      <module name="opentsp-location-dsa" target="1.7" />
+      <module name="opentsp-location-joblocation" target="1.7" />
+      <module name="opentsp-location-jobtracker" target="1.7" />
+      <module name="opentsp-location-kafka-mongo" target="1.8" />
+      <module name="opentsp-location-monitor" target="1.7" />
+      <module name="opentsp-location-monitor-commands" target="1.7" />
+      <module name="opentsp-location-monitor-core" target="1.7" />
+      <module name="opentsp-location-parallel" target="1.8" />
+      <module name="opentsp-location-parse" target="1.7" />
+      <module name="opentsp-location-protocol" target="1.7" />
+      <module name="opentsp-location-push" target="1.7" />
+      <module name="opentsp-location-push-commands" target="1.7" />
+      <module name="opentsp-location-push-core" target="1.7" />
+      <module name="opentsp-location-rprest" target="1.7" />
+      <module name="opentsp-location-rprest-commands" target="1.7" />
+      <module name="opentsp-location-rprest-core" target="1.7" />
+      <module name="opentsp-location-rpws" target="1.7" />
+      <module name="opentsp-location-rpws-core" target="1.7" />
+      <module name="opentsp-location-schedule" target="1.7" />
+      <module name="opentsp-location-tools" target="1.7" />
+      <module name="opentsp-location_dongfeng" target="1.7" />
+      <module name="tasktracker-qqi-location" target="1.7" />
+      <module name="tasktracker-qqi-location-core" target="1.7" />
+      <module name="tasktracker-qqi-location-vo" target="1.7" />
+      <module name="tasktracker-rprest" target="1.7" />
+      <module name="tasktracker-rprest-core" target="1.6" />
+      <module name="tasktracker-rprest-vo" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

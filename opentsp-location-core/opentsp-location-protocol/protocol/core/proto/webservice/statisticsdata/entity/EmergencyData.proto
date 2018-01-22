@@ -1,0 +1,13 @@
+option java_outer_classname = "LCEmergencyData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message EmergencyData{
+	required	int64	terminalID =1;
+	required	int64	startDate =2;
+	required	int64	endDate =3;
+	required	int32	continuousTimes =4;
+	required	int32	beginLat =5;
+	required	int32	beginLng =6;
+	required	int32	endLat =7;
+	required	int32	endLng =8;
+}

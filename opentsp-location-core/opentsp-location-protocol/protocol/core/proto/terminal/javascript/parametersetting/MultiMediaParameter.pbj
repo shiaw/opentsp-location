@@ -1,0 +1,9 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message MultiMediaParameter{
+	optional	int32	pictureQuality		=1;
+	optional	int32	brightness			=2;
+	optional	int32	contrast			=3;
+	optional	int32	saturation			=4;
+	optional	int32	chroma				=5;
+}

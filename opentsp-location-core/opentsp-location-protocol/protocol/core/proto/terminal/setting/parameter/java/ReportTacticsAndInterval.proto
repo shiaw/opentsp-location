@@ -1,0 +1,29 @@
+option java_outer_classname = "LCReportTacticsAndInterval";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message ReportTacticsAndInterval{
+	optional	ReportTactics	tactics		=1;
+	optional	ReportProgram	program		=2;
+	optional	int32	notLoginTime		=3;
+	optional	int32	sleepingTime		=4;
+	optional	int32	urgentTime			=5;
+	optional	int32	defaultTime			=6;
+	optional	int32	defaultDistance		=7;
+	optional	int32	notLoginDistance	=8;
+	optional	int32	sleepingDistance	=9;
+	optional	int32	urgentDistance		=10;
+	optional	int32	inflectionAngle		=11;
+	optional	int32	fenceRadius			=12;
+	optional    int64   alarmInterval       =13;
+	
+	enum ReportTactics{
+		timing				=0x00;
+		distance			=0x01;
+		timingAndDistance	=0x02;
+	}
+
+	enum ReportProgram{
+		accStatus		=0x00;
+		loginAndAcc		=0x01;
+	}	
+}

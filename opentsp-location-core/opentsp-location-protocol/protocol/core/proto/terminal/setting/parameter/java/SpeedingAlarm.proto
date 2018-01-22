@@ -1,0 +1,8 @@
+option java_outer_classname = "LCSpeedingAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message SpeedingAlarm{
+	required	int32	maxSpeed		=1;
+	required	int32	continueTime	=2;
+	optional	int32	warningSpeed	=3;
+}

@@ -1,0 +1,11 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message AnswerQuestion{
+ 
+ 
+	required	int32	serialNumber	=1;
+	required	ResponseResult	result	=2;
+	optional	int32	answerId		=3;
+	
+}

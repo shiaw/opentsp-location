@@ -1,0 +1,8 @@
+option java_outer_classname = "LCUpgradeResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum UpgradeResult{
+	success		=0;
+	failed		=1;
+	cancel		=2;
+}

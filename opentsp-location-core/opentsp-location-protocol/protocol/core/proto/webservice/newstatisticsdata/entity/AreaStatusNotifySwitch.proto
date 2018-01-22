@@ -1,0 +1,6 @@
+option java_outer_classname = "LCAreaStatusNotifySwitch";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message AreaStatusNotifySwitch{
+	required	bool	switch		=1;
+}

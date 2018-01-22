@@ -1,0 +1,7 @@
+option java_outer_classname = "LCCANchannel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum CANChannel{
+	CAN_01					=0x00;
+	CAN_02					=0x01;
+}

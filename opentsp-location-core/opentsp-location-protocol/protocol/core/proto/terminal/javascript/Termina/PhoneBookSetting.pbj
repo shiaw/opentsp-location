@@ -1,0 +1,24 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+
+message PhoneBookSetting{
+	enum SettingType{
+		deleteAll = 0X00;
+		updateAll = 0x01;
+		additional = 0x02;
+		modify = 0x03;
+	}
+	required SettingType types = 1;
+	repeated PhoneBook books = 2;
+
+}
+message PhoneBook{
+	enum CallPermission{
+		inPermission = 0x00;
+		outPermission = 0x01;
+		allPermission = 0x02;
+	}
+	required CallPermission perminssion = 1;
+	required string phoneNumber = 2;
+	optional string connector = 3;
+}

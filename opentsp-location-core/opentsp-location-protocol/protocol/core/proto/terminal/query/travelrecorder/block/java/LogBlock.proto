@@ -1,0 +1,15 @@
+option java_outer_classname = "LCLogBlock";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder.block";
+
+
+message LogBlock{
+	required	bool			isNormal			=1;
+	required	int64			beginDate			=2;
+	required	int64			endDate				=3;
+	repeated	SpeedBlock		speedBlocks			=4;
+}
+
+message SpeedBlock{
+	required	int32	recordSpeed		=1;
+	required	int32	referSpeed		=2;
+}

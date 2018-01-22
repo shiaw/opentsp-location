@@ -1,0 +1,8 @@
+option java_outer_classname = "LCCommandType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum CommandType{
+	multiPhoto	=0x00;
+	stopPhoto	=0x01;
+	videoModel	=0x02;
+}

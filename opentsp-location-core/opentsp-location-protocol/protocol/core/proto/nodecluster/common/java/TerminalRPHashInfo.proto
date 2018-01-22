@@ -1,0 +1,8 @@
+option java_outer_classname = "LCTerminalRPHashInfo";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster.common";
+import "core/proto/dataaccess/terminal/java/TerminalInfo.proto";
+message TerminalRPHashInfo{
+	required	int64	rpNodeCode			=1;
+	required	TerminalInfo	info		=2;
+}

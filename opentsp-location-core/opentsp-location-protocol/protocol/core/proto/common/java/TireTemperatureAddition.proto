@@ -1,0 +1,14 @@
+option java_outer_classname = "LCTireTemperatureAddition";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message TireTemperatureAddition{
+	optional	int32	vehType                 =1;
+    optional	int32	tyrePosition            =2;
+    optional	int32	tyreCondition           =3;
+    optional	int32	tyrePressure            =4;
+    optional	int32	tyreTemperature         =5;
+    optional	int32	temAlarmThreshold       =6;
+    optional	int32	tyreHalarmThreshold     =7;
+    optional	int32	tyreLalarmThreshold     =8;
+    optional	int32	tyreNomimalValue        =9;
+}

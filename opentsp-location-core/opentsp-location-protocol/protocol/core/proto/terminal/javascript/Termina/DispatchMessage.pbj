@@ -1,0 +1,14 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+
+message DispatchMessage{
+	required string messageContent = 1;
+	required MessageSign signs = 2;
+	
+	enum MessageSign{
+		urgent = 0;
+		display = 1;
+		broadcast = 2;
+		advertiseScreen = 3;
+	}
+}

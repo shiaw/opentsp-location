@@ -1,0 +1,12 @@
+option java_outer_classname = "LCAreaType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum AreaType{
+	noType = 0x222E0;
+	point = 0x222E1;
+	circle = 0x222E2;
+	rectangle = 0x222E3;
+	polygon = 0x222E4;
+	route = 0x222E5;
+	segment	=	0x222E6;
+}

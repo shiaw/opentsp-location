@@ -1,0 +1,18 @@
+option java_outer_classname = "LCAskQuestion";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message AskQuestion{
+	repeated	QuestionStatus	status			=1;
+	required	string	content					=2;
+	repeated	CandidateAnswer	answers			=3;
+	
+	enum QuestionStatus{
+		emergency				=0x00;		
+		terminalTTS				=0x01;		
+		displayOnScreen			=0x02;	
+	}
+	message CandidateAnswer{
+		required	int32	answerId		=1;
+		required	string	answerContent	=2;
+	}
+}

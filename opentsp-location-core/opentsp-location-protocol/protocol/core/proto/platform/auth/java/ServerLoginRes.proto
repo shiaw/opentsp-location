@@ -1,0 +1,9 @@
+option java_outer_classname = "LCServerLoginRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message ServerLoginRes{
+	required	int32	serialNumber	=1;
+	required	PlatformResponseResult	results		=2;
+	optional	int32	interval		=3;
+}

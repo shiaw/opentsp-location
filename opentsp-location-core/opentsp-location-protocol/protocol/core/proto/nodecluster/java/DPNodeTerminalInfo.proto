@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDPNodeTerminalInfo";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+import "core/proto/nodecluster/common/java/TerminalRPHashInfo.proto";
+
+message DPNodeTerminalInfo{
+	repeated	TerminalRPHashInfo	rpHashInfo	=1;
+}

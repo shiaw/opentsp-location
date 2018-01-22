@@ -1,0 +1,10 @@
+option java_outer_classname = "LCDataEncrypt";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.correct";
+
+message DataEncrypt{
+	required	int64	terminalIdentify	=1;
+	required	int32	longitude	=2;
+	required	int32	latitude	=3;
+	required	int32	height		=4;
+	required	int64	gpsDate		=5;
+}

@@ -1,0 +1,35 @@
+option java_outer_classname = "LCVehicleStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+message VehicleStatus{
+	enum Status{
+		acc						=0x000001;
+		isLocation				=0x000002;
+		northSouthLat			=0x000004;
+		eastWestLng				=0x000008;
+		operateStatus			=0x000010;
+		isEncrypted				=0x000020;
+			
+		emptyLoad				=0x000000;
+		halfLoad				=0x000100;
+			
+		fullLoad				=0x000300;
+		oilNormal				=0x000400;
+		powerNormal				=0x000800;
+		isLocked				=0x001000;
+		frontDoorSwitch			=0x002000;
+		middleDoorSwitch		=0x004000;
+		backDoorSwitch			=0x008000;
+		driverDoorSwitch		=0x010000;
+		defineByYourself		=0x020000;
+		isUsingGps				=0x040000;
+		isUsingBeidou			=0x080000;
+		isUsingGlonass			=0x100000;
+		isUsingGalileo			=0x200000;
+	}
+	enum StatusAddition{
+		switchVoltage			=0x000100;
+		switchDoor				=0x000200;	
+	}
+}
+
+	

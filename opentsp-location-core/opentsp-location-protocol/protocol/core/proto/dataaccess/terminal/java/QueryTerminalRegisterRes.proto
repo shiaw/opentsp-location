@@ -1,0 +1,11 @@
+option java_outer_classname = "LCQueryTerminalRegisterRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/common/java/PlatformResponseResult.proto";
+import "core/proto/dataaccess/terminal/java/TerminalRegisterSave.proto";
+
+message QueryTerminalRegisterRes{
+	required	int32					serialNumber		=1;
+	required	PlatformResponseResult	results				=2;
+	optional	TerminalRegisterSave	info				=3;
+}

@@ -1,0 +1,6 @@
+option java_outer_classname = "LCDataOverdueBroadcast";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message DataOverdueBroadcast{
+	repeated	string	key		=1;
+}

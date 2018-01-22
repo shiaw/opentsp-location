@@ -1,0 +1,12 @@
+option java_outer_classname = "LCOutRegionToLimitSpeedSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message OutRegionToLimitSpeedSave{
+	required	int64	terminalId =1;
+	required	int64	areaIdentify=2;
+	optional	int64	limitDate=3;
+	optional	int32	limitSpeed=4;
+	optional	bool	signs=5;
+
+
+}

@@ -1,0 +1,10 @@
+option java_outer_classname = "LCVehicleInfoSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message VehicleInfoSetting{
+	optional	int32	mileageValues		=1;
+	optional	int32	provinceIdentify	=2;
+	optional	int32	cityIdentify		=3;
+	optional	string	vehicleLicense		=4;
+	optional	int32	licenseColor		=5;
+}

@@ -1,0 +1,13 @@
+option java_outer_classname = "LCVehicleControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message VehicleControl{
+	required	int32	controlStatus		=1;
+	optional	int32	paras               =2;
+}
+
+enum ControlStatus{
+	doorSwitch	=0x01;
+	lockVehicle	=0x02;
+	limitSpeed	=0x04;
+}

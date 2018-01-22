@@ -1,0 +1,8 @@
+import "core/proto/terminal/java/SettingObject.proto";
+option java_outer_classname = "LCTerminalSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+message TerminalSetting{
+	required	int32	settingName	=1;
+	repeated SettingObject setting = 2;
+}

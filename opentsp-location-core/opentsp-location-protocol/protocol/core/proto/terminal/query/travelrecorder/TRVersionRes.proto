@@ -1,0 +1,11 @@
+option java_outer_classname = "LCTRVersionRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message TRVersionRes{
+	required	int32	serialNumber			=1;
+	required	ResponseResult	result			=2;
+	optional	int32	versionYear				=3;
+	optional	int32	modifyVersion			=4;
+}

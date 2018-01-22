@@ -1,0 +1,12 @@
+option java_outer_classname = "LCRouteProperty";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum RouteProperty{
+	accordingTime	=0x0001;
+	inRouteAlarmToDriver	=0x0004;
+	inRouteAlarmToPlatform	=0x0008;
+	outRouteAlarmToDriver	=0x0010;
+	outRouteAlarmToPlatform	=0x0020;
+	everyDay	=0x020000;
+}
+

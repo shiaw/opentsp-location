@@ -1,0 +1,7 @@
+option java_outer_classname = "LCConnectionControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum ConnectionControl{
+	SpecifiedServer	=0x00;
+	defaultServer	=0x01;
+}

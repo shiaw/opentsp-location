@@ -1,0 +1,14 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message MediaDataQuery{
+ 
+ 
+	required	MediaType	types	=1;
+	required	bool	isAllChannels	=2;
+	optional	int32	channels	=3;
+	required	EventCode	events	=4;
+	required	int64	beginDate	=5;
+	required	int64	endDate		=6;
+	
+}

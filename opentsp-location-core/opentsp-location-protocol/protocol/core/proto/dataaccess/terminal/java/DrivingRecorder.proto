@@ -1,0 +1,49 @@
+option java_outer_classname = "LCDrivingRecorder";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+
+message DrivingRecorder{
+	required	int64	terminalId					=1;
+	required	RecorderOperation	recorderCode	=2;
+	required	bytes	recorderContent				=3;
+	enum RecorderOperation{
+		TRVersion						= 160800;
+		TRVersionRes					= 160801;
+		TRSpeedCollect					= 160802;
+		TRSpeedCollectionRes			= 160803;
+		TRDoubtCollect					= 160804;
+		TRDoubtCollectionRes			= 160805;
+		TRPulseCollect					= 160806;
+		TRPulseCollectionRes			= 160807;
+		TRSetPulseValue					= 160808;
+		TRCollectDriverInfo				= 160809;
+		TRCollectDriverInfoRes			= 160810;
+		TRCollectRealTime				= 160811;
+		TRCollectRealTimeRes			= 160812;
+		TRCollectMileage				= 160813;
+		TRCollectMileageRes				= 160814;
+		TRCollectVehicleInfo			= 160815;
+		TRCollectVehicleInfoRes			= 160816;
+		TRCollectStatusSignal			= 160817;
+		TRCollectStatusSignalRes		= 160818;
+		TRCollectOnlyCode				= 160819;
+		TRCollectOnlyCodeRes			= 160820;
+		TRCollectLocationData			= 160821;
+		TRCollectLocationDataRes		= 160822;
+		TRCollectOvertimeRecord			= 160823;
+		TRCollectOvertimeRecordRes		= 160824;
+		TRCollectDriverIdentity			= 160825;
+		TRCollectDriverIdentityRes		= 160826;
+		TRCollectPowerRecord			= 160827;
+		TRCollectPowerRecordRes			= 160828;
+		TRCollectParaModifyRecord		= 160829;
+		TRCollectParaModifyRecordRes	= 160830;
+		TRCollectSpeedLog				= 160831;
+		TRCollectSpeedLogRes			= 160832;
+		TRSetVehicleInfo				= 160833;
+		TRSetInstallDate				= 160834;
+		TRSetStatusSignal				= 160835;
+		TRSetCurrentDate				= 160836;
+		TRSetMileage					= 160837;
+	}
+}

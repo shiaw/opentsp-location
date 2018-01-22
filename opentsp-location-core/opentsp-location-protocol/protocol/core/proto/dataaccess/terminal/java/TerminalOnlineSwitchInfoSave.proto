@@ -1,0 +1,8 @@
+option java_outer_classname = "LCTerminalOnlineSwitchInfoSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+message TerminalOnlineSwitchInfoSave{
+	required	int64	terminalId			=1;
+	required	int64	switchDate			=2;
+	required	bool	status				=3;
+}

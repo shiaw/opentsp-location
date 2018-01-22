@@ -1,0 +1,8 @@
+option java_outer_classname = "LCAntiTamperBoxSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+
+message AntiTamperBoxSetting{
+	optional	int32	lockVehiclePar = 1;
+	optional	string	deviceId       = 2;
+}

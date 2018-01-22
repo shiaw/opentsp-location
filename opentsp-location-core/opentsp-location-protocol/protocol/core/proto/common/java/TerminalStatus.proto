@@ -1,0 +1,27 @@
+option java_outer_classname = "LCTerminalStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum TerminalStatus{
+	acc	=0x000000000001;
+	isLocation	=0x000000000002;
+	northSouthLat	=0x000000000004;
+	eastWestLng	=0x000000000008;
+	operateStatus	=0x000000000010;
+	isEncrypted	=0x000000000020;
+	halfLoad	=0x000000000100;
+	fullLoad	=0x000000000200;
+	oilNormal	=0x000000000400;
+	powerNormal	=0x000000000800;
+	isLocked	=0x000000001000;
+	frontDoorSwitch	=0x000000002000;
+	middleDoorSwitch	=0x000000004000;
+	backDoorSwitch	=0x000000008000;
+	driverDoorSwitch	=0x000000010000;
+	defineByYourself	=0x000000020000;
+	isUsingGps	=0x000000040000;
+	isUsingBeidou	=0x000000080000;
+	isUsingGlonass	=0x000000100000;
+	isUsingGalileo	=0x000000200000;
+
+}
+

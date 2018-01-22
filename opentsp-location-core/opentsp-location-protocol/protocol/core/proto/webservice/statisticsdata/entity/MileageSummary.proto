@@ -1,0 +1,18 @@
+option java_outer_classname = "LCMileageSummary";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message MileageSummary{
+	required	int64	terminalID = 1;
+	optional	int32	recordsTotal =12;
+	optional	int32	calculatedAT =13;
+        optional	int64	beginMileage =14;
+	optional	int64	endMileage =3;
+	optional	int64	mileage =4;
+	optional	int32	staticDate =5;
+	optional	int64	startDate =6;
+	optional	int64	endDate =7;
+	optional	int32	beginLat =8;
+	optional	int32	beginLng =9;
+	optional	int32	endLat =10;
+	optional	int32	endLng =11;
+}

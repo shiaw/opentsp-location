@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDispatchMessage";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/MessageSign.proto";
+
+message DispatchMessage{
+	required string messageContent = 1;
+	required MessageSign signs = 2;
+}

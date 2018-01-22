@@ -1,0 +1,9 @@
+option java_outer_classname = "LCMultimediaDataSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/terminal/monitor/java/MultimediaUpload.proto";
+
+message MultimediaDataSave{
+	required	int64	terminalId					=1;
+	required	MultimediaUpload	multimediaData	=2;
+}

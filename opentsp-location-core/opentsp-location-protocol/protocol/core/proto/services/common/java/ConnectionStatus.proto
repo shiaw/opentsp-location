@@ -1,0 +1,8 @@
+option java_outer_classname = "LCConnectionStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+enum ConnectionStatus{
+		success	=0x01;
+		timeOut	=0x02;
+		noAnswer	=0x03;
+}

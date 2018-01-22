@@ -1,0 +1,46 @@
+option java_outer_classname = "LCCANBUSDataReport";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData";
+
+import "core/proto/terminal/CANBUSData/Report/AMCON.proto";
+import "core/proto/terminal/CANBUSData/Report/CrCtlVehSpd.proto";
+import "core/proto/terminal/CANBUSData/Report/ElectricRetarder.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineConfiguration.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineController.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineInletCondition.proto";
+import "core/proto/terminal/CANBUSData/Report/EnvironmentCondition.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineLiquidLevel.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineRunningTime.proto";
+import "core/proto/terminal/CANBUSData/Report/EngineTemperature.proto";
+import "core/proto/terminal/CANBUSData/Report/EngRetCfgBAM.proto";
+import "core/proto/terminal/CANBUSData/Report/FanDrive.proto";
+import "core/proto/terminal/CANBUSData/Report/FaultInfoNotice.proto";
+import "core/proto/terminal/CANBUSData/Report/FuelConsumptionRate.proto";
+import "core/proto/terminal/CANBUSData/Report/MessageOfMFD1.proto";
+import "core/proto/terminal/CANBUSData/Report/ShutDwn.proto";
+import "core/proto/terminal/CANBUSData/Report/UreaTankInfo.proto";
+import "core/proto/terminal/CANBUSData/Report/VehicleMileage.proto";
+import "core/proto/terminal/CANBUSData/Report/VehiclePower.proto";
+
+message CANBUSDataReport{
+	required	int64	reportDate												=1;
+	optional	EngineController	eec											=2;
+	optional	ElectricRetarder	erc											=3;
+	optional	CrCtlVehSpd	cruiseControl										=4;
+	optional	EngRetCfgBAM	bamBroadcast									=5;
+	optional	EngineLiquidLevel	liquidLevel									=6;
+	optional	EngineTemperature	temperature									=7;
+	optional	UreaTankInfo	ureaTankInfo									=8;
+	optional	VehiclePower	vehiclePower									=9;
+	optional	EngineRunningTime	runningTime									=10;
+	optional	FuelConsumptionRate	rate										=11;
+	optional	EngineInletCondition	inletCondi								=12;
+	optional	EnvironmentCondition	environment								=13;
+	optional	ShutDwn	shutDwn													=14;
+	optional	FaultInfoNotice	currentFault									=15;
+	optional	FaultInfoNotice	historyFault									=16;
+	optional	VehicleMileage	mileage											=17;
+	optional	EngineConfiguration	config										=18;
+	optional	int32	waterInFuel												=19;
+	optional	MessageOfMFD1	mfd												=20;
+	optional	FanDrive	fanDrive											=21;
+}

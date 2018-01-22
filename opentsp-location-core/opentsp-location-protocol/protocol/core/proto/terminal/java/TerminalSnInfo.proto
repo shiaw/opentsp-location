@@ -1,0 +1,10 @@
+option java_outer_classname = "LCTerminalSnInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+message TerminalSnInfo{
+	required	string	vin	= 1;
+	required    string  ecu_id = 2;
+	required    string  van = 3;
+	required    string  sn = 4;
+	required    string  vehicle = 5;
+}

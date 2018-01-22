@@ -1,0 +1,12 @@
+option java_outer_classname = "LCCANBUSDataQuery";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData";
+
+
+
+message CANBUSDataQuery{
+	required	int32	channelId		=1;
+	required	int32	interval		=2;
+	optional	int32	collectTime		=3;
+	optional	int32	reportInterval	=4;
+	optional	int32	reportType		=5;
+}

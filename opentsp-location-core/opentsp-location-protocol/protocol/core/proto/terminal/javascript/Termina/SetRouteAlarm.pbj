@@ -1,0 +1,33 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+enum SetAreaOperation{
+	updateArea	=0;
+	additionalArea	=1;
+	modifyArea	=2;
+}
+
+message SetRouteAlarm{
+	required SetAreaOperation operations = 1;
+	repeated Route routes = 2;
+}
+
+message Route{
+	required int64 routeIdentify = 1;
+	required int32 routeProperty = 2;
+	optional int64 beginDate = 3;
+	optional int64 endDate = 4;
+	repeated TurningPoint turningPoints = 5;
+}
+
+message TurningPoint{
+	required int64 turningIdentify = 1;
+	required int64 lineIdentify = 2;
+	required int32 turningLatitude = 3;
+	required int32 turningLongitude = 4;
+	optional int32 lineWidth = 5;
+	optional int32 lineProperty = 6;
+	optional int32 drivingOutTime = 7;
+	optional int32 drivingLackOfTime = 8;
+	optional int32 maxSpeed = 9;
+	optional int32 speedingContinuousTime = 10;
+}

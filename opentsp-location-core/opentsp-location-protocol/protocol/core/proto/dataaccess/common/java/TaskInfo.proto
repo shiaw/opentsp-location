@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTaskInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message TaskInfo{
+	required	int64	nodeCode			=1;
+	repeated	int64	terminalId			=2;
+}

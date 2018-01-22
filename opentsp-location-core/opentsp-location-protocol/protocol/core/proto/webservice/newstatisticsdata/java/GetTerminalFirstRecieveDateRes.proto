@@ -1,0 +1,9 @@
+option java_outer_classname = "LCGetTerminalFirstRecieveDateRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata";
+
+import "core/proto/dataaccess/terminal/java/TerminalRecieveDateSave.proto";
+
+message GetTerminalFirstRecieveDateRes{
+	required	 int32			statusCode		=1;
+	repeated TerminalRecieveDateSave	records	=2;
+}

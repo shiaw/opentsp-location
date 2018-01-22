@@ -1,0 +1,15 @@
+option java_outer_classname = "LCRPNodeData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+message RPNodeData {
+	required	ServerType	types				=1;
+	required	string	RpIp					=2;
+	required	int32	RpPort					=3;
+	repeated	int64	terminalIdentify		=4;
+	
+	enum ServerType{
+		realTimeCommunication		=0x01;
+		dataQueryRequest			=0x02;
+	}
+	
+}

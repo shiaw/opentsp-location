@@ -1,0 +1,20 @@
+option java_outer_classname = "LCTerminalStatusChangeNotify";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message TerminalStatusChangeNotify{
+	required	int64	currentDate			=1;
+	required	int32	pattern				=2;
+	required	int32	sign				=3;	
+	required	int64	gpsID				=4;
+	required	int64	fixedKey			=5;
+	required	int32	ecuType				=6;
+	required	int32	ecuVersion			=7;
+	required	int32	ecuRunStatus		=8;
+	required	int32	ecuActivationStatus =9;
+	required	int32	ecuLockStatus		=10;
+	required	int32	key					=11;
+	required	int32	gpsIDBool			=12;
+	required	int64	ecuTotalhandshake	=13;
+	required	int64	ecuSuccesshandshake =14;
+	required	int32	ecuLockErrorCode	=15;
+}

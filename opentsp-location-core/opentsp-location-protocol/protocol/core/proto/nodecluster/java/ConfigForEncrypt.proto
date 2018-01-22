@@ -1,0 +1,9 @@
+option java_outer_classname = "LCConfigForEncrypt";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+import "core/proto/nodecluster/common/java/ParameterConfig.proto";
+
+message ConfigForEncrypt{
+	repeated	ParameterConfig	paras		=1;
+}

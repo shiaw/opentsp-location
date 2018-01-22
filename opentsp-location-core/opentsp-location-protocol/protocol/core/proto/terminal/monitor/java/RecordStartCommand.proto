@@ -1,0 +1,13 @@
+option java_outer_classname = "LCRecordStartCommand";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/SaveStatus.proto";
+import "core/proto/terminal/common/java/AudioRate.proto";
+
+message RecordStartCommand{
+	required	bool			isRecord		=1;
+	required	bool			isAlways		=2;
+	required	int32			recordTime		=3;
+	required	SaveStatus		status			=4;
+	required	AudioRate		rates			=5;
+}

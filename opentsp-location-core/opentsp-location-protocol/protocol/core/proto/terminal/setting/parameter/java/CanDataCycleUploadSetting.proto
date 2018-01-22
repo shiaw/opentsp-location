@@ -1,0 +1,21 @@
+option java_outer_classname = "LCCanDataCycleUploadSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message CanDataCycleUploadSetting{
+    required    int32   canChannel      =1;
+    required    int32   frameType       =2;
+    required    int32   collectionMode  =3;
+    required    int32   baudRate        =4;
+    required    int32   uploadCycle     =5;
+    optional    int32   collectionTime  =6;
+    optional    int32   collectCycle    =7;
+    optional    int32   alarmLimit      =8;
+    optional    int32   endianType      =9;
+	repeated	CanDataCycleUploadItems	 items   =10;
+}
+message CanDataCycleUploadItems{
+    optional    int32   canId           =1;
+    optional    int32   paraId          =2;
+    optional    int32   begin           =3;
+    optional    int32   offset          =4;
+}

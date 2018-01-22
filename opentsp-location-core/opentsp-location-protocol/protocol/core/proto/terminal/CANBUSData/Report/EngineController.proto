@@ -1,0 +1,65 @@
+option java_outer_classname = "LCEngineController";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineController{
+	optional	float	enginePercentTorque				=1;
+	optional	int32	torqueMode						=2;
+	optional	int32	driverPercentTorque				=3;
+	optional	int32	engineSpeed						=4;
+	optional	int32	engineControlAddress			=5;
+	optional	int32	engineStartMode					=6;
+	optional	int32	demandPercentTorque				=7;
+	optional	SpeedLimitStatus	status				=8;
+	optional	PedalSwitch	pedalSwitch					=9;
+	optional	AcceleratorPedalSwitch	aPedalSwitch	=10;
+	optional	float	aPedalPosition					=11;
+	optional	int32	loadPercent						=12;
+	optional	int32	remoteAcceleratorPosition01		=13;
+	optional	int32	remoteAcceleratorPosition02		=14;
+	optional	int32	maxTorquePercent				=15;
+	optional	int32	frictionTorquePercent			=16;
+	optional	float	engineDesiredSpeed				=17;
+	optional	int32	engineAsymmetryAdjustment		=18;
+	optional	int32	engineLossesPercent				=19;
+	optional	float	exhaustGas						=20;
+	repeated	TreatmentStatus	intakeStatus			=21;
+	repeated	TreatmentStatus	exhaustStatus			=22;
+
+}
+	enum SpeedLimitStatus{
+		activeSpeedLimit	=0x00;
+		notActiveSpeedLimit	=0x01;
+		errorSpeedLimit	=0x02;
+		notAvailableSpeedLimit	=0x03;
+		
+	}
+	enum PedalSwitch{
+		kickDownNotActive	=0x00;
+		kickDownActive	=0x01;
+		notAvailablePedal	=0x03;
+	}
+	
+	enum AcceleratorPedalSwitch{
+		lowIdleSwitchSignalNotActive	=0x00;
+		lowIdleSwitchSignalActive	=0x01;
+		errorAccelerator	=0x02;
+		notAvailableAccelerator	=0x03;
+		
+
+	}
+	
+	enum TreatmentStatus{
+		notExceedDewPoint	=0x00;
+		exceedDewPoint	=0x01;
+		errorTreatment	=0x02;
+		notAvailableTreatment	=0x03;
+	}
+
+	
+	
+	
+	
+	
+	
+	

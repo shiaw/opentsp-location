@@ -1,0 +1,23 @@
+option java_outer_classname = "LCElectricRetarder";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message ElectricRetarder{
+	optional 	RetarderTorqueMode	mode			=1;
+	optional	int32	actualTorquePercent			=2;
+	optional	int32	intendedTorquePercent		=3;
+	optional	int32	retarderAddress				=4;
+	optional	int32	demandTorquePercent			=5;
+	optional	int32	switchTorquePercent			=6;
+	optional	int32	maxRetarderTorquePercent	=7;
+	
+
+}
+	enum RetarderTorqueMode{
+		noRequest		=0x00;
+		ASR				=0x05;
+		Transmission	=0x06;
+		DR				=0x0A;
+		VM				=0x0E;
+
+	}

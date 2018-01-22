@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAnswerQuestion";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message AnswerQuestion{
+	required	int32	serialNumber				=1;
+	optional	int32	answerId					=3;
+}

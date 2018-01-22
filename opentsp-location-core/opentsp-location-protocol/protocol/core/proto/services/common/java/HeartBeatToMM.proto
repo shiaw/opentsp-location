@@ -1,0 +1,18 @@
+option java_outer_classname = "LCHeartBeatToMM";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+import "core/proto/services/common/java/CpuInfo.proto";
+import "core/proto/services/common/java/MemoryInfo.proto";
+import "core/proto/services/common/java/MonitorCacheSize.proto";
+import "core/proto/services/common/java/MonitorThreadStatus.proto";
+import "core/proto/services/common/java/NodeBuildingStatus.proto";
+import "core/proto/services/common/java/NodeType.proto";
+
+message HeartBeatToMM{
+	required	NodeType	types	=1;
+	required CpuInfo cpuInfos = 2;
+	required MemoryInfo memoryInfos = 3;
+	repeated MonitorCacheSize cacheSize = 4;
+	repeated MonitorThreadStatus threadStatus = 5;
+	repeated NodeBuildingStatus	status		=6;
+}

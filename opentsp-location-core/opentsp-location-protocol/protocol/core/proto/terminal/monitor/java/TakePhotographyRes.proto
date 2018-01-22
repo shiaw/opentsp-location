@@ -1,0 +1,12 @@
+option java_outer_classname = "LCTakePhotographyRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/terminal/common/java/PhotoResult.proto";
+
+message TakePhotographyRes{
+	required	int32					serialNumber		=1;	
+	required	ResponseResult			result				=2;
+	required	PhotoResult				results				=3;
+	repeated	int64					mediaIdentify		=4;
+}

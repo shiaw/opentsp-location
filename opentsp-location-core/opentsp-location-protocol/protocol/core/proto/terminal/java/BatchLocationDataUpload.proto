@@ -1,0 +1,11 @@
+option java_outer_classname = "LCBatchLocationDataUpload";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+import "core/proto/common/java/LocationDataType.proto";
+import "core/proto/common/java/LocationData.proto";
+
+message BatchLocationDataUpload{
+	required	LocationDataType	types		=1;
+	repeated	LocationData		datas		=2;
+
+}

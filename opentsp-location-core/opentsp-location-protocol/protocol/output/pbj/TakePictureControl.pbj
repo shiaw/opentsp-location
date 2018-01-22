@@ -1,0 +1,26 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message TakePictureControl{
+	 repeated   PassageStatus  passageStatus=1;
+	 required	bool	   status	  =2;
+	 required	int32	timingInterval =3;
+	 required   IntervalUnit  unit=4;
+
+	message PassageStatus{
+	 
+		required	int32	passageId	=1;	   
+		required	bool	isPhotoing	=2;	   
+		required	bool	isSaving	=3;	 
+
+	}
+	enum IntervalUnit{
+	 
+		timing_second	=0x01;	   
+		timing_minute	=0x02;		   
+		distance_meter	=0x03;		   
+		distance_kiloMiter	=0x04;		 
+
+	}
+
+}

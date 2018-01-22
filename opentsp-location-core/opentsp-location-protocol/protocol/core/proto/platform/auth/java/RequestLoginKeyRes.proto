@@ -1,0 +1,20 @@
+option java_outer_classname = "LCRequestLoginKeyRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+import "core/proto/common/java/DistrictCode.proto";
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message RequestLoginKeyRes{
+	required	int32	requestLoginSerial				=1;
+	required	PlatformResponseResult	results			=2;
+	required	DistrictCode	districtCode			=3;
+	optional	string	mmMasterNodeIp					=4;
+	optional	int32	mmMasterNodePort				=5;
+	optional	string	mmSlaverNodeIp					=6;
+	optional	int32	mmSlaverNodePort				=7;
+	optional	int64	serverIdentifies				=8;
+	optional	string	channelIdentify					=9;
+	optional    string	dataSynchronizeIp               =10;
+    optional    int32	dataSynchronizePort             =11;
+	
+}

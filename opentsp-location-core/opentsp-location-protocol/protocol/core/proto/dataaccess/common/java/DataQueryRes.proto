@@ -1,0 +1,10 @@
+option java_outer_classname = "LCDataQueryRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message DataQueryRes{
+		required	int32	nodeNumberTo		=1;
+		required	int32	dataType			=2;
+		required	int32	blockNumber			=3;
+		required	int32	totalBlock			=4;
+		repeated	bytes	dataValue			=5;
+}

@@ -1,0 +1,7 @@
+option java_outer_classname = "LCServerType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum ServerType{
+	businessServer =0x01;
+	cloudNode =0x02;
+}

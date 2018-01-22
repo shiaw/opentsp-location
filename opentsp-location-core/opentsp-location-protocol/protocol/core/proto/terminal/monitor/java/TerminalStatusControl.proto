@@ -1,0 +1,13 @@
+option java_outer_classname = "LCTerminalStatusControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+message TerminalStatusControl{
+	required	PeripheralControl	controls =1;
+	repeated	int32	paras                =2;
+	optional    int32   controlType         =3;
+}
+
+enum PeripheralControl{
+	lockVehicle	=0x01;
+	openOrClose = 0x03;
+}

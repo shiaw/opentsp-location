@@ -1,0 +1,8 @@
+option java_outer_classname = "LCTerminalMessageSwitch";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+
+message TerminalMessageSwitch{
+	required bool	messageSwitch = 1;
+}
+

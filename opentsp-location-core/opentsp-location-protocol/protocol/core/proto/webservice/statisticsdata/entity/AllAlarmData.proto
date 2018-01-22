@@ -1,0 +1,39 @@
+option java_outer_classname = "LCAllAlarmData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+import "core/proto/webservice/statisticsdata/entity/OverspeedData.proto";
+import "core/proto/webservice/statisticsdata/entity/AreaInOutData.proto";
+import "core/proto/webservice/statisticsdata/entity/AreaOverspeedData.proto";
+import "core/proto/webservice/statisticsdata/entity/RouteInOutData.proto";
+import "core/proto/webservice/statisticsdata/entity/RLineOverspeedData.proto";
+import "core/proto/webservice/statisticsdata/entity/RLineOvertimeData.proto";
+import "core/proto/webservice/statisticsdata/entity/OvertimeParkingData.proto";
+import "core/proto/webservice/statisticsdata/entity/FatigueData.proto";
+import "core/proto/webservice/statisticsdata/entity/EmergencyData.proto";
+import "core/proto/webservice/statisticsdata/entity/PowerStayInLowerData.proto";
+import "core/proto/webservice/statisticsdata/entity/ElectricPowerOffData.proto";
+import "core/proto/webservice/statisticsdata/entity/ACCStatusData.proto";
+import "core/proto/webservice/statisticsdata/entity/MileagesData.proto";
+import "core/proto/webservice/statisticsdata/entity/DriverLoginData.proto";
+import "core/proto/webservice/statisticsdata/entity/TerOnOffStatusData.proto";
+import "core/proto/webservice/statisticsdata/entity/WFlowData.proto";
+
+message AllAlarmData{
+	required	int64	terminalID =1;
+	repeated	OverspeedData	overspeedList =2;
+	repeated	AreaInOutData	areaInOutList =3;
+	repeated	AreaOverspeedData	areaOverSpdList =4;
+	repeated	RouteInOutData	routeInOutList =5;
+	repeated	RLineOverspeedData	rlineOverSpdList =6;
+	repeated	RLineOvertimeData	rlineOverTList =7;
+	repeated	OvertimeParkingData	overtimePList =8;
+	repeated	FatigueData	fatigueList =9;
+	repeated	EmergencyData	emergencyList =10;
+	repeated	PowerStayInLowerData	powerSILList =11;
+	repeated	ElectricPowerOffData	electricPOList =12;
+	repeated	ACCStatusData	accList =13;
+	repeated	MileagesData	mileageList =14;
+	repeated	DriverLoginData	driverLoginList =15;
+	repeated	TerOnOffStatusData	terminalStuList =16;
+	repeated	WFlowData	wflowList =17;		
+}

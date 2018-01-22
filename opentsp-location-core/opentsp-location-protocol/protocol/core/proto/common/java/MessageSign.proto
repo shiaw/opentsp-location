@@ -1,0 +1,10 @@
+option java_outer_classname = "LCMessageSign";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message MessageSign{
+		required	bool	isUrgent					=1;
+		required	bool	isDisplay					=2;
+		required	bool	isBroadcast					=3;
+		required	bool	isAdvertiseScreen			=4;
+		required	bool	infoType					=5;
+	}

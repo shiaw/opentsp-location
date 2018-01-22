@@ -1,0 +1,9 @@
+option java_outer_classname = "LCResAllAlarmRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/AlarmData.proto";
+message ResAllAlarmRecoreds{
+	required	int32	totalRecords =1;
+	required	int32	statusCode =2;
+	repeated	AlarmData	dataList =3;
+}

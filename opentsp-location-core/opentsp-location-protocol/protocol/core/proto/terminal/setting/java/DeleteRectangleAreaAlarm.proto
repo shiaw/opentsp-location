@@ -1,0 +1,6 @@
+option java_outer_classname = "LCDeleteRectangleAreaAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+message DeleteRectangleAreaAlarm{
+	repeated int64 areaIdentify = 1;
+}

@@ -1,0 +1,7 @@
+option java_outer_classname = "LCDriverEventType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum DriverEventType{
+	login	=0x01;
+	logout	=0x02;
+}

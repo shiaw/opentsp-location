@@ -1,0 +1,8 @@
+option java_outer_classname = "LCQueryAppointPara";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+import "core/proto/terminal/common/java/ParameterMessageNumber.proto";
+
+message QueryAppointPara{
+	repeated	ParameterMessageNumber	numbers		=1;
+}

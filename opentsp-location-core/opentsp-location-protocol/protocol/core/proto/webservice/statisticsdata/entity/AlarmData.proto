@@ -1,0 +1,18 @@
+option java_outer_classname = "LCAlarmData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message AlarmData{
+	required	int64	terminalID =1;
+	required	int64	emergecy =2;
+	required	int64	powerSIW =3;
+	required	int32	electricPOff =4;
+ 	required	int32	areaInOut =5;
+	required	int32	areaOS =6;
+	required	int32	overSpd =7;
+	required	int32	routeIO =8;
+	required	int32	offRLine =9;
+	required	int32	rLineOSpd =10;
+	required	int32	rLineOT =11;
+	required	int32	overTP =12;
+	required	int32	fatigue =13;
+}

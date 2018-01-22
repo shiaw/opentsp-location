@@ -1,0 +1,10 @@
+option java_outer_classname = "LCCommonSummary";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message CommonSummary{
+	required	int64	terminalID = 1;
+	optional	int64	startTime =2;
+	optional	int64	endTime =3;
+	optional	int32	recordsTotal =4;
+	optional	int32	calculatedAT =5;
+}

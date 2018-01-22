@@ -1,0 +1,91 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+enum AreaType{
+	noType = 0x222E0;
+	point = 0x222E1;
+	circle = 0x222E2;
+	rectangle = 0x222E3;
+	polygon = 0x222E4;
+	route = 0x222E5;
+	segment	=	0x222E6;
+}
+message LocationData{
+	required	int64	alarm = 1;
+	required	int64	status = 2;
+	optional	int32	longitude = 3;
+	optional	int32	latitude = 4;
+	optional	int32	originalLng = 5;
+	optional	int32	originalLat = 6;
+	required	int32	height = 7;
+	required	int32	speed = 8;
+	required	int32	direction = 9;
+	required	int64	gpsDate = 10;
+	optional	int64	mileage = 11;
+	required	int64	receiveDate = 12;
+	required	bool	isPatch = 13;
+	optional	int32	oil = 14;
+	optional	int32	recorderSpeed = 15;
+	repeated	SpeedAddition	speedAddition = 16;
+	repeated	AreaAddition	areaAddition = 17;
+	repeated	RouteAddition	routeAddition = 18;
+	repeated	TemAddition	temAlarm = 19;
+	optional	int32	starStatus = 20;
+	optional	int32	starNumber = 21;
+
+}
+
+	message SpeedAddition{
+		required	AreaType	types =1;
+		optional	int64	areaId =2 ;
+	}
+	
+	message AreaAddition{
+		required	AreaType	areaType =1;
+		required	int64	areaId =2;
+		required	bool	direction =3;
+	}
+
+	message RouteAddition{
+		required	int64	areaId =1;
+		required	int32	routeTime =2;
+		required	bool	routeResult =3;
+	}
+	
+	message TemAddition{
+		required	int32	channelId =1;
+		required	bool	temAlarm =2;
+		optional	int32	temperature =3;
+	}	
+
+message MultimediaUpload{
+	required int64 mediaId = 1;
+	required MediaType types = 2;
+	
+	required FormatEncoding encode = 3;
+	required EventCode events = 4;
+	required int32 channels = 5;
+	required LocationData locationData = 6;
+	required bytes mediaData = 7;
+	
+	enum MediaType{
+		picture = 0;
+		audio = 1;
+		video = 2;
+	}
+
+	enum FormatEncoding{
+		picture_jpeg = 0;
+		picture_tif = 1;
+		audio_mp3 = 2;
+		audio_wav = 3;
+		audio_wmv = 4;
+	}
+
+	enum EventCode{
+		platformSend = 0;
+		timedAction = 1;
+		robberyAlarm = 2;
+		collisionAlarm = 3;
+	}
+	
+}

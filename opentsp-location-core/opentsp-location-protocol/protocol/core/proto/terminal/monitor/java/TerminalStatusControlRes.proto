@@ -1,0 +1,12 @@
+option java_outer_classname = "LCTerminalStatusControlRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message TerminalStatusControlRes{
+	required	int32	serialNumber	=1;
+	required	ResponseResult	result	=2;
+	optional	int32	controlType	    =3;
+	optional	int32	types	        =4;
+}
+

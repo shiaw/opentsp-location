@@ -1,0 +1,8 @@
+option java_outer_classname = "LCGetNodeInfoRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.mm";
+
+import "core/proto/services/mm/java/NodeInfo.proto";
+
+message GetNodeInfoRes{
+	repeated	NodeInfo	nodeInfo	=1;
+}

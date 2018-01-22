@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>opentsp-location-push</artifactId>
+        <groupId>com.navinfo.platform</groupId>
+        <version>1.208-RC47-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>opentsp-location-push-core</artifactId>
+    <properties>
+        <start-class>com.navinfo.opentsp.platform.push.Application</start-class>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.navinfo</groupId>
+            <artifactId>opentsp-push-commands</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.navinfo</groupId>
+            <artifactId>opentsp-platform-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.navinfo</groupId>
+            <artifactId>opentsp-common-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.navinfo</groupId>
+            <artifactId>opentsp-users-common-commands</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <scope>test</scope>
+        </dependency-->
+        <dependency>
+            <groupId>com.navinfo</groupId>
+            <artifactId>opentsp-tester</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

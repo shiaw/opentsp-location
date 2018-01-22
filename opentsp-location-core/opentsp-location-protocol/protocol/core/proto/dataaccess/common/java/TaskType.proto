@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTaskType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+enum TaskType{
+		DataTransfer	=0x00;
+		DataStatistic	=0x01;
+}

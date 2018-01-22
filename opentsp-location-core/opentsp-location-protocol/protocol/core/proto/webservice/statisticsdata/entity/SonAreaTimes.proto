@@ -1,0 +1,9 @@
+option java_outer_classname = "LCSonAreaTimes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+import "core/proto/webservice/statisticsdata/entity/GrandSonAreaTimes.proto";
+message SonAreaTimes{
+	required int64 _id =1;
+	required int32 times =2;
+	repeated GrandSonAreaTimes grandsonAreaTimes =3;
+}

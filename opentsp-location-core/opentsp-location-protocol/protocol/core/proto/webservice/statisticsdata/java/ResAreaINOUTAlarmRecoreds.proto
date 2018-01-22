@@ -1,0 +1,9 @@
+option java_outer_classname = "LCResAreaINOUTAlarmRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/AreaInOutData.proto";
+message ResAreaINOUTAlarmRecoreds{
+	required	int32	statusCode =1;
+	optional	int32	totalRecords =2;
+	repeated	AreaInOutData	dataList =3;
+}

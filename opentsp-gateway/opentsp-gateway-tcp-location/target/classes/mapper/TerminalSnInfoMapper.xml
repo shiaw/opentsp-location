@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.navinfo.opentsp.gateway.tcp.proto.location.mapper.TerminalSnInfoMapper">
+  <resultMap id="BaseResultMap" type="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalSnInfo">
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="TERMINAL_ID" jdbcType="BIGINT" property="terminalId" />
+    <result column="VIN" jdbcType="VARCHAR" property="vin" />
+    <result column="ECUID" jdbcType="VARCHAR" property="ecuid" />
+    <result column="VAN" jdbcType="VARCHAR" property="van" />
+    <result column="SN" jdbcType="VARCHAR" property="sn" />
+    <result column="VEHICLE" jdbcType="VARCHAR" property="vehicle" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, TERMINAL_ID, VIN, ECUID, VAN, SN, VEHICLE
+  </sql>
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from lc_terminal_sn_info
+    where 1=1
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from lc_terminal_sn_info
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from lc_terminal_sn_info
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalSnInfo">
+    insert into lc_terminal_sn_info (ID, TERMINAL_ID, VIN, 
+      ECUID, VAN, SN, VEHICLE
+      )
+    values (#{id,jdbcType=INTEGER}, #{terminalId,jdbcType=BIGINT}, #{vin,jdbcType=VARCHAR}, 
+      #{ecuid,jdbcType=VARCHAR}, #{van,jdbcType=VARCHAR}, #{sn,jdbcType=VARCHAR}, #{vehicle,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalSnInfo">
+    insert into lc_terminal_sn_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="terminalId != null">
+        TERMINAL_ID,
+      </if>
+      <if test="vin != null">
+        VIN,
+      </if>
+      <if test="ecuid != null">
+        ECUID,
+      </if>
+      <if test="van != null">
+        VAN,
+      </if>
+      <if test="sn != null">
+        SN,
+      </if>
+      <if test="vehicle != null">
+        VEHICLE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="terminalId != null">
+        #{terminalId,jdbcType=BIGINT},
+      </if>
+      <if test="vin != null">
+        #{vin,jdbcType=VARCHAR},
+      </if>
+      <if test="ecuid != null">
+        #{ecuid,jdbcType=VARCHAR},
+      </if>
+      <if test="van != null">
+        #{van,jdbcType=VARCHAR},
+      </if>
+      <if test="sn != null">
+        #{sn,jdbcType=VARCHAR},
+      </if>
+      <if test="vehicle != null">
+        #{vehicle,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalSnInfo">
+    update lc_terminal_sn_info
+    <set>
+      <if test="terminalId != null">
+        TERMINAL_ID = #{terminalId,jdbcType=BIGINT},
+      </if>
+      <if test="vin != null">
+        VIN = #{vin,jdbcType=VARCHAR},
+      </if>
+      <if test="ecuid != null">
+        ECUID = #{ecuid,jdbcType=VARCHAR},
+      </if>
+      <if test="van != null">
+        VAN = #{van,jdbcType=VARCHAR},
+      </if>
+      <if test="sn != null">
+        SN = #{sn,jdbcType=VARCHAR},
+      </if>
+      <if test="vehicle != null">
+        VEHICLE = #{vehicle,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalSnInfo">
+    update lc_terminal_sn_info
+    set TERMINAL_ID = #{terminalId,jdbcType=BIGINT},
+      VIN = #{vin,jdbcType=VARCHAR},
+      ECUID = #{ecuid,jdbcType=VARCHAR},
+      VAN = #{van,jdbcType=VARCHAR},
+      SN = #{sn,jdbcType=VARCHAR},
+      VEHICLE = #{vehicle,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

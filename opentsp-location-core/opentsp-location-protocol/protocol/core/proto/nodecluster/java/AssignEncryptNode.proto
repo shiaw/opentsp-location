@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAssignEncryptNode";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+message AssignEncryptNode{
+	required	int64	encryptCode	=1;
+}

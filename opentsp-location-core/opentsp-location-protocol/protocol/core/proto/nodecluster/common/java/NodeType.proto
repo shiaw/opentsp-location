@@ -1,0 +1,13 @@
+option java_outer_classname = "LCNodeType";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster.common";
+
+enum NodeType{
+	ta						=101000;
+	dp						=102000;
+	rp						=103000;
+	rp_dr					=103001;
+	da						=104000;
+	mm						=105000;
+	dsa						=106000;
+}

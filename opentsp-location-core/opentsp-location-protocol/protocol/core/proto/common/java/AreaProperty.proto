@@ -1,0 +1,28 @@
+option java_outer_classname = "LCAreaProperty";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum AreaProperty{
+	accordingTime							=0x000001;
+	speedLimit								=0x000002;
+	inAreaAlarmToDriver						=0x000004;
+	inAreaAlarmToPlatform					=0x000008;
+	outAreaAlarmToDriver					=0x000010;
+	outAreaAlarmToPlatform					=0x000020;
+	northOrSouthLatitude					=0x000040;
+	eastOrWestLongitude						=0x000080;
+	doorStatusSwitches						=0x000100;
+		
+	communicateModuleSwitch					=0x004000;
+	collectGNSSLocationInfo					=0x008000;
+		
+	openDoorOutArea							=0x010000;
+	everyDay								=0x020000;	
+	
+	notArriveFenceAlarmToDriver				=0x040000;
+	notArriveFenceAlarmToPlatform			=0x080000;
+	notLeaveFenceAlarmToDriver				=0x100000;
+	notLeaveFenceAlarmToPlatform			=0x200000;
+
+
+}
+

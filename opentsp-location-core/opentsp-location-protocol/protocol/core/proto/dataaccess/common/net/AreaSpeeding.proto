@@ -1,0 +1,20 @@
+option java_outer_classname = "LCAreaSpeeding";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+import "core/proto/common/net/AreaType.proto";
+
+message AreaSpeeding{
+	required	int64				areaId				=1;
+	required	AreaType			types				=2;
+	optional	int64				routeId				=3;
+	required	int32				maxSpeed			=4;
+	required	int32				continuousTime		=5;
+	required	bool				basedTime			=6;
+	optional	bool				isEveryDay			=7;
+	optional	int64				startDate			=8;
+	optional	int64				endDate				=9;
+}
+

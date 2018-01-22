@@ -1,0 +1,31 @@
+option java_outer_classname = "LCEngineConfiguration";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineConfiguration{
+	optional	float	speedAtIdle01						=1;
+	optional	int32	torqueAtIdle01						=2;
+	optional	float	maxSpeed02							=3;
+	optional	int32	torqueAtMaxSpeed02					=4;
+	optional	float	speed03								=5;
+	optional	int32	torque03							=6;
+	optional	float	speed04								=7;
+	optional	int32	torque04							=8;
+	optional	float	speed05								=9;
+	optional	int32	torque05							=10;
+	optional	float	speed06								=11;
+	optional	float	speedGovernor						=12;
+	optional	int32	referenceTorque						=13;
+	optional	float	maxMomentarySpeed					=14;
+	optional	float	maxMomentaryTimeLimit				=15;
+	optional	int32	speedRangeLowerLimit				=16;
+	optional	int32	speedRangeUpperLimit04				=17;
+	optional	int32	torqueRangeLowerLimit				=18;
+	optional	int32	torqueRangeUpperLimit				=19;
+	optional	int32	speedRangeUpperLimit05				=20;
+	optional	float	engineMomentOfInertia				=21;
+
+
+}
+
+

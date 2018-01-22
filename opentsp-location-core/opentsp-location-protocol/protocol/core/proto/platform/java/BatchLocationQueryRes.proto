@@ -1,0 +1,9 @@
+option java_outer_classname = "LCBatchLocationQueryRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+import "core/proto/platform/java/LocationObject.proto";
+
+message BatchLocationQueryRes{
+	required	int32	serialNumber	=1;
+	repeated	LocationObject	locationObject	=2;
+}

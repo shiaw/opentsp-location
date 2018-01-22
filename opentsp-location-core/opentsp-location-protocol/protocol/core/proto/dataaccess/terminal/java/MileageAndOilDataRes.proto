@@ -1,0 +1,19 @@
+option java_outer_classname = "LCMileageAndOilDataRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+message MileageAndOilDataRes{
+	repeated	MileageAndOilData	records  =1;
+}
+
+message MileageAndOilData{
+	required	int64	terminalId  = 1;
+	optional	int64	mileage  = 2;
+	optional	float	Oil         = 3;
+	optional    int64  	currentDate = 4;
+	optional    float   oilValue       =5;
+}
+
+
+
+
+

@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTerOilConsum";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message TerOilConsum{
+	required	int64	terminalID 				=1;
+	required	int32	type					=2;
+}

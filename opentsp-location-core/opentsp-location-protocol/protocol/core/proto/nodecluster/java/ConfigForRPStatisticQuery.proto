@@ -1,0 +1,10 @@
+option java_outer_classname = "LCConfigForRPStatisticQuery";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+import "core/proto/nodecluster/common/java/ParameterConfig.proto";
+
+message ConfigForRPStatisticQuery{
+	required	int64	daCode				=1;
+	repeated	ParameterConfig	paras		=2;
+}

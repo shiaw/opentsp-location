@@ -1,0 +1,12 @@
+option java_outer_classname = "LCOvertimeRecordBlock";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder.block";
+
+import "core/proto/common/java/TRLocationData.proto";
+
+message OvertimeRecordBlock{
+	required	string				driverLicense			=1;
+	required	int64				beginDate				=2;
+	required	int64				endDate					=3;
+	required	TRLocationData		beginLocation			=4;
+	required	TRLocationData		endLocation				=5;
+}

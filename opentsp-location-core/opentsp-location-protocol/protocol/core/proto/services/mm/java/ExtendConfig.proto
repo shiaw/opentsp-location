@@ -1,0 +1,28 @@
+option java_outer_classname = "LCExtendConfig";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.mm";
+
+import "core/proto/services/common/java/ParameterConfig.proto";
+
+message ExtendConfig{
+	repeated	NodePort	ports	=1;
+	repeated	ParameterConfig	paras	=2;
+	
+
+}
+message NodePort{
+	required	int32	ports	=1;
+	required	PortType	types	=2;
+	enum PortType{
+		ta_terminal	=0x01;
+		dp_ta	=0x02;
+		dp_encrypt	=0x03;
+		dp_rp	=0x04;
+		rp_server	=0x05;
+		da_dataServer	=0x06;
+		mm_nodeMonitor	=0x07;
+		mm_server	=0x08;
+		mm_terminal_jt01	=0x09;
+		mm_terminal_jt02	=0x10;
+	}
+	
+}

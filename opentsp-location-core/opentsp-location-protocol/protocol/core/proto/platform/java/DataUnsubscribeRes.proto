@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDataUnsubscribeRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+
+message DataUnsubscribeRes{
+	required	int32	serialNumber	=1;
+	required	bool	result			=2;
+	repeated	int64	terminalIdentify	=3;
+}

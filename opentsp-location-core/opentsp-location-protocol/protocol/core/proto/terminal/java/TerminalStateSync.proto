@@ -1,0 +1,10 @@
+option java_outer_classname = "LCTerminalStateSync";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+
+message TerminalStateSync{
+	required	string	gpsDate	= 1;
+	optional    float   gpsMileage = 2;
+	optional    float   integralMileage = 3;
+	optional    float   integralConsumption = 4;
+}

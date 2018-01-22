@@ -1,0 +1,20 @@
+option java_outer_classname = "LCDriverInfoReport";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+message DriverInfoReport{
+	optional	bool	cardStatus = 1;
+	optional	int64	cardSwitchDate = 2;
+	optional	ReadResult	results = 3;
+	required	string	name = 4;
+	required	string	certificateCode	= 5;
+	required	string	organizationName = 6;
+	optional	int64	licenseValidDate = 7;
+	
+	enum ReadResult{
+		success = 0;
+		passwordError = 1;
+		cardLocked = 2;
+		cardPullOut = 3;
+		cardCheckError = 4;
+	}
+}

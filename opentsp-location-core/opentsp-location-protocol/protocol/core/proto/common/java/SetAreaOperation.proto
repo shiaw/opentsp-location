@@ -1,0 +1,9 @@
+option java_outer_classname = "LCSetAreaOperation";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum SetAreaOperation{
+	updateArea	=0;
+	additionalArea	=1;
+	modifyArea	=2;
+}
+

@@ -1,0 +1,8 @@
+option java_outer_classname = "LCPhotoResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum PhotoResult{
+	success1				=0x00;
+	failed					=0x01;
+	channelNotSupport		=0x02;
+}

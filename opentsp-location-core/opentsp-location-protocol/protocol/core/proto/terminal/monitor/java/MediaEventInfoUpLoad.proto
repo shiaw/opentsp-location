@@ -1,0 +1,14 @@
+option java_outer_classname = "LCMediaEventInfoUpLoad";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/MediaType.proto";
+import "core/proto/terminal/common/java/EventCode.proto";
+import "core/proto/terminal/common/java/FormatEncoding.proto";
+
+message MediaEventInfoUpLoad{
+	required	int64				mediaId			=1;
+	required	MediaType			types			=2;
+	required	FormatEncoding		encode			=3;
+	required	EventCode			events			=4;
+	required	int32				channels		=5;
+}

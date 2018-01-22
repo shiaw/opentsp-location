@@ -1,0 +1,13 @@
+option java_outer_classname = "LCNodeStatusReport";
+
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+message NodeStatusReport{
+	required	NodeStatus	status =1;
+	enum NodeStatus{
+		failed				= 0x00;
+		notBuilding			= 0x01;
+		working				= 0x02;
+	}
+}

@@ -1,0 +1,9 @@
+option java_outer_classname = "LCQueryDistrictMMNodeRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.district";
+
+import "core/proto/nodecluster/common/java/NodeInfo.proto";
+
+message QueryDistrictMMNodeRes{
+	required	int32	serialNumber		=1;
+	repeated	NodeInfo	nodes			=2;
+}

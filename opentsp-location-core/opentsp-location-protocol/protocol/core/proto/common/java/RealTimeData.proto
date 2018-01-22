@@ -1,0 +1,19 @@
+option java_outer_classname = "RealTimeDataPb";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message RealTimeData{
+    required    int64                       gpsTime                     =1;
+    optional    int32                       latitude                    =2;
+    optional    int32                       longitude                   =3;
+    optional    int32                       height                      =4;
+    optional    int32                       engineOutputTorque          =5;
+    optional    int32                       speed                       =6;
+    optional    int32                       accelerator                 =7;
+    optional    int32                       brake                       =8;
+    optional    int32                       rotation                    =9;
+    optional    int32                       gear                        =10;
+    optional    int32                       clutchSwitch                =11;
+    optional    int32                       realTimeOilConsumption      =12;
+    optional    int32                       fuelConsumptionRate         =13;
+}
+

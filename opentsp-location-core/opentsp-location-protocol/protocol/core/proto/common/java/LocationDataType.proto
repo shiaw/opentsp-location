@@ -1,0 +1,7 @@
+option java_outer_classname = "LCLocationDataType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum LocationDataType{
+	normal			=0x00;
+	blindArea		=0x01;
+}

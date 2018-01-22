@@ -1,0 +1,6 @@
+
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+message DeleteCircleAreaAlarm{
+	repeated int64 areaIdentify = 1;
+}

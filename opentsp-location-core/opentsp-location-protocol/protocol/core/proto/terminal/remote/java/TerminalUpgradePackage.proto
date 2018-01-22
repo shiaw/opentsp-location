@@ -1,0 +1,11 @@
+option java_outer_classname = "LCTerminalUpgradePackage";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.remote";
+
+import "core/proto/terminal/common/java/UpgradeType.proto";
+
+message TerminalUpgradePackage{
+	required	UpgradeType		types				=1;
+	required	string			manufacturerId		=2;
+	required	string			version				=3;
+	required	bytes			upgradeData			=4;
+}

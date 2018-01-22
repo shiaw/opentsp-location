@@ -1,0 +1,9 @@
+option java_outer_classname = "LCUreaTankInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message UreaTankInfo{
+	optional	float	ureaTankLevel			=1;
+	optional	int32	ureaTankTemperature		=2;
+}
+

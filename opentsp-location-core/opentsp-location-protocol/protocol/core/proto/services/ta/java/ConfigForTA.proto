@@ -1,0 +1,14 @@
+option java_outer_classname = "LCConfigForTA";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.ta";
+
+import "core/proto/services/common/java/ParameterConfig.proto";
+
+message ConfigForTA{
+	required	string	dpIP	=1;
+	required	int32	dpPort	=2;
+	required	string	daIP	=3;
+	required	int32	daPort	=4;
+	required	string	taForTerminalIP	=5;
+	required	int32	taForTerminalPort	=6;
+	repeated	ParameterConfig	paras		=7;
+}

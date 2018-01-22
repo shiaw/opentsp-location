@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTRSetInstallDate";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+message TRSetInstallDate{
+	required	int64	currentDate		=1;
+}
+

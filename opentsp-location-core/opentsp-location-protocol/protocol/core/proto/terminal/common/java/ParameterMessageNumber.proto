@@ -1,0 +1,21 @@
+option java_outer_classname = "LCParameterMessageNumber";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum ParameterMessageNumber{
+	MessageTimeoutProcess			=0x2251;
+	ConnectServerConfig				=0x2252;
+	ReportTacticsAndInterval		=0x2253;
+	PrivilegeNumbers				=0x2254;
+	AlarmTriggeredSetting			=0x2255;
+	SpeedingAlarm					=0x2256;
+	FatigueDriving					=0x2258;
+	MultiMediaParameter				=0x2260;
+	VehicleInfoSetting				=0x2261;
+	RoadTransportPermit				=0x2262;
+	CollisionAlarm					=0x2263;
+	RolloverAlarm					=0x2264;
+	TakePictureControl				=0x2265;
+	GnssSetting						=0x2266;
+	CanBusSetting					=0x2267;
+	OvertimeParking					=0x2268;
+}

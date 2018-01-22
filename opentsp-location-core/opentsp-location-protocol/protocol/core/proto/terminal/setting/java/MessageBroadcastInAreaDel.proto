@@ -1,0 +1,8 @@
+option java_outer_classname = "LCMessageBroadcastInAreaDel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+message MessageBroadcastInAreaDel{
+	repeated	int64	areaIdentifys				=1;
+	optional	bool	saveSign				    =2;
+	
+}

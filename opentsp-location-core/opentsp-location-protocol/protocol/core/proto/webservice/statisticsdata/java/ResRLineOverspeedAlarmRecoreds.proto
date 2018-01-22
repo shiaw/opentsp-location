@@ -1,0 +1,9 @@
+option java_outer_classname = "LCResRLineOverspeedAlarmRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/RLineOverspeedData.proto";
+message ResRLineOverspeedAlarmRecoreds{
+	required	int32	 statusCode =1;
+	optional	int32	totalRecords =2;
+	repeated	RLineOverspeedData	dataList =3;
+}

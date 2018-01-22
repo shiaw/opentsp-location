@@ -1,0 +1,11 @@
+option java_outer_classname = "LCUpdateTerminalInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message UpdateTerminalInfo{
+	required int64 terminalId = 1;
+	required DistrictCode districtCode = 2;
+	required	int64	nodeCode = 3;
+	optional	int64	changeTId = 4;
+}

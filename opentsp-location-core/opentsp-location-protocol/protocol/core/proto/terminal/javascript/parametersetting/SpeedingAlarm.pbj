@@ -1,0 +1,6 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message SpeedingAlarm{
+	required	int32	maxSpeed		=1;
+	required	int32	continueTime	=2;
+}

@@ -1,0 +1,12 @@
+option java_outer_classname = "LCEngineInletCondition";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineInletCondition{
+	optional	float	particulateTrapInlet		=1;
+	optional	int32	boostPressureAtmosphere		=2;
+	optional	int32	intakeManifold				=3;
+	optional	int32	airInletPressure			=4;
+	optional	float	exhaustGasTemperature		=5;
+}
+

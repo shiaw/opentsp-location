@@ -1,0 +1,13 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message MediaEventInfoUpLoad{
+ 
+ 
+	required	int64	mediaId		=1;
+	required	MediaType	types	=2;
+	required	FormatEncoding	encode	=3;
+	required	EventCode	events	=4;
+	required	int32	channels	=5;
+	
+}

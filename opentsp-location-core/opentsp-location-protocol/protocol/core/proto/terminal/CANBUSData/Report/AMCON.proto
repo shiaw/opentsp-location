@@ -1,0 +1,10 @@
+option java_outer_classname = "LCAMCON";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message AMCON{
+	optional	float	barometricPressure		=1;
+	optional	float	ambientAirTemperature	=2;
+	optional	int32	airInletTemperature		=3;
+}
+

@@ -1,0 +1,7 @@
+option java_outer_classname = "LCMultiServerAuth";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+message MultiServerAuth{
+	repeated	string	serverIp				=1;
+	optional	string	channelIdentify			=2;
+}

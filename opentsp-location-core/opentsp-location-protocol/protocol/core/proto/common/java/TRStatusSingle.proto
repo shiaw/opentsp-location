@@ -1,0 +1,10 @@
+option java_outer_classname = "LCTRStatusSingle";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum TRStatusSingle{
+	dippedBeam			=0x08;
+	highBeam			=0x10;
+	rightTurning		=0x20;
+	leftTurning			=0x40;
+	braking				=0x80;
+}

@@ -1,0 +1,15 @@
+option java_outer_classname = "LCMediaDataQuery";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/MediaType.proto";
+import "core/proto/terminal/common/java/EventCode.proto";
+
+message MediaDataQuery{
+	required	MediaType			types			=1;
+	required    bool    			isAllChannels	=2;  
+	optional	int32				channels		=3;
+	required    EventCode 			events 			=4;
+	required	int64				beginDate		=5;
+	required	int64				endDate			=6;
+
+}

@@ -1,0 +1,14 @@
+option java_outer_classname = "LCStagnationTimeout";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message StagnationTimeout{
+    required	string	_id				=1;
+	required	int64	terminalId		=2;
+	required	int64	beginDate		=3;
+	required	int64	endDate			=4;
+	required	int32	continuousTime	=5;
+	required	int32	limitParking	=6;
+	optional	int32	beginLat		=7;
+	optional	int32	beginLng		=8;
+	optional    bool	status			=9;
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.navinfo.opentsp.gateway.tcp.proto.location.mapper.TerminalMileageOilTypeMapper">
+  <resultMap id="BaseResultMap" type="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalMileageOilType">
+    <id column="TERMINAL_ID" jdbcType="BIGINT" property="terminalId" />
+    <result column="MILEAGE_TYPE" jdbcType="INTEGER" property="mileageType" />
+    <result column="OIL_TYPE" jdbcType="INTEGER" property="oilType" />
+    <result column="SPEED_TYPE" jdbcType="INTEGER" property="speedType" />
+    <result column="CREATE_TIME" jdbcType="INTEGER" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    TERMINAL_ID, MILEAGE_TYPE, OIL_TYPE, SPEED_TYPE, CREATE_TIME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from lc_terminal_mileage_oil_type
+    where TERMINAL_ID = #{terminalId,jdbcType=BIGINT}
+  </select>
+  <select id="getMileageOil"  resultMap="BaseResultMap" parameterType="java.lang.Long">
+    select
+    <include refid="Base_Column_List" />
+    from lc_terminal_mileage_oil_type
+    where CREATE_TIME > #{createTime,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from lc_terminal_mileage_oil_type
+    where TERMINAL_ID = #{terminalId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalMileageOilType">
+    insert into lc_terminal_mileage_oil_type (TERMINAL_ID, MILEAGE_TYPE, OIL_TYPE, SPEED_TYPE,
+      CREATE_TIME)
+    values (#{terminalId,jdbcType=BIGINT}, #{mileageType,jdbcType=INTEGER}, #{oilType,jdbcType=INTEGER}, #{speedType,jdbcType=INTEGER},
+      #{createTime,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalMileageOilType">
+    insert into lc_terminal_mileage_oil_type
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="terminalId != null">
+        TERMINAL_ID,
+      </if>
+      <if test="mileageType != null">
+        MILEAGE_TYPE,
+      </if>
+      <if test="oilType != null">
+        OIL_TYPE,
+      </if>
+      <if test="speedType != null">
+        SPEED_TYPE,
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="terminalId != null">
+        #{terminalId,jdbcType=BIGINT},
+      </if>
+      <if test="mileageType != null">
+        #{mileageType,jdbcType=INTEGER},
+      </if>
+      <if test="oilType != null">
+        #{oilType,jdbcType=INTEGER},
+      </if>
+      <if test="speedType != null">
+        #{speedType,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalMileageOilType">
+    update lc_terminal_mileage_oil_type
+    <set>
+      <if test="mileageType != null">
+        MILEAGE_TYPE = #{mileageType,jdbcType=INTEGER},
+      </if>
+      <if test="oilType != null">
+        OIL_TYPE = #{oilType,jdbcType=INTEGER},
+      </if>
+      <if test="speedType != null">
+        SPEED_TYPE = #{speedType,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME = #{createTime,jdbcType=INTEGER},
+      </if>
+    </set>
+    where TERMINAL_ID = #{terminalId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.navinfo.opentsp.gateway.tcp.proto.location.pojo.TerminalMileageOilType">
+    update lc_terminal_mileage_oil_type
+    set MILEAGE_TYPE = #{mileageType,jdbcType=INTEGER},
+      OIL_TYPE = #{oilType,jdbcType=INTEGER},
+      SPEED_TYPE = #{speedType,jdbcType=INTEGER},
+      CREATE_TIME = #{createTime,jdbcType=INTEGER}
+    where TERMINAL_ID = #{terminalId,jdbcType=BIGINT}
+  </update>
+</mapper>

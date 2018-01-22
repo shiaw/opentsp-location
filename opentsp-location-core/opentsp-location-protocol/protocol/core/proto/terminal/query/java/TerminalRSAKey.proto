@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTerminalRSAKey";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query";
+
+message TerminalRSAKey{
+	required	int64	eKey	=1;
+	required	bytes	nKey	=2;
+}

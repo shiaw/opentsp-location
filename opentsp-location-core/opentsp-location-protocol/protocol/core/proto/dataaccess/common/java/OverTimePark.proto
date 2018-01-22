@@ -1,0 +1,8 @@
+option java_outer_classname = "LCOverTimePark";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message OverTimePark{
+	required	int64	areaId				    =1;	
+	required	int32	overtimeLimit    		=2;
+	optional 	int32	overtimeNotifyLimit		=3;
+}

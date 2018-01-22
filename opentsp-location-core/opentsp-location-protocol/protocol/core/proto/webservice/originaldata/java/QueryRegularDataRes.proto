@@ -1,0 +1,8 @@
+option java_outer_classname = "LCQueryRegularDataRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.originaldata";
+
+import "core/proto/dataaccess/common/java/RegularData.proto";
+
+message QueryRegularDataRes{
+	repeated	RegularData	datas	=1;
+}

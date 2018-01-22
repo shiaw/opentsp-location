@@ -1,0 +1,8 @@
+option java_outer_classname = "LCBatchLocationQuery";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+import "core/proto/platform/java/BatchQueryObject.proto";
+
+message BatchLocationQuery{
+	repeated	int64	terminalIdentify	=1;
+}

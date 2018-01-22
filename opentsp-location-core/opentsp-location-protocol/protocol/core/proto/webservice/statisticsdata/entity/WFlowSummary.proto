@@ -1,0 +1,12 @@
+option java_outer_classname = "LCWFlowSummary";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message WFlowSummary{
+	required	int64	terminalID = 1;
+	optional	int32	recordsTotal =4;
+	optional	int32	calculatedAT =5;
+        optional	float	upFlow =6;
+	optional	float	downFlow =7;
+	optional	int64   beginDate=8;
+	optional	int64	endDate =9;
+}

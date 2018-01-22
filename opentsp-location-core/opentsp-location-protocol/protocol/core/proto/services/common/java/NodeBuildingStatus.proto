@@ -1,0 +1,15 @@
+option java_outer_classname = "LCNodeBuildingStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+
+message NodeBuildingStatus{
+	required	string	nodeIp		=1;
+	required	bool	beLinked	=2;
+	required	LinkStatus	status	=3;
+		
+	enum LinkStatus{
+	normal	=0x01;
+	abnormal	=0x02;
+	connectingFailure	=0x03;
+	}
+}

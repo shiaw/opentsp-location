@@ -1,0 +1,11 @@
+option java_outer_classname = "LCVehiclePower";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message VehiclePower{
+	optional	float	powerInput			=1;
+	optional	float	batteryPotential	=2;
+
+}
+
+

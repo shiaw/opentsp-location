@@ -1,0 +1,27 @@
+option java_outer_classname = "LCPlatformResponseResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum PlatformResponseResult{
+	failure							=0x00;
+	success							=0x01;
+	keyError						=180000;
+	serverIdentifyTimeOut			=180001;
+	requestTimeOut					=180002;
+	districtError					=180003;
+	illegalIp						=180004;
+	nameNotExist					=180005;
+	passwordError 					=180006;
+	versionError					=180007;
+	districtNoAnswer				=180010;
+	districtNoReady					=180011;
+	
+	queryParameterError				=180100;
+	queryStartEndTimeError			=180101;
+	queryResultNULL					=180102;
+	queryPageSizeOverTop			=180103;
+	queryStartPageOverMargin		=180104;
+	queryInterfaceNoExist			=180105;
+	
+	terminalIdentifyIsExist			=180200;
+	deviceIdentifyIsExist			=180201;
+}

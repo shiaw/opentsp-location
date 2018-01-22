@@ -1,0 +1,7 @@
+option java_outer_classname = "LCTerminalControl";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal";
+
+message TerminalControl{
+	required int32 controlStatus = 1;
+
+}

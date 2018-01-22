@@ -1,0 +1,13 @@
+option java_outer_classname = "LCEventCode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum EventCode{
+	platformSend	=0x00;
+	timedAction		=0x01;
+	robberyAlarm	=0x02;
+	collisionAlarm	=0x03;
+	doorOpenPhoto	=0x04;
+	doorClosePhoto	=0x05;
+	doorSwitch		=0x06;
+	distancePhoto	=0x07;
+}

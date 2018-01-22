@@ -1,0 +1,58 @@
+option java_outer_classname = "LCCrCtlVehSpd";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message CrCtlVehSpd{
+	optional	int32	cruiseControlSwitch									  	=1;
+	optional	CruiseStatus	parkingBrake									=2;
+	optional	float	vehicleSpeed									  		=3;
+	optional	CruiseStatus	clutchSwitch									=4;
+	optional	CruiseStatus	brakeSwitch									  	=5;
+	optional	int32	cruiseControlEnable									  	=6;
+	optional	CruiseStatus	cruiseControlActive								=7;
+	optional	CruiseStatus	accelerateSwitch								=8;
+	optional	CruiseStatus	resumeSwitch									=9;
+	optional	CruiseStatus	decelerateSwitch								=10;
+	optional	CruiseStatus	setSwitch									  	=11;
+	optional	int32	setSpeed									  			=12;
+	optional	CruiseControlStatus	status									  	=13;
+	optional	PTOStatus	ptoStatus									  		=14;
+	optional	int32	engineShutDownOverrideSwitch							=15;
+	optional	int32	engineTestModeSwitch									=16;
+	optional	int32	engineIdledecrementSwitch								=17;
+	optional	int32	engineIdleIncrementSwitch								=18;
+}
+	enum CruiseStatus{
+		notActuatedStatus		=0x00;
+		actuatedStatus			=0x01;
+		errorStatus				=0x02;
+		notAvailableStatus		=0x03;
+		
+	}
+	enum CruiseControlStatus{
+		cruiseOffOrDisable		=0x00;
+		cruiseHold				=0x01;
+		cruiseAcc				=0x02;
+		cruiseDec				=0x03;
+		cruiseResume			=0x04;
+		cruiseSet				=0x05;
+		cruiseAccOverride		=0x06;
+
+	}
+	enum PTOStatus{
+		offOrDisablePTO			=0x00;
+		holdPTO					=0x01;
+		standbyOrNeutralPTO		=0x03;
+		notUsedPTO				=0x04;
+		setPTO					=0x05;
+		deceleratePTO			=0x06;
+		resumePTO				=0x07;
+		accPTO					=0x08;
+		notUsed					=0x09;
+		programmedSetSpeedPTO01	=0x0A;
+		programmedSetSpeedPTO02	=0x0B;
+		programmedSetSpeedPTO03	=0x0C;
+		programmedSetSpeedPTO04	=0x0D;
+		notAvailablePTO			=0x1F;
+		
+	}

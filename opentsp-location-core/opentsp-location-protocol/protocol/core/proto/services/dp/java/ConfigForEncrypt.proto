@@ -1,0 +1,10 @@
+option java_outer_classname = "LCConfigForEncrypt";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.dp";
+
+import "core/proto/services/common/java/ParameterConfig.proto";
+
+message ConfigForEncrypt{
+	required	string	encryptIp=1;
+	required	int32	encryptPort=2;
+	repeated	ParameterConfig	paras=3;
+}

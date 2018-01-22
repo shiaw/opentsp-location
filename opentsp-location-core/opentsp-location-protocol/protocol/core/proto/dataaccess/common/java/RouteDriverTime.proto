@@ -1,0 +1,13 @@
+option java_outer_classname = "LCRouteDriverTime";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message RouteDriverTime{
+	required	int64	routeId	=1;
+	required	int64	lineId	=2;
+	required	int32	maxTime	=3;
+	required	int32	minTime	=4;
+	required	bool	basedTime	=5;
+	optional	bool	isEveryDay	=6;
+	optional	int64	startDate	=7;
+	optional	int64	endDate		=8;
+}

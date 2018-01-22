@@ -1,0 +1,19 @@
+option java_outer_classname = "LCDriverLoginData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message DriverLoginData{
+	optional	int64	terminalID =1;
+	optional	string	driverName =2;
+	optional	string	driverIDCode =3;
+	optional	string	driverCertificate =4;
+	optional	string	agencyName =5;
+	optional	string	certificateExpiredDate =6;
+	optional	int64	checkInDate= 7;
+	optional	int64	checkOutDate=8;	
+	optional	int64	logintimes=9;		
+	optional	string	failedReasons=10;		
+	optional	int32	beginLat=11;		
+	optional	int32	beginLng=12;		
+	optional	int32	endLat=13;		
+	optional	int32	endLng=14;		
+}

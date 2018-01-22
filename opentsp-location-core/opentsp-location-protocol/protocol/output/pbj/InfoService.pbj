@@ -1,0 +1,9 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message InfoService{
+ 
+	 required	int32	infoType		=1;
+	 required	string	infoContent		=2;
+	
+}

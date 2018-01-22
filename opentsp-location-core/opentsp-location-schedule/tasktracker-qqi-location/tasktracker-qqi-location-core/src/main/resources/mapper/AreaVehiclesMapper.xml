@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.navinfo.tasktracker.nilocation.mapper.AreaVehiclesMapper">
+
+    <!-- 获取所有的未关闭的，超时的会话列表 sunbo 2017-1-18 10:56:02-->
+    <select id="getAreaVehiclesList" resultType="com.navinfo.tasktracker.nilocation.entity.AreaVehiclesEntity" >
+
+        SELECT
+        imm.TILE_ID AS tile_Id,
+        imm.DISTRICT_ID AS district_Id,
+        imm.PARENT_DISTRICT_ID AS parent_District_Id
+        FROM
+        LC_DISTRICT_AND_TILE_MAPPING imm limit 0,15
+    </select>
+
+</mapper>
+

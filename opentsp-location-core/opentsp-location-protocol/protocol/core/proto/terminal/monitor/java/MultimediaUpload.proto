@@ -1,0 +1,20 @@
+option java_outer_classname = "LCMultimediaUpload";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/LocationData.proto";
+
+import "core/proto/terminal/common/java/MediaType.proto";
+import "core/proto/terminal/common/java/EventCode.proto";
+import "core/proto/terminal/common/java/Resolution.proto";
+import "core/proto/terminal/common/java/FormatEncoding.proto";
+
+message MultimediaUpload{
+	required	int64			mediaId		=1;
+	required	MediaType		types		=2;
+	required	FormatEncoding	encode		=3;
+	required	EventCode		events		=4;
+	required	int32			channels	=5;
+	optional	LocationData	locationData=6;
+	optional	bytes			mediaData	=7;
+
+}

@@ -1,0 +1,9 @@
+option java_outer_classname = "LCRoadTransportPermit";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message RoadTransportPermit{
+	optional	string	mainServerIp		=1;
+	optional	int32	tcpPort				=2;
+	optional	int32	udpPort				=3;
+	optional	string	backupServerIp		=4; 
+}

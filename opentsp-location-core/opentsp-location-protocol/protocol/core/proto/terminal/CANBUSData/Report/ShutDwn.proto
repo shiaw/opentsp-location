@@ -1,0 +1,10 @@
+option java_outer_classname = "LCShutDwn";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message ShutDwn{
+	optional	int32	startLamp				=1;
+	optional	int32	engineProtectSystem		=2;
+
+}
+

@@ -1,0 +1,36 @@
+option java_outer_classname = "LCTerminalAlarm";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum TerminalAlarm{
+	emergencyAlarm	=0x000000000001;
+	speedingAlarm	=0x000000000002;
+	tiredAlarm	=0x000000000004;
+	comingAlarm	=0x000000000008;
+	faultGNSS	=0x000000000010;
+	noConnectGNSS	=0x000000000020;
+	shortCircuitGNSS	=0x000000000040;
+	underPower	=0x000000000080;
+	lossPower	=0x000000000100;
+	faultLCD	=0x000000000200;
+	faultTTS	=0x000000000400;
+	faultCamera	=0x000000000800;
+	icCardFailure	=0x000000001000;
+	speedingWarningAlarm	=0x000000002000;
+	tiredWarningAlarm	=0x000000004000;
+		
+	drivingTimeout	=0x000000040000;
+	parkingTimeout	=0x000000080000;
+	inOutArea	=0x000000100000;
+	inOutRoute	=0x000000200000;
+	routeLackOrOverTime	=0x000000400000;
+	routeDeviates	=0x000000800000;
+	faultVSS	=0x000001000000;
+	abnormalOil	=0x000002000000;
+	stolenVehicle	=0x000004000000;
+	illegalIgnition	=0x000008000000;
+	illegalDisplacement	=0x000010000000;
+	collisionAlarm	=0x000020000000;
+	rolloverAlarm	=0x000040000000;
+
+}
+

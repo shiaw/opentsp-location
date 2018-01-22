@@ -1,0 +1,9 @@
+option java_outer_classname = "LCPassThrough";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+
+message PassThrough{
+	required	int64	terminalId		=1;
+	required	bool	isUp			=2;
+	required	bytes	throughContent	=3;
+}

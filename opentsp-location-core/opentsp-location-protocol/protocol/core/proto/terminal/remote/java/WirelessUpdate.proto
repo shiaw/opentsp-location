@@ -1,0 +1,17 @@
+option java_outer_classname = "LCWirelessUpdate";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.remote";
+
+message WirelessUpdate{
+	optional	string	urlAddress				=1;
+	optional	string	dialName				=2;
+	required	string	username				=3;
+	required	string	password				=4;
+	required	string	serverIp				=5;
+	optional	int32	tcpPort					=6;
+	optional	int32	udpPort					=7;
+	optional	string	productId				=8;
+	optional	string	hardwareVersion			=9;
+	optional	string	firmwareVersion			=10;
+	optional	bool	isAlwaysConnecting	    =11;
+	optional	int32	connectTime				=12;
+}

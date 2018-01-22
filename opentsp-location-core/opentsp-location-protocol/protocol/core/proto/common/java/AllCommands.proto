@@ -1,0 +1,320 @@
+option java_outer_classname = "LCAllCommands";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message AllCommands{
+	enum Platform{
+		DistrictInfoReport					=0x1001;
+		DistrictInfoReportRes				=0x0001;
+		QueryDistrictMMNode					=0x0003;
+		QueryDistrictMMNodeRes				=0x1003;
+		
+		Heartbeat							=0x1099;
+		ServerCommonRes	                    =0x1100;
+		
+		RequestLoginKey						=0x1101;
+		RequestLoginKeyRes					=0x0101;
+		ServerAuth							=0x0102;	
+		ServerAuthRes						=0x1102;
+		ServerLogin							=0x0103;	
+		ServerLoginRes						=0x1103;
+		Reconnect							=0x0105;
+		Logout								=0x0106;
+		ServerStatusNotice					=0x0107;
+		ServerStatusNoticeRes				=0x1107;
+		ServerExpiredNotice					=0x1108;
+		MultiServerAuth						=0x0109;
+		MultiServerAuthRes					=0x1109;
+		
+		SubscribeRequest					=0x0200;
+		SubscribeRequestRes					=0x1200;
+		DataSubscribe						=0x0201;
+		DataSubscribeRes					=0x1201;
+		DataUnsubscribe						=0x0202;
+		
+		BatchLocationQuery					=0x0203;
+		BatchLocationQueryRes				=0x1203;
+	}
+	
+	enum NodeCluster{
+		BroadcastNodeInfo					=0x0601;
+		ReportServerIdentify				=0x0602;
+		HeartBeatToMM						=0x1603;	
+	    LinkStatusSwitchNotice				=0x1606;
+		NodeStatusReport					=0x1608;
+		
+
+		DPNodeTerminalInfo					=0x1672;
+		
+		ReportErrorNode						=0x1609;
+		BroadcastErrorNode					=0x0609;
+		RequestNewNode						=0x1610;
+		AssignNewNode						=0x0610;
+		
+		ConfigForNode						=0x0611;
+		
+		ConfigForTA							=0x0650;	
+		ConfigForDP							=0x0670;
+		ConfigForRP							=0x0690;
+		ConfigForDA							=0x0710;
+		ConfigForDSA					    =0x1761;
+		ConfigForEncrypt					=0x1760;
+		ConfigForRPStatisticQuery			=0x0691;
+		
+		GetNodeInfo							=0x0730;
+		GetNodeInfoRes						=0x1730;
+		AddNodeInfoNotice					=0x1731;
+		GetNodeInfoByType					=0x0732;
+		GetNodeInfoByTypeRes				=0x1732;
+		
+		CollectionCheck						=0x0733;
+		DataTransfer						=0x0734;
+		DataTransferCompletionNotice		=0x1735;
+		
+        DataStatistic					    =0x0736;
+        DataStatisticCompletionNotice	    =0x1737;
+	}
+	
+	enum DataAccess{
+		GetTerminalInfos					=0x0900;
+		GetTerminalInfosRes					=0x1900;
+		UpdateTerminalInfo					=0x0901;
+		TerminalInfoSynchronous				=0x0902;
+		TerminalRegisterSave				=0x0903;
+		QueryTerminalRegister				=0x0904;
+		QueryTerminalRegisterRes			=0x1904;
+		
+		GetDictData							=0x0910;
+		GetDictDataRes						=0x1910;
+		
+		QueryAreaInfo						=0x0930;
+		QueryAreaInfoRes					=0x1930;
+		DeleteAreaInfo						=0x0931;
+		QueryRegularData					=0x0932;
+		QueryRegularDataRes					=0x1932;
+		RegularDataSave						=0x0933;
+		ParameterSave						=0x0934;
+		DeleteRegularData					=0x0935;
+		TerminalOnlineSwitchInfoSave		=0x0984;
+		FlowInfoSave						=0x0985;
+		DriverInfoReportSave				=0x0986;
+		
+		
+		DataEncrypt							=0x0940;
+		DataEncryptRes						=0x1940;
+		
+		ServerLogSave						=0x0960;
+		TerminalOperateLogSave				=0x0961;
+		TerminalOperateLogUpdate			=0x0962;
+		MessageBroadcastSave				=0x0963;
+		OutRegionToLimitSpeedSave			=0x0964;
+		TaskInfoSave						=0x0990;
+		TaskInfoQuery						=0x0991;
+		TaskInfoQueryRes					=0x1991;
+		
+		DataSave							=0x0970;
+		DataQuery							=0x0971;
+		DataQueryRes						=0x1971;
+		
+		LocationDataSave					=0x0980;
+		MultimediaDataSave					=0x0981;
+		PassThrough							=0x0982;
+		DrivingRecorder						=0x0983;
+		
+		DataQueryKeyOverdue					=0x1992;
+		DataOverdueBroadcast				=0x0993;
+		
+		QueryTerminalProtocolMapping		=0x0950;
+		TerminalProtocolMappingRes			=0x1950;
+		TerminalStatisticStatus             =0x0994;
+		AlarmCancelOrNot					=0x0995;
+		QueryAlarmCancelOrNot				=0x0996;
+	}	
+	
+	enum Terminal{
+		DownCommonRes						=0x3001;
+		UpCommonRes							=0x2001;
+		
+		ReportLocationData					=0x3002;
+		TerminalRegister					=0x3003;
+		TerminalRegisterRes					=0x2003;
+		TerminalAuth						=0x3004;
+		TerminalLogout						=0x3005;
+		DriverInfoReport					=0x3006;
+		TerminalOnlineSwitch				=0x3007;
+		ShortLocationDataReport				=0x3008;
+		WaybillReport						=0x3009;
+		ReportDriverReq						=0x2010;
+		BatchLocationDataUpload				=0x3011;
+		CANBUSDataUpload					=0x3012;
+		
+		
+		CallName							=0x2050;
+		CallNameRes							=0x3050;
+		TRVersionCollect					=0x2055;
+		TRVersionRes						=0x3055;
+		TRSpeedCollect						=0x2056;
+		TRSpeedCollectionRes				=0x3056;
+		TRDoubtCollect						=0x2057;
+		TRDoubtCollectionRes				=0x3057;
+		TRPulseCollection					=0x2058;
+		TRPulseCollectionRes				=0x3058;
+		TRSetPulseValue						=0x2059;
+		DownPassThrough						=0x2131;
+		UpPassThrough						=0x3131;
+		
+		DataCompression						=0x3132;
+		PlatformRSAKey						=0x2133;
+		TerminalRSAKey						=0x3133;
+		QueryTerminalProperty				=0x2134;
+		QueryTerminalPropertyRes			=0x3134;
+		
+		
+		
+		
+		TRCollectDriverInfo					=0x2060;					
+		TRCollectDriverInfoRes				=0x3060;
+		TRCollectRealTime					=0x2061;
+		TRCollectRealTimeRes				=0x3061;
+		TRCollectMileage					=0x2062;
+		TRCollectMileageRes					=0x3062;
+		TRCollectVehicleInfo				=0x2063;
+		TRCollectVehicleInfoRes				=0x3063;
+		TRCollectStatusSignal				=0x2064;
+		TRCollectStatusSignalRes			=0x3064;
+		TRCollectOnlyCode					=0x2065;
+		TRCollectOnlyCodeRes				=0x3065;
+		TRCollectLocationData				=0x2066;
+		TRCollectLocationDataRes			=0x3066;
+		TRCollectOvertimeRecord				=0x2067;
+		TRCollectOvertimeRecordRes			=0x3067;
+		TRCollectDriverIdentity				=0x2068;
+		TRCollectDriverIdentityRes			=0x3068;
+		TRCollectPowerRecord				=0x2069;
+		TRCollectPowerRecordRes				=0x3069;
+		TRCollectParaModifyRecord			=0x2070;
+		TRCollectParaModifyRecordRes		=0x3070;
+		TRCollectSpeedLog					=0x2071;
+		TRCollectSpeedLogRes				=0x3071;
+		TRSetVehicleInfo					=0x2072;
+		TRSetInstallDate					=0x2073;
+		TRSetStatusSignal					=0x2074;
+		TRSetCurrentDate					=0x2075;
+		TRSetMileage						=0x2076;
+		
+		
+		DispatchMessage						=0x2151;		
+		CallListener						=0x2152;
+		TakePhotography						=0x2153;
+		TakePhotographyRes					=0x3153;
+		MultimediaUpload					=0x3154;
+		OilCircuitControl					=0x2156;
+		VehicleControl						=0x2157;
+		EventSetting						=0x2158;
+		EventReport							=0x3159;
+		AskQuestion							=0x2160;
+		AnswerQuestion						=0x3160;
+		InfoDemandMenu						=0x2161;
+		InfoDemandOrCancel					=0x3162;
+		InfoService							=0x2163;
+		
+		MediaEventInfoUpLoad				=0x3164;
+		MediaDataQuery						=0x2165;
+		MediaDataQueryRes					=0x3165;
+		SaveMultimediaSingleUpload			=0x2166;
+		SaveMultimediaUpload				=0x2167;
+		RecordStartCommand					=0x2168;
+		ConfirmAlarmMessage					=0x2169;
+		TerminalStatusControl               =0x2170;
+		DrivingBehaviorSetting              =0x2270;
+		AntiTamperBoxSetting                =0x2271;
+		AntiTamperBoxShieldAlarmSetting     =0x2272;
+		CANDataReportSetting                =0x2273;
+		CANBUSDataQuery 					=0x2135;
+		CANBUSDataReport    				=0x3013;
+		MessageTimeoutProcess				=0x2251;
+		ConnectServerConfig					=0x2252;
+		ReportTacticsAndInterval			=0x2253;
+		PrivilegeNumbers					=0x2254;
+		AlarmTriggeredSetting				=0x2255;
+		
+		SpeedingAlarmSetting				=0x2256;
+		SpeedingAlarmCancel					=0x2257;
+		
+		FatigueDrivingSetting				=0x2258;
+		FatigueDrivingCancel				=0x2259;
+		
+		MultiMediaParameter					=0x2260;
+		VehicleInfoSetting					=0x2261;
+		RoadTransportPermit					=0x2262;
+		CollisionAlarm						=0x2263;
+		RolloverAlarm						=0x2264;
+		TakePictureControl					=0x2265;
+		GnssSetting							=0x2266;
+		CanBusSetting						=0x2267;
+		ParameterQuery						=0x2302;
+		ParameterQueryRes					=0x3302;
+		ParameterQueryText					=0x2303;//终端自检
+		ParameterQueryTextRes				=0x3303;
+		PhoneBookSetting					=0x2304;
+		SetCircleAreaAlarm					=0x2305;
+		DeleteCircleAreaAlarm				=0x2306;
+		SetRectangleAreaAlarm				=0x2307;
+		DeleteRectangleAreaAlarm			=0x2308;
+		SetPolygonAreaAlarm					=0x2309;
+		DeletePolygonAreaAlarm				=0x2310;
+		SetRouteAlarm						=0x2311;
+		DeleteRouteAlarm					=0x2312;	
+		TemporaryLocationControl			=0x2313;	
+		DrivingBanSetting					=0x2314;
+		DrivingBanSettingCancel				=0x2315;
+		OvertimeParking						=0x2268;
+		OvertimeParkingCancel				=0x2269;
+		QueryAppointPara					=0x2316;
+		
+		TerminalShutdown					=0x2400;//终端关机
+		TerminalReset						=0x2401;//终端复位
+		TerminalRestoreFactory				=0x2402;//终端恢复出厂设置
+		TerminalCloseGPRS					=0x2403;//关闭数据通信
+		TerminalCloseAllWireless			=0x2404;//关闭所有无线通信
+		WirelessUpdate						=0x2405;
+		ConnectToServer						=0x2406;
+		TerminalUpgradePackage				=0x2407;
+		TerminalUpgradePackageRes			=0x3408;
+		
+		MessageBroadcastInArea              =0x2500;
+		MessageBroadcastInAreaDel           =0x2501;
+		OvertimeParkingInArea               =0x2502;
+		OvertimeParkingInAreaDel            =0x2503;
+		
+		OutRegionToLimitSpeed               =0x2317;
+		OutRegionToLimitSpeedDel            =0x2318;
+		
+		TerminalStatusControlRes            =0x3170;
+		TerminalStatusChangeNotify			=0x3270;
+		CANBUSDataQueryRes					=0x3135;
+		
+		TerminalBroadcastSwitch             =0x2520;
+		BroadcastInfoNotice					=0x2521;
+		ServerStationComment                =0x2522;
+		
+		DelayOvertimeParkingInArea          =0x2525;
+		VehiclePassInArea                   =0x2505;
+		VehiclePassInAreaDel                =0x2506;
+		InAreaTriggerActivationOrLockNotify	=0x2319;
+		InAreaTriggerActivationOrLockNotifyDel = 0x2320;
+		ActivationOrLockNotify				=0x3321;
+		InAreaRetentionNotifySet			=0x2322;
+		InAreaRetentionNotifySetDel			=0x2323;
+		InAreaRetentionNotify				=0x3324;
+		OvertimeParkingInAreaNotify			=0x3526;
+		InOrOutAreaNotify					=0x3528;
+		VehicleControlRes                   =0x0500;
+	}
+	
+	enum InitialData{
+		DataInquiry							=0x4001;
+		DataInquiryRes						=0x4501;
+	}
+}
+
+	

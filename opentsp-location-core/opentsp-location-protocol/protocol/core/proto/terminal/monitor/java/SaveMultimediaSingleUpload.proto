@@ -1,0 +1,9 @@
+option java_outer_classname = "LCSaveMultimediaSingleUpload";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+
+message SaveMultimediaSingleUpload{
+	required	int64	mediaId		=1;
+	required	bool	isDelete	=2;
+}
+

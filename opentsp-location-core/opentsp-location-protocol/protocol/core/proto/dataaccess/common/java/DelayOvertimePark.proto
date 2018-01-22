@@ -1,0 +1,6 @@
+option java_outer_classname = "LCDelayOvertimePark";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message DelayOvertimePark {
+	required	int64	delayDate =1;
+}

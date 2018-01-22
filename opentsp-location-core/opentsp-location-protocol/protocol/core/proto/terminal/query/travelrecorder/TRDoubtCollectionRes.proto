@@ -1,0 +1,11 @@
+option java_outer_classname = "LCTRDoubtCollectionRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/terminal/query/travelrecorder/block/java/TRDoubtDataBlock.proto";
+
+message TRDoubtCollectionRes{
+	required	int32				serialNumber		=1;
+	required	ResponseResult		result				=2;
+	repeated	TRDoubtDataBlock	doubtDataBlock		=3;
+}

@@ -1,0 +1,50 @@
+option java_outer_classname = "LCMessageOfMFD1";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message MessageOfMFD1{
+	optional	int32	relativeOilPressure			=1;
+	optional	OilPressureLow	status				=2;
+	optional	OverCoolantTem	temperature			=3;
+	optional	ColdStartHeaterStatus	coldStart	=4;
+	optional	OBDLampStatus	obdLampStatus		=5;
+	optional	float	exhaustFlapValveOutput		=6;
+}
+	enum OilPressureLow{
+		oilPressureNormal	=0x00;
+		belowOperateRange	=0x01;
+		notAvailablePressure	=0x03;
+		
+
+	}
+	enum OverCoolantTem{
+		coolantNormal	=0x00;
+		coolantPreWarning	=0x01;
+		coolantWarning	=0x03;
+	}
+	
+	enum ColdStartHeaterStatus{
+		offPhase	=0x00;
+		preHeatingPhase	=0x01;
+		standbyPhaseWithHeat	=0x02;
+		standbyPhaseWithoutHeat	=0x03;
+		crankWithExtraHeatPhase	=0x04;
+		crankPhase	=0x05;
+		postHeatPhase	=0x06;
+		heatingPhaseEnd	=0x07;
+		afterRunPhase	=0x08;
+	}
+	
+	enum OBDLampStatus{
+		obdNormal	=0x00;
+		obdPreWarning	=0x01;
+		obdWarning	=0x03;
+	}
+
+	
+	
+	
+	
+	
+	
+	

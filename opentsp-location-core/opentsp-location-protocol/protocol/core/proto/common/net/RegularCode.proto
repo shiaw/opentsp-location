@@ -1,0 +1,14 @@
+option java_outer_classname = "LCRegularCode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+enum RegularCode{
+	speeding = 0x2981A;
+	inOutArea = 0x29824;
+	routeDriverTime = 0x2982E;
+	driverNotCard = 0x29838;
+	doorOpenOutArea = 0x29842;
+	drivingBan = 0x2984C;
+}

@@ -1,0 +1,11 @@
+option java_outer_classname = "LCLastestVehicleInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata.entity";
+
+message LastestVehicleInfo{
+	optional	int64	tid				=1;
+	optional	int64	mileage			=2;
+	optional	int64	runTime			=3;
+	optional	bool	hasFaultCode    =4;
+
+
+}

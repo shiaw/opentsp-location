@@ -1,0 +1,10 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message SaveMultimediaSingleUpload{
+ 
+ 
+	required	int64	mediaId		=1;
+	required	bool	isDelete	=2;
+	
+}

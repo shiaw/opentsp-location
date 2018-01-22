@@ -1,0 +1,9 @@
+option java_outer_classname = "LCFatigueDriving";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message FatigueDriving{
+	required	int32	continueDrivingTime					=1;
+	required	int32	dayCumulativeDrivingTime			=2;
+	required	int32	minRestingTime						=3;
+	optional	int32	warningFatigue						=4;
+}

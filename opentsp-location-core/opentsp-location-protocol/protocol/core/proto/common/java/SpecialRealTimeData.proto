@@ -1,0 +1,27 @@
+option java_outer_classname = "LCConcentratedRealTimeData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+message SpecialRealTimeData{
+    required    GpsLocationData             gpsLocationData             =1;
+    required    int32                       dataUnitCount               =2;
+    repeated    RealTimeDataUnit            realTimeDataUnit            =3;
+}
+message GpsLocationData{
+    required    int64                       gpsTime                     =1;
+    optional    int32                       latitude                    =2;
+    optional    int32                       longitude                   =3;
+    optional    int32                       height                      =4;
+}
+
+message RealTimeDataUnit{
+    optional    int32                       engineOutputTorque          =1;
+    optional    int32                       speed                       =2;
+    optional    int32                       accelerator                 =3;
+    optional    int32                       brake                       =4;
+    optional    int32                       rotation                    =5;
+    optional    int32                       gear                        =6;
+    optional    int32                       clutchSwitch                =7;
+    optional    int32                       realTimeOilConsumption      =8;
+    optional    int32                       fuelConsumptionRate         =9;
+}
+

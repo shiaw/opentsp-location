@@ -1,0 +1,19 @@
+option java_outer_classname = "LCShortLocationData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+message ShortLocationData{
+	optional	int32	longitude = 1;
+	optional	int32	latitude = 2;
+	optional	int32	originalLng = 3;
+	optional	int32	originalLat = 4;
+	required	int32	height = 5;
+	required	int32	speed = 6;
+	required	int32	direction = 7;
+	required	int64	gpsDate = 8;
+	optional	int64	mileage = 9;
+	required	int64	receiveDate = 10;
+	required	bool	isPatch = 11;
+}

@@ -1,0 +1,10 @@
+option java_outer_classname = "LCBroadcastErrorNode";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message BroadcastErrorNode{
+	optional	int64	errorNodeCode				=1;
+	optional	int64	replaceNodeCode				=2;
+}

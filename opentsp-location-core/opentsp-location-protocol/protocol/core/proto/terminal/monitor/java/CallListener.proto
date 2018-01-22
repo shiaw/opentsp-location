@@ -1,0 +1,9 @@
+option java_outer_classname = "LCCallListener";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/terminal/common/java/ListenerStatus.proto";
+
+message CallListener{
+	required string phoneNumber = 1;
+	required ListenerStatus status = 2;
+}

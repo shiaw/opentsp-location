@@ -1,0 +1,9 @@
+option java_outer_classname = "LCParameterSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+
+message ParameterSave{
+	required	int64	terminalId	=1;
+	required	int32	commandCode	=2;
+	required	bytes	paraContent	=3;
+}

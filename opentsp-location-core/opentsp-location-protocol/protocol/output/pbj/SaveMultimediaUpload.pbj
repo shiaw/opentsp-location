@@ -1,0 +1,14 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message SaveMultimediaUpload{
+ 
+ 
+	required	MediaType	types	=1;
+	required	int32	channels	=2;
+	required	EventCode	events	=3;
+	required	int64	beginDate	=4;
+	required	int64	endDate		=5;
+	required	bool	isDelete	=6;
+	
+}

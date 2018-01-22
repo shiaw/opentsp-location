@@ -1,0 +1,10 @@
+option java_outer_classname = "LCBreakdownType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum BreakdownType{
+	break1	           =0x01;
+	break2	           =0x02;
+	break3	           =0x03;
+	break4	           =0x04;
+
+}

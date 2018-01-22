@@ -1,0 +1,7 @@
+option java_outer_classname = "LCSaveStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum SaveStatus{
+	terminalSave	=0x00;
+	upload			=0x01;
+}

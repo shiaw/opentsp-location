@@ -1,0 +1,13 @@
+option java_outer_classname = "LCGetNodeInfoRes";
+
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+import "core/proto/nodecluster/common/java/NodeInfo.proto";
+import "core/proto/common/java/PlatformResponseResult.proto";
+
+message GetNodeInfoRes{
+	required	int32					serialNumber	=1;
+	required	PlatformResponseResult	results			=2;
+	repeated	NodeInfo				nodeInfo		=3;
+
+}

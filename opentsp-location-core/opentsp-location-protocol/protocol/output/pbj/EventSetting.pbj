@@ -1,0 +1,21 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message EventSetting{
+ 
+ 
+	required	SettingType	controlStatus	=1;
+	repeated	EventObject	events			=2;
+	
+	enum SettingType{
+		deleteAll	=0x00;	
+		updateAll	=0x01;	
+		Additional	=0x02;	
+		Modify		=0x03;
+		deletePart	=0x04;	
+	}
+	message EventObject{
+		required	int32	eventId	       =1;
+		required	string	eventContent   =2;
+	}
+}

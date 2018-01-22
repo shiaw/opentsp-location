@@ -1,0 +1,57 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message GnssSetting{
+ 
+ 
+	optional	LocationMode	locationMode	=1;	   
+	optional	BaudRate	baudRate	=2;	   
+	optional	LocationRate	locationRate	=3;	   
+	optional	int32	collectRate	        =4;	   
+	repeated	UpLoadSetting	uploadSetting	=5;	 
+
+	message LocationMode{
+    
+		required	bool	isGps	        =1;   
+		required	bool	isBeidou	=2;	   
+		required	bool	isGlonass	=3;	   
+		required	bool	isGalileo	=4;	 
+
+	}
+	enum BaudRate{
+ 
+		rate4800	=0x00;	   
+		rate9600	=0x01;	   
+		rate19200	=0x02;	   
+		rate38400	=0x03;
+		rate57600	=0x04;
+		rate115200	=0x05;
+
+	}
+	enum LocationRate{
+ 
+		ms500		=0x00;
+		ms1000		=0x01;
+		ms2000		=0x02;
+		ms3000		=0x03;
+		ms4000		=0x04;
+
+	}
+	message UploadSetting{
+ 
+		required	UploadMode	modes	=1;	   
+		optional	int32	uploadInterval	=2;
+
+	}
+	enum UploadMode{
+ 
+		localSave		=0x00;		   
+		timing			=0x01;	   
+		distance		=0x02;		   
+		accumulatedTiming	=0x0B;		   
+		accumulatedDistance	=0x0C;		   
+		accumulatedNumber	=0x0D;		 
+
+	}
+
+}

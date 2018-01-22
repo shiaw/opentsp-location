@@ -1,0 +1,20 @@
+option java_outer_classname = "LCPrivilegeNumbers";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting.parameter";
+
+message PrivilegeNumbers{
+	optional	string	platformPhone		=1;	
+	optional	string	resetPhone			=2;
+	optional	string	factoryResetPhone	=3;
+	optional	string	PlatformsmsPhone	=4;
+	optional	string	smsAlarmPhone		=5;
+	optional	AnswerTactics	tactics		=6;
+	optional	int32	everyTalking		=7;
+	optional	int32	monthTalking		=8;
+	optional	string	listenerPhone		=9;
+	optional	string	privilegeSmsPhone	=10;
+	
+	enum AnswerTactics{
+		autoAnswer		=0x00;
+		AnswerByAcc		=0x01;
+	}
+}

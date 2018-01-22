@@ -1,0 +1,36 @@
+option java_outer_classname = "LCFanDrive";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message FanDrive{
+	optional	float	fanSpeedPercent	=1;
+	optional	FanDriveState	state	=2;
+	optional	float	fanSpeed		=3;
+
+
+
+}
+	enum FanDriveState{
+		fanOff	=0x00;
+		engineSystem	=0x01;
+		excessiveEngineAirTemp	=0x02;
+		excessiveEngineOilTemp	=0x03;
+		excessiveEngineCoolant	=0x04;
+		manualControl	=0x09;
+		transmissionRetarder	=0x0A;
+		aCSystem	=0x0B;
+		timer	=0x0C;
+		engineBrake	=0x0D;
+		other	=0x0E;
+		notAvailableFan	=0x0F;
+
+
+	}
+
+	
+	
+	
+	
+	
+	
+	

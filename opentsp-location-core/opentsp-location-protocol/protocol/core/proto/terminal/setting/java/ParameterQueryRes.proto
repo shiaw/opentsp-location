@@ -1,0 +1,43 @@
+option java_outer_classname = "LCParameterQueryRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/terminal/setting/parameter/java/MessageTimeoutProcess.proto";
+import "core/proto/terminal/setting/parameter/java/ConnectServerConfig.proto";
+import "core/proto/terminal/setting/parameter/java/ReportTacticsAndInterval.proto";
+import "core/proto/terminal/setting/parameter/java/PrivilegeNumbers.proto";
+import "core/proto/terminal/setting/parameter/java/AlarmTriggeredSetting.proto";
+import "core/proto/terminal/setting/parameter/java/SpeedingAlarm.proto";
+import "core/proto/terminal/setting/parameter/java/FatigueDriving.proto";
+import "core/proto/terminal/setting/parameter/java/MultiMediaParameter.proto";
+import "core/proto/terminal/setting/parameter/java/VehicleInfoSetting.proto";
+import "core/proto/terminal/setting/parameter/java/RoadTransportPermit.proto";
+import "core/proto/terminal/setting/parameter/java/CollisionAlarm.proto";
+import "core/proto/terminal/setting/parameter/java/RolloverAlarm.proto";
+import "core/proto/terminal/setting/parameter/java/TakePictureControl.proto";
+import "core/proto/terminal/setting/parameter/java/GnssSetting.proto";
+import "core/proto/terminal/setting/parameter/java/CanBusSetting.proto";
+import "core/proto/terminal/setting/parameter/java/OvertimeParking.proto";
+
+
+
+message ParameterQueryRes{
+	required	int32							serialNumber		=1;
+	required	ResponseResult					result				=2;
+	optional	MessageTimeoutProcess			process				=3;
+	optional	ConnectServerConfig				config				=4;
+	optional	ReportTacticsAndInterval		interval			=5;
+	optional	PrivilegeNumbers				numbers				=6;
+	optional	AlarmTriggeredSetting			setting				=7;
+	optional	SpeedingAlarm					speeding			=8;
+	optional	FatigueDriving					driving				=9;
+	optional	MultiMediaParameter				parameter			=10;
+	optional	VehicleInfoSetting				vehiclesetting		=11;
+	optional	RoadTransportPermit				permit				=12;
+	optional	CollisionAlarm					collision			=13;
+	optional	RolloverAlarm					rollover			=14;
+	optional	TakePictureControl				picture				=15;
+	optional	GnssSetting						gnss				=16;
+	optional	CanBusSetting					canbus				=17;
+	optional	OvertimeParking					parking				=18;
+}

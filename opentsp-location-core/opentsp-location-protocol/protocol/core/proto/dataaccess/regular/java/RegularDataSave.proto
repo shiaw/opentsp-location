@@ -1,0 +1,10 @@
+option java_outer_classname = "LCRegularDataSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.regular";
+
+import "core/proto/dataaccess/common/java/RegularData.proto";
+import "core/proto/dataaccess/common/java/AreaInfo.proto";
+
+message RegularDataSave{
+	repeated	RegularData	datas	=1;
+	repeated	AreaInfo	infos	=2;
+}

@@ -1,0 +1,47 @@
+option java_outer_classname = "LCRegularData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/common/java/RegularCode.proto";
+import "core/proto/dataaccess/common/java/AreaSpeeding.proto";
+import "core/proto/dataaccess/common/java/InOutArea.proto";
+import "core/proto/dataaccess/common/java/RouteDriverTime.proto";
+import "core/proto/dataaccess/common/java/DriverNotCard.proto";
+import "core/proto/dataaccess/common/java/DoorOpenOutArea.proto";
+import "core/proto/dataaccess/common/java/DrivingBan.proto";
+import "core/proto/dataaccess/common/java/KeyPointFence.proto";
+import "core/proto/dataaccess/common/java/MessageBroadcast.proto";
+import "core/proto/dataaccess/common/java/OverTimePark.proto";
+import "core/proto/dataaccess/common/java/OutRegionToLSpeed.proto";
+import "core/proto/dataaccess/common/java/TerminalMessageSwitch.proto";
+import "core/proto/dataaccess/common/java/DelayOvertimePark.proto";
+import "core/proto/dataaccess/common/java/VehiclePassTimes.proto";
+import "core/proto/dataaccess/common/java/InAreaTriggerActivationOrLock.proto";
+import "core/proto/webservice/newstatisticsdata/entity/InOrOutAreaNotifySetPara.proto";
+
+message RegularData{
+	optional int64				terminalId 			= 1;
+	required RegularCode 		regularCode 		= 2;
+	required int64 				lastModifyDate 		= 3;
+	optional AreaSpeeding 		speeding 			= 4;
+	optional InOutArea 			inOutArea 			= 5;
+	optional RouteDriverTime 	driverTime			= 6;
+	optional DriverNotCard 		driverNotCard 		= 7;
+	optional DoorOpenOutArea 	doorOpenOutArea 	= 8;
+	optional DrivingBan			drivingBan	 		= 9;
+	optional KeyPointFence		keyPointFence		= 10;
+	required RegularType             type           = 11;
+	optional MessageBroadcast   messageBroadcast    = 12;
+	optional OverTimePark	    overtimePark        = 13;
+	optional OutRegionToLSpeed	outregionToLSpeed   = 14;
+	optional TerminalMessageSwitch terminalMessage  = 15;
+	optional DelayOvertimePark    delayPark         = 16;
+	optional VehiclePassTimes     passTimes         = 17;
+	optional InAreaTriggerActivationOrLock inAreaTriggerActivationOrLock = 18;
+	optional InOrOutAreaNotifySetPara setPara	=19;
+}
+
+enum RegularType{
+	common 	   = 0;
+	individual = 1;
+	statistic  = 2;
+}

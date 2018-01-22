@@ -1,0 +1,7 @@
+option java_outer_classname = "LCListenerStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum ListenerStatus{
+		calling = 0;
+		listening = 1;
+}

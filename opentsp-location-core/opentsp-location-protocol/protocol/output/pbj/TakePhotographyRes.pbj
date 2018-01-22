@@ -1,0 +1,18 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message TakePhotographyRes{
+ 
+ 
+	required	int32	serialNumber	=1;
+	required	ResponseResult	result	=2;
+	required	PhotoResult	results		=3;
+	repeated	int64	mediaIdentify	=4;
+	
+	enum PhotoResult{
+		photo_success	=0x00;
+		photo_failed	=0x01;
+		photo_channelNotSupport	=0x02;
+	}
+	
+}

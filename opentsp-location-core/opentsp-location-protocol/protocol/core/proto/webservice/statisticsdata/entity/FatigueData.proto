@@ -1,0 +1,16 @@
+option java_outer_classname = "LCFatigueData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message FatigueData{
+	required	int64	terminalID =1;
+	required	int64	startDate =2;
+	required	int64	endDate =3;
+	required	int32	continuousTimes =4;
+	required	int32	limitDriving =5;
+	required	int32	limitDayDriving =6;
+	required	int32	limitRest =7;
+	required	int32	beginLat =8;
+	required	int32	beginLng =9;
+	required	int32	endLat =10;
+	required	int32	endLng =11;
+}

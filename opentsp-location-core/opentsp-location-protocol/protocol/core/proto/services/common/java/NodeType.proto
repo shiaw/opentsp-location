@@ -1,0 +1,14 @@
+option java_outer_classname = "LCNodeType";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+enum NodeType{
+	ta_jt808_2011	=100100;
+	ta_jt808_2013	=100101;
+		
+	dp	=100200;
+	rp	=100300;
+	da	=100400;
+	mm	=100500;
+	dp_report	=100600;
+	dp_encrypt	=100700;
+}

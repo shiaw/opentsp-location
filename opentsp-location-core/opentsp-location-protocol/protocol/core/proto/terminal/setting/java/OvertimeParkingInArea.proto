@@ -1,0 +1,11 @@
+option java_outer_classname = "LCOvertimeParkingInArea";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.setting";
+
+import "core/proto/dataaccess/common/java/AreaInfo.proto";
+
+message OvertimeParkingInArea{
+	required	AreaInfo	areaInfo	 =1;
+	required	int32	parkingTime =2;
+	optional	bool	saveSign =3;
+	optional	int32	parkingTimeForNotify =4;
+}

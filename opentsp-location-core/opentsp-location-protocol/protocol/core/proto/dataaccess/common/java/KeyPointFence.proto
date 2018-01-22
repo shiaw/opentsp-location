@@ -1,0 +1,13 @@
+option java_outer_classname = "LCKeyPointFence";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message KeyPointFence{
+	required	int64	areaId							=1;	
+	optional	bool	notLeaveFenceAlarmToDriver		=2;
+	optional	bool	notLeaveFenceAlarmToPlatform	=3;
+	optional	bool	notArriveFenceAlarmToDriver		=4;
+	optional	bool	notArriveFenceAlarmToPlatform	=5;
+	optional	bool	isEveryDay						=6;
+	optional	int64	startDate						=7;
+	optional	int64	endDate							=8;
+}

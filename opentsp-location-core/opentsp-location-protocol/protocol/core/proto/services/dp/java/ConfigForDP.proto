@@ -1,0 +1,16 @@
+option java_outer_classname = "LCConfigForDP";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.dp";
+
+import "core/proto/services/common/java/ParameterConfig.proto";
+
+message ConfigForDP{
+		required	string	dpForTaIP	=1;
+		required	int32	dpForTaPort	=2;
+		required	string	dpForRpIP	=3;
+		required	int32	dpForRpPort	=4;
+		required	string	daIP		=5;
+		required	int32	daPort		=6;
+		required	string	encryptIP	=7;
+		required	int32	encryptPort	=8;
+		repeated	ParameterConfig	paras	=9;
+}

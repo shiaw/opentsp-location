@@ -1,0 +1,9 @@
+option java_outer_classname = "LCAudioRate";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum AudioRate{
+	rate_8k		=0x00;
+	rate_11k	=0x01;
+	rate_23k	=0x02;
+	rate_32k	=0x03;
+}

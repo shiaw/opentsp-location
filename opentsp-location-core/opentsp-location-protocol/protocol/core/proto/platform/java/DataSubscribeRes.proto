@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDataSubscribeRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+
+message DataSubscribeRes{
+	required	int32	serialNumber	=1;
+	required	bool	result			=2;
+	repeated	int64	terminalIdentify	=3;
+}

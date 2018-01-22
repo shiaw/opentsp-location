@@ -1,0 +1,11 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+message CallListener{
+	required string phoneNumber = 1;
+	required ListenerStatus status = 2;
+	
+	enum ListenerStatus{
+		calling = 0;
+		listening = 1;
+	}
+}

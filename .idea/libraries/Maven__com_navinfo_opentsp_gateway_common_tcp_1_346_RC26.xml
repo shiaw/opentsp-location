@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.navinfo:opentsp-gateway-common-tcp:1.346-RC26">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/navinfo/opentsp-gateway-common-tcp/1.346-RC26/opentsp-gateway-common-tcp-1.346-RC26.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/navinfo/opentsp-gateway-common-tcp/1.346-RC26/opentsp-gateway-common-tcp-1.346-RC26-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/navinfo/opentsp-gateway-common-tcp/1.346-RC26/opentsp-gateway-common-tcp-1.346-RC26-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

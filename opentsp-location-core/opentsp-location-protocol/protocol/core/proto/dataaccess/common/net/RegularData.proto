@@ -1,0 +1,25 @@
+option java_outer_classname = "LCRegularData";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "csharp_options.proto"; 
+option (google.protobuf.csharp_file_options).namespace = "AeroCloud.Protocol"; 
+
+import "core/proto/common/net/RegularCode.proto";
+import "core/proto/dataaccess/common/net/AreaSpeeding.proto";
+import "core/proto/dataaccess/common/net/InOutArea.proto";
+import "core/proto/dataaccess/common/net/RouteDriverTime.proto";
+import "core/proto/dataaccess/common/net/DriverNotCard.proto";
+import "core/proto/dataaccess/common/net/DoorOpenOutArea.proto";
+import "core/proto/dataaccess/common/net/DrivingBan.proto";
+
+message RegularData{
+	required int64 terminalId = 1;
+	required RegularCode regularCode = 2;
+	required int64 lastModifyDate = 3;
+	optional AreaSpeeding speeding = 4;
+	optional InOutArea inOutArea = 5;
+	optional RouteDriverTime driverTime = 6;
+	optional DriverNotCard driverNotCard = 7;
+	optional DoorOpenOutArea doorOpenOutArea = 8;
+	optional DrivingBan	drivingBan	 = 9;
+}

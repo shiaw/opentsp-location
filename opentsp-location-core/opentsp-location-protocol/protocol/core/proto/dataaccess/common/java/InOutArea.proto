@@ -1,0 +1,14 @@
+option java_outer_classname = "LCInOutArea";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+message InOutArea{
+	required	int64	areaId	=1;
+	required	bool	inAreaAlarmToDriver	=2;
+	required	bool	inAreaAlarmToPlatform	=3;
+	required	bool	outAreaAlarmToDriver	=4;
+	required	bool	outAreaAlarmToPlatform	=5;
+	required	bool	basedTime	=6;
+	optional	bool	isEveryDay	=7;
+	optional	int64	startDate	=8;
+	optional	int64	endDate		=9;
+}

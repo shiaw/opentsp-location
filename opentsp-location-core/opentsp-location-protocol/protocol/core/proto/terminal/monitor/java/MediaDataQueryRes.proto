@@ -1,0 +1,22 @@
+option java_outer_classname = "LCMediaDataQueryRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+import "core/proto/common/java/ResponseResult.proto";
+import "core/proto/common/java/LocationData.proto";
+import "core/proto/terminal/common/java/MediaType.proto";
+import "core/proto/terminal/common/java/EventCode.proto";
+
+
+message MediaDataQueryRes{
+	required	int32				serialNumber		=1;
+	required	ResponseResult		result				=2;
+	repeated	MediaQueryData		queryData			=3;
+}
+
+message MediaQueryData{
+	required	int64				mediaId			=1;
+	required	MediaType			types			=2;
+	required	int32				channels		=3;
+	required    EventCode 			events 			=4;
+	optional	LocationData		locationData	=5;
+}

@@ -1,0 +1,10 @@
+option java_outer_classname = "LCVehiclePassDetail";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message VehiclePassDetail{
+	required	int32	times 	=1;
+	optional	int64	tid		=2;
+	optional	int64	mileage =3;
+	optional	int64	runTime =4;
+	optional	bool	hasFaultCode =5;
+}

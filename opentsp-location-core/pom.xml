@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>opentsp-location</artifactId>
+        <groupId>com.navinfo.platform</groupId>
+        <version>1.208-RC47-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>opentsp-location-core</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>opentsp-location-protocol</module>
+        <module>opentsp-location-dp</module>
+        <module>opentsp-location-rpws</module>
+        <module>opentsp-location-da</module>
+        <module>opentsp-location-dsa</module>
+        <module>opentsp-location-rprest</module>
+        <module>opentsp-location-monitor</module>
+        <module>opentsp-location-push</module>
+        <module>opentsp-location-schedule</module>
+    </modules>
+</project>

@@ -1,0 +1,14 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal.terminalsetting;
+message ConnectServerConfig{
+	optional	string	masterApn	=1;
+	optional	string	masterName	=2;
+	optional	string	masterPassword	=3;
+	required	string	masterIP	=4;
+	optional	string	backupApn	=5;
+	optional	string	backupName	=6;
+	optional	string	backupPasswd	=7;
+	optional	string	backupIP		=8;
+	optional	int32	tcpPort			=9;
+	optional	int32	udpPort			=10;
+}

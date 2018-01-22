@@ -1,0 +1,9 @@
+option java_outer_classname = "LCLastestTerminalStatusRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata";
+
+import "core/proto/common/java/LastestTerminalStatus.proto";
+
+message LastestTerminalStatusRes{
+required	 int32			statusCode		=1;
+	repeated LastestTerminalStatus	status	=2;
+}

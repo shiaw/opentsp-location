@@ -1,0 +1,12 @@
+option java_outer_classname = "LCEngineLiquidLevel";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message EngineLiquidLevel{
+	optional	int32	fuelPressure		=1;
+	optional	float	engineOilLevel		=2;
+	optional	int32	engineOilPressure	=3;
+	optional	float	engineCoolantLevel	=4;
+	
+}
+

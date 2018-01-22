@@ -1,0 +1,14 @@
+option java_outer_classname = "LCFaultCode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata.entity";
+
+message FaultCode{
+	required	int64	terminalId =1;
+	required	int32	spn =2;
+	required	int32	fmi =3;
+	optional	int64	beginDate =4;
+	optional	int32	continuousTime =5;
+	optional	int32	beginLon =6;
+	optional	int32	beginLat =7;
+	optional	int32	endLon =8;
+	optional	int32	endLat =9;
+}

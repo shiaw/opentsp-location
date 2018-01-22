@@ -1,0 +1,9 @@
+option java_outer_classname = "PoiDenseLocationPb";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+import "core/proto/common/java/RealTimeData.proto";
+
+message PoiDenseLocation{
+	required int64			terminalId		=1;
+	repeated RealTimeData	dataList	=2;
+}

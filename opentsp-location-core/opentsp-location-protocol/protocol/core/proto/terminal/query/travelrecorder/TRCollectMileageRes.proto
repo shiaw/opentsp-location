@@ -1,0 +1,13 @@
+option java_outer_classname = "LCTRCollectMileageRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query.travelrecorder";
+
+import "core/proto/common/java/ResponseResult.proto";
+
+message TRCollectMileageRes{
+	required	int32			serialNumber				=1;
+	required	ResponseResult	result						=2;
+	optional	int64			currentDate					=3;
+	optional	int64			installDate					=4;
+	optional	int32			originalMileage				=5;
+	optional	int32			cumulativeMileage			=6;
+}

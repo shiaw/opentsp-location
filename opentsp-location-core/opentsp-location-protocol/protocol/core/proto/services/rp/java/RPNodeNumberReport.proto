@@ -1,0 +1,7 @@
+option java_outer_classname = "LCRPNodeNumberReport";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.rp";
+
+
+message RPNodeNumberReport{
+	required int32 rpNumber = 1;
+}

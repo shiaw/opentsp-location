@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      label: @remoteconfigLabel@
+      uri: @remoteconfigAddr@
+      name: @artifactId@
+      enabled: @remoteconfigActive@

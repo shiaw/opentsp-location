@@ -1,0 +1,11 @@
+option java_outer_classname = "LCFuelConsumptionRate";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+
+message FuelConsumptionRate{
+	optional	float	engineFuelRate					=1;
+	optional	float	engineInstantaneousFuelRate		=2;
+	optional	float	engineAverageFuelRate			=3;
+
+}
+

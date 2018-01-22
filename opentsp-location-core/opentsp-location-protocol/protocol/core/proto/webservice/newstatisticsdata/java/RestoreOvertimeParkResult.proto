@@ -1,0 +1,6 @@
+option java_outer_classname = "LCRestoreOvertimeParkResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata";
+
+message RestoreOvertimeParkResult{
+	required int32			statusCode		=1;
+}

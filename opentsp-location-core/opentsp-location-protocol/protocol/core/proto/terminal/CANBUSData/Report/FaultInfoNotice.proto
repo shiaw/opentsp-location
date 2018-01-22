@@ -1,0 +1,32 @@
+option java_outer_classname = "LCFaultInfoNotice";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.CANBUSData.Report";
+
+import "core/proto/common/java/VehicleBreakdown.proto";
+
+message FaultInfoNotice{
+	optional	LampStatus	malfunctionIndictor			=1;
+	optional	LampStatus	redStop						=2;
+	optional	LampStatus	amberWarning				=3;
+	optional	LampStatus	svsProtect					=4;
+	optional	FlashLampStatus	malfunctionFlash		=5;
+	optional	FlashLampStatus	redStopFlash			=6;
+	optional	FlashLampStatus	amberWarningFlash		=7;
+	optional	FlashLampStatus	svsFlash				=8;
+	repeated	VehicleBreakdown	breakdownCode		=9;
+
+
+}
+	enum LampStatus{
+		lampOff	=0x00;
+		lampOn	=0x01;
+
+	}
+	enum FlashLampStatus{
+		slowFlash	=0x00;
+		fastFlash	=0x01;
+		classCDTC	=0x02;
+		unavailable	=0x03;
+
+
+	}
+	

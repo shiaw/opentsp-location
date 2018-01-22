@@ -1,0 +1,9 @@
+option java_outer_classname = "LCLatestParkRecoreds";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.newstatisticsdata";
+
+import "core/proto/webservice/newstatisticsdata/entity/LatestPark.proto";
+message LatestParkRecoreds{
+	required int32			statusCode		=1;
+	optional int32			totalRecords	=2;
+	repeated LatestPark	dataList	=3;
+}

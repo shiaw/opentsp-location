@@ -1,0 +1,10 @@
+option java_outer_classname = "LCFormatEncoding";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.common";
+
+enum FormatEncoding{
+	picture_jpeg	=0x00;
+	picture_tif		=0x01;
+	audio_mp3		=0x02;
+	audio_wav		=0x03;
+	video_wmv		=0x04;
+}

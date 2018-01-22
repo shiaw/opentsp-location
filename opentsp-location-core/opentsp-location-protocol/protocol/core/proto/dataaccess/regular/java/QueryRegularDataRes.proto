@@ -1,0 +1,11 @@
+option java_outer_classname = "LCQueryRegularDataRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.regular";
+
+import "core/proto/common/java/PlatformResponseResult.proto";
+import "core/proto/dataaccess/common/java/RegularData.proto";
+
+message QueryRegularDataRes{
+	required	int32					serialNumber		=1;
+	required	PlatformResponseResult	results				=2;
+	repeated	RegularData				datas				=3;
+}

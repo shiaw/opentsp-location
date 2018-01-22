@@ -1,0 +1,10 @@
+option java_outer_classname = "LCCANDataSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.terminal";
+
+import "core/proto/terminal/CANBUSData/CANBUSDataReport.proto";
+
+message CANDataSave{
+	required	int64	terminalId = 1;
+	required	int32	type = 2;
+	repeated	CANBUSDataReport datas = 3;
+}

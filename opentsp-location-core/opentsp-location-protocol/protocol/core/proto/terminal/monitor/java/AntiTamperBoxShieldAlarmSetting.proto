@@ -1,0 +1,7 @@
+option java_outer_classname = "LCAntiTamperBoxShieldAlarmSetting";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.monitor";
+
+
+message AntiTamperBoxShieldAlarmSetting{
+	optional	bytes	shieldingSetting  = 1;
+}

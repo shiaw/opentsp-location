@@ -1,0 +1,13 @@
+option java_outer_classname = "LCServerAuth";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform.auth";
+
+import "core/proto/common/java/DistrictCode.proto";
+
+message ServerAuth{
+	required	string	name				=1;
+	required	string	password			=2;
+	required	string	version				=3;
+	required	DistrictCode	district	=4;
+	required	string	serverIp			=5;
+	optional	string	channelIdentify		=6;
+}

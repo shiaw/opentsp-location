@@ -1,0 +1,10 @@
+option java_outer_classname = "LCServerStatus";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum ServerStatus{
+	login				=120001;
+	reconnect			=120003;
+	disconnect			=120004;
+	logout				=120005;
+	auth				=120006;
+}

@@ -1,0 +1,8 @@
+option java_outer_classname = "LCUpPassThrough";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.terminal.query";
+
+import "core/proto/terminal/common/java/PassType.proto";
+message UpPassThrough{
+	required PassType types = 1;
+	required string passContents = 2;
+}

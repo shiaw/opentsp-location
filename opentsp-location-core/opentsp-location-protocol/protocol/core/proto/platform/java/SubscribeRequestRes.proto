@@ -1,0 +1,11 @@
+option java_outer_classname = "LCSubscribeRequestRes";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.platform";
+
+
+import "core/proto/platform/java/RPNodeData.proto";
+
+message SubscribeRequestRes{
+	required	int32	serialNumber			=1;	
+	repeated	RPNodeData	datas				=2;
+	repeated	int64	terminalIdentify		=3;
+}

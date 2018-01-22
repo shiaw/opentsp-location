@@ -1,0 +1,13 @@
+option java_outer_classname = "LCAreaInfo";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/common/java/AreaType.proto";
+import "core/proto/dataaccess/common/java/AreaData.proto";
+
+message AreaInfo{
+	optional int64	terminalId	=1;
+	required int64 areaIdentify = 2;
+	required AreaType types = 3;
+	optional int64 createDate = 4;
+	repeated AreaData datas = 5;
+}

@@ -1,0 +1,40 @@
+option java_outer_classname = "LCTerminalOperation";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum TerminalOperation{
+	TerminalRegister				=160000;
+	TerminalRegisterRes				=160001;
+	TerminalCancelled				=160002;
+	DriverInfoReport				=160003;
+
+	MessageTimeoutProcess			=160100;
+	ConnectServerConfig				=160101;
+	ReportTacticsAndInterval		=160102;
+	PrivilegeNumbers				=160103;
+	AlarmTriggeredSetting			=160104;
+	SpeedingAlarm					=160105;
+	CancelSpeedingAlarm				=160106;
+	FatigueDriving					=160107;
+	CancelFatigueDriving			=160108;
+	
+	DispatchMessage					=160200;
+	CallListener					=160201;
+	TakePhotography					=160202;
+	MultimediaUpload				=160203;
+	OilCircuitControl				=160204;
+	VehicleControl					=160205;
+	
+	ParameterQuery					=160300;
+	ParameterQueryRes				=160301;
+	ParameterQueryText				=160302;
+	ParameterQueryTextRes			=160303;
+	PhoneBookSetting				=160304;
+	SetCircleAreaAlarm				=160305;
+	DeleteCircleAreaAlarm			=160306;
+	SetRectangleAreaAlarm			=160307;
+	DeleteRectangleAreaAlarm		=160308;
+	SetPolygonAreaAlarm				=160309;
+	DeletePolygonAreaAlarm			=160310;
+	SetRouteAlarm					=160311;
+	DeleteRouteAlarm				=160312;
+}

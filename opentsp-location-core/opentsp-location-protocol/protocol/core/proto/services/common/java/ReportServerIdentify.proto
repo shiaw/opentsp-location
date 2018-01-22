@@ -1,0 +1,8 @@
+option java_outer_classname = "LCReportServerIdentify";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.services.common";
+
+import "core/proto/services/common/java/NodeType.proto";
+message ReportServerIdentify{
+	required	NodeType	type		=1;
+	required	int32	nodeCode		=2;
+}

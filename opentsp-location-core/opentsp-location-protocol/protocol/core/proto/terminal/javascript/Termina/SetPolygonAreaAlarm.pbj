@@ -1,0 +1,26 @@
+"pbj-0.0.3"
+package com.navinfo.opentsp.platform.location.protocol.terminal;
+enum SetAreaOperation{
+	updateArea	=0;
+	additionalArea	=1;
+	modifyArea	=2;
+}
+message SetPolygonAreaAlarm{
+	required SetAreaOperation operations = 1;
+	repeated PolygonArea areas = 2;
+}
+
+message PolygonArea{
+	required int64 areaId = 1;
+	required int32 areaProperty = 2;
+	optional int64 beginDate = 3;
+	optional int64 endDate = 4;
+	optional int32 maxSpeed = 5;
+	optional int32 speedingContinuousTime = 6;
+	repeated PolygonPoint polygonPoints = 7;
+}
+
+message PolygonPoint{
+	required int32 latitude = 1;
+	required int32 longitude = 2;
+}

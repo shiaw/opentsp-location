@@ -1,0 +1,18 @@
+"pbj-0.0.3"
+package platform.auth;
+
+message MediaDataQueryRes{
+ 
+ 
+	required	int32	serialNumber	=1;
+	required	ResponseResult	result	=2;
+	repeated	MediaQueryData	queryData	=3;
+	
+	message MediaQueryData{
+		required	int64	mediaId		=1;
+		required	MediaType	types	=2;
+		required	int32	channels	=3;
+		required	EventCode	events	=4;
+		optional	LocationData	locationData	=5;
+	}
+}

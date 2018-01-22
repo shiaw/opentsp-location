@@ -1,0 +1,13 @@
+option java_outer_classname = "LCMessageBroadcastSave";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.dataaccess.common";
+
+import "core/proto/common/java/MessageSign.proto";
+
+message MessageBroadcastSave{
+	required	int64	terminalId =1;
+	required	int64	areaIdentify=2;
+	optional	int64	broadcastDate=3;
+	optional	string	broadcastContent=4;
+	optional	MessageSign	signs=5;
+
+}

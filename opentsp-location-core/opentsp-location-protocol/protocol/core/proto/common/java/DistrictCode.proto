@@ -1,0 +1,42 @@
+option java_outer_classname = "LCDistrictCode";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.common";
+
+enum DistrictCode{
+	none						=0x00;
+	center						=130000;
+	beijing						=130100;
+	tanjian						=130200;
+	hebeisheng					=130300;
+	shanxisheng					=130400;
+	neimengguzizhiqu			=130500;
+	liaoningsheng				=130600;
+	jilinsheng					=130700;
+	heilongjiangsheng			=130800;
+	shanghaishi					=130900;
+	jiangsusheng				=131000;
+	zhejiangsheng				=131100;
+	anhuisheng					=131200;
+	fujiansheng					=131300;
+	jiangxisheng				=131400;
+	shandongsheng				=131500;
+	henansheng					=131600;
+	hubeisheng					=131700;
+	hunansheng					=131800;
+	guangdongsheng				=131900;
+	guangxizhuangzuzizhiqu		=132000;
+	hainansheng					=132100;
+	zhongqingshi				=132200;
+	sichuansheng				=132300;
+	guizhousheng				=132400;
+	yunnansheng					=132500;
+	xizangzizhiqu				=132600;
+	shanxisheng2				=132700;
+	gansusheng					=132800;
+	qinghaisheng				=132900;
+	ningxiahuizuzizhiqu			=133000;
+	xinjiangweiwuerzizhiqu		=133100;
+	taiwansheng					=133200;
+
+
+}
+

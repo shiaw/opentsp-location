@@ -1,0 +1,7 @@
+option java_outer_classname = "LCCrossGridCounts";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.webservice.statisticsdata";
+
+import "core/proto/webservice/statisticsdata/entity/CrossGridRecord.proto";
+message CrossGridCounts{
+	repeated CrossGridRecord records =1;
+}

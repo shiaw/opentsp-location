@@ -1,0 +1,9 @@
+option java_outer_classname = "LCDSAFeedbackStatisticResult";
+option java_package = "com.navinfo.opentsp.platform.location.protocol.nodecluster";
+
+
+message DSAFeedbackStatisticResult{
+	required        int64	endedTime	      =1;
+	required	bool	isCompleted           =2;
+        repeated	int64   archivedTerminals     =3;
+}
